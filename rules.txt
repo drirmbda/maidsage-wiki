@@ -1,0 +1,47 @@
+====== Terms for Editing or Using this Wiki ======
+
+This is the only page on this wiki that cannot be freely edited. The admin will add pages, edit, and re-organize the wiki as new content is added.
+
+===== 1. Basic Rules =====
+
+Your privileges to freely edit the wiki could be revoked if you do not follow these basic, common-sense rules:
+
+  - Be respectful; no improper language; no personal attacks, etc.
+  - Do not add content unrelated to SAFE Network; no copyrighted materials; no illegal materials; no advertising.
+
+===== 2. Guidelines =====
+
+  - Include sources or links whenever possible, especially from the SAFE Network Forum, and other MaidSafe websites.
+  - Instead of duplicating content, link to it.
+  - Try to avoid deletion, but feel free to leave a concise note. (The wiki admin will try to confirm and make appropriate changes.)
+  - There is no particular process for making changes. Feel free to comment in the main thread about this wiki on safenetforum  [[https://safenetforum.org/t/public-notebook-on-everything-about-safe-network/28800/11|here]].
+
+Common-sense thoughts about editing a public wiki from Wikipedia can be found [[https://en.wikipedia.org/wiki/Wikipedia:Ten_simple_rules_for_editing_Wikipedia|here]].
+
+===== 3. How the wiki is set up =====
+
+Due to time and resource limitations, this wiki is kept as simple as possible.
+
+==== Protection from loss contributions ====
+
+The contents of this wiki are automatically backed up daily, using git. A public repository is planned for easy access.
+
+==== Information Collection ====
+
+When registering for this website we will store your information (name and e-mail that you provide), and will only use it in case we need to contact you with regard to content you added. We do our best to keep this server secure to protect that information. The wiki is setup not to send any email automatically.
+
+==== Password Reset ====
+
+You must select a password when you register. Since e-mail is disabled, you cannot recover your password. Either register again with a different ID, or if your ID is the same as that on safenetforum.org, contact @drirmbda there to delete your account so that you can re-register once more with a same user ID.
+
+===== 4. Disclaimer =====
+
+Before you use this website you must accept that the information may not be accurate or reliable, and that it is your responsibility to confirm it, and seek expert advice to determine if any information might apply to your specific situation. We are not responsible for any losses or damages.
+
+If you believe any portion of this site infringes copyright, is illegal, or damaging, please contact the admin.
+
+===== 5. Wiki Admin Contact =====
+
+If anything should be changed here, or if you have any issues with this wiki, please contact this wiki's admin [[http://safenetforum.org/u/drirmbda/activity|@drirmbda]] on the [[http://safenetforum.org| SAFE Network Forum]].
+
+The main thread on the forum about this wiki is [[https://safenetforum.org/t/public-notebook-on-everything-about-safe-network/28800/11|here]].

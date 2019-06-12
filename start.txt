@@ -1,0 +1,541 @@
+====== Welcome to the Independent SAFE Network Wiki ======
+
+The SAFE Network project is vast and complex. While there are great resources available online for study, these resources still tend to be hard locate and digest. For example, [[http://safenetforum.org|SAFE Network Forum]] contains many years-worth of great information but lacks concise and up-to-date summaries which would be convenient for newcomers to catch up.
+
+The [[http://maidsafe.net|MaidSafe]] community could perhaps play a bigger role in the SAFE Network project by working together to lower the bar for contribution, and by enabling making smaller contributions that do not necessarily require top coding skills, deep technical expertise, or the devotion of huge amounts of time to make a difference.
+
+This Wiki was created for the above two main reasons. This is starting-out as a growing collection of personal notes of the editor trying to thoroughly understand the project, and is intended to evolve into an independent guide to SAFE Network.
+
+All information here is unofficial, mainly contributed by outsiders. You are free to edit and contribute right here as you go, learning about MaidSafe and SAFE Network yourself. This Wiki should fill gaps, and reference existing resources whenever possible. Opinions other than perhaps brief and temporary notes on the content or suggested changes, belong on the Safenet forum, and will generally be removed from the Wiki.
+
+<note important>
+In the spirit of the future SAFE Network, this Wiki is open to editing by anyone. Automatic registration is needed to avoid spam, and there are some [[rules]] to follow to keep this fun. The rules page also contains contact information, and a few legal notices.
+</note>
+
+<note warning>
+Before reading this site you must accept that it is your responsibility to obtain expert judgment and advice before using any information from this site for your particular situation. You accept that you alone are responsible for any losses or damages resulting from using this website.
+</note>
+
+===== 1. Start Here =====
+
+The SAFE Network forum has a [[https://safenetforum.org/t/new-members-start-here/26839|start here page]] which you may want to have a look at. You can always come back here if you get lost. Below are links to resources at different levels of difficulty and detail.
+
+==== Basic Level ====
+
+  - This is just out - the [[https://www.safenetworkprimer.com/|SAFE Network primer]]
+  - A sampling of topics made easy [[https://safecrossroads.net/|SAFE Crossroads]]
+  - If you've only got 10 minutes [[https://safenetforum.org/t/10-key-facts-about-safe-network/12948 | 10 key facts]]
+  - For those familiar with bitcoin / blockchain [[https://safe-network-explained.github.io/safe-for-bitcoiners | SAFE Network explained using bitcoin terminology]]
+
+(a document called SafeNetForDummies is available on Google docs but I lost the link to it)
+==== Intermediate Level ====
+
+  - A write-up of September 2017 can be found [[https://safe-network-explained.github.io/architecture|here]].
+  - The Documentation topic of September 2017 summarizes many concepts [[https://safenetforum.org/t/the-documentation-topic/16149|here]].
+
+
+Reading this wiki may one day provide an accurate technical introduction but we are only at the beginning. If you are in the process of trying to go beyond the basic level feel free to share your notes on this wiki.
+
+==== Expert Level ====
+
+  - Read all RFCs
+  - Read all Documentation
+
+=== RFCs ===
+
+MaidSafe requests input through a public RFC (Request For Comment) process. RFCs are accessible [[https://github.com/maidsafe/rfcs|here]] on GitHub.
+
+The list of RFCs by status can be found in that repository [[https://github.com/maidsafe/rfcs/blob/master/RFCs-by-status.md#active-rfcs|here]].
+
+MAIDSafe has internal "pre-RFC" documents on certain topics, which means that the published RFCs provide an incomplete picture of the status of technology development.
+
+=== Rust Core Libraries Documentation ===
+
+  * [[https://docs.rs/safe_app|Crate safe_app]]
+  * [[https://docs.rs/crate/safe_authenticator|Crate safe_authenticator]]
+  * [[https://docs.rs/safe_core|Crate safe_core]]
+  * [[https://docs.rs/routing|Crate routing]]
+  * [[https://docs.rs/safe_vault|Crate safe_vault]]
+  * [[https://docs.rs/self_encryption|Crate self_encryption]]
+
+=== SAFE Web App ===
+
+  * [[https://github.com/maidsafe/safe_examples/tree/master/safe_web_app_quick_start|Web App Tutorial]]
+
+=== API Documentation ===
+
+  * [[https://docs.maidsafe.net/safe_app_nodejs/index.html|SAFE Network Node.JS Client Library Docs]]
+  * [[https://docs.maidsafe.net/safe_app_java/|SAFE App Java (Android)]]
+  * [[https://docs.maidsafe.net/safe_app_csharp/api/index.html|SAFE App C#]]
+
+===== 2. Goals of the SAFE Network =====
+
+(There is a lot of information hidden on the forum, however it would be good to extract that what will truly be new and different about SAFE Network in particular from user's viewpoint. Just doing things differently does not mean that it adds value.)
+
+==== 2.1 SAFE Network Core Goals ====
+
+The primary goal of SAFE Network is becoming completely autonomous; impossible to change, break or stop by any single entity or group of actors.
+
+The first iteration of the SAFE Network will achieve the following core goals [[https://safenetforum.org/t/core-goals-of-the-first-iteration-of-safe-network-at-launch/28820|(discussion)]]:
+
+  - de-centralize ownership of certain network functions so that they cannot be changed or disabled by any group of actors(*3)
+    - function: identity proofing
+    - function: access control
+    - function: communication
+    - function: information storage
+  - protect all information perpetually(*1) from unpermitted access, interception, tampering or deletion
+  - preserve stored information, and end-to-end communications, and global access to these perpetually(*1) and for free(**2)
+  - provide a digital medium of exchange
+
+  * *1) The meaning of perpetual is not clear yet. 30 years?
+  * *2) Free, except for the cost of broadband access and the user terminal.
+  * *3) That the threshold is to making changes is unclear yet. A majority?
+
+A future iteration is expected to achieve the following additional goals
+    - function: computation
+
+Trustless network, autonomous network, and de-centralized network may be very similar ways to express the same goal.
+
+=== Open Questions ===
+(List open questions here, along with links to forum discussion, until we find some answers.)
+
+What is perpetual?
+What is the required size of group of actors to allow changes to the mechanisms of SAFE Network that guarantee the core goals?
+==== 2.2 SAFE Network Non-Core Goals ====
+
+Certain goals not included in the previous section, but on the roadmap, could be considered non-essential, or merely good-to-have. This is a list of such goals, and is subject to change:
+
+=== Independent but important add-ons ===
+  - multiple identities
+  - de-centralized name resolution
+  - CLI interface and API
+  - 
+=== Convenient and promoting adoption ===
+  - SAFE Browser
+  - Language bindings
+
+=== Nice to have but not as important ===
+  - RDF Format
+
+
+==== 2.3 Benefits ====
+
+Benefits will be the results of SAFE Network achieving its goals.
+Many individual benefits may not be unique to SAFE Network, but the combination of a large number of them might be.
+
+=== Relevant to the user ===
+  - No censorship
+  - Perfect privacy
+  - Full control over own data
+  - No loss of data or access issues ever
+  - No loss of ability to communicate ever
+  - Always on; 100% availability
+
+== Cryptocurrency benefits relevant to users ==
+  - No transaction fees
+  - Anonymous and untraceable transactions
+
+== Open Questions ==
+
+Does permanent availability of published data not contradict having full control over own data?
+
+=== Relevant to the developer ===
+
+  - No need to implement and maintain reliable data storage
+  - No need to implement and maintain basic security measures
+  - No need to implement authentication
+  - Get paid for development of software
+  - Inherently scaling storage infrastructure
+
+=== Relevant to technical progress ===
+
+  - Scalable immutable transaction ledger
+  - Scalable cryptocurrency (without a block chain)
+
+=== Relevant to our planet ===
+  - Consensus at low power consumption
+  - Secure cryptocurrency at low power cost (in contrast to PoW)
+
+=== Potential concerns ===
+
+== Open Questions ==
+  - How will this impact open source and free software development?
+
+==== 2.4 Why switch? ====
+
+(Today's Internet is free because people pay for Broadband Access, and because Corporations have found ways to monetize user's privacy and attention, which pays for the cost of running datacenters.)
+
+
+===== 3. Architecture =====
+(probably target in-depth, since general stuff is covered elsewhere.)
+
+
+==== 3.1 Place in OSI Reference Model ====
+
+Layers 0-4 will provide the basis for communication, without modification. Internet/Routing (Layer 3) will be based on IPv4 and/or IPv6. Host-to-host Transport (Layer 4) will provide QUIC transport, which is based on UDP (a connection-less service). SAFE Network will not modify anything below and including Layer 3. SAFE Network will add to Layer 4, and functions in Layers 5, 6, and 7:
+
+LAYER 7 - Application: Vaults, SAFE Browser, Authenticator, SDNS, (not sure about SFTP, SNTP, SIMAP) (tentatively placed here until verified)
+
+LAYER 6 - Presentation: "Self-Encryption" (tentatively placed here until verified)
+
+LAYER 5 - Session: Session ID and network entry point selection, Self-Authentication (tentative)
+
+LAYER 4 - Routing: SAFE Network PARSEC Consensus, and Kademlia Distributed Hash Table-based Routing, using QUIC/UDP
+
+=== Open Questions ===
+
+Does this mean that if Layers 4 or below would fail on a grand scale, it could disrupt SAFE Network, or even an irrecoverable disruption?
+
+
+
+=== Open Items ===
+Could SAFE Network be split up in smaller parts to speed up development and to make it more robust?
+
+== Before Launch ==
+
+== After Launch ==
+
+=== Notes on CRUST ===
+
+  - CRUST will be replaced by [[https://en.wikipedia.org/wiki/QUIC|QUIC]] (originally: Quick UDP Internet Connections), which relies on UDP/IP.
+
+==== 3.2 SAFE Network Overlay Network ====
+
+The SAFE Network is a virtual overlay network on the Internet, consisting of SAFE Network Nodes, which correspond to an instance of SAFE Network "Vault" software in the real world. Nodes are dynamically organized by the network as Vaults come, gain trust over time, and leave the network.
+
+=== SAFE Network Address Space ===
+
+SAFE Network Nodes exist in the virtual overlay network in a multi-dimensional space called the XOR Space. There is no correlation between geographical distance (or IP address distance) between physical nodes in the real world, and distance between the same nodes in XOR Space. This is the result of how Node IDs are allocated by the SAFE Network. People running a Vault have no control over this process, which is an important security feature.
+
+In XOR space, the distance between Nodes is the XOR of the IDs of the two Nodes, which is read as an unsigned integer. Distance is used for routing in this space and for organizing Nodes into groups, as well as for allocating responsibilities over other entities in SAFE Network XOR space such as "Clients" and units of data ("Chunks"), which also have an ID using which distances to Nodes can be calculated in exactly the same way.
+
+Clients need to connect to Nodes to access the SAFE Network and the appropriate node is decided based on distance. Chunks are managed by groups of Nodes, which are also determined by distance. Chunks of data derive their ID from a hash of the contents of the chunk.
+
+  * Entities in XOR Space: Vault Nodes, Clients, Chunks (other?)
+  * XOR Space addresses length: 256 bits
+
+=== Organization of Entities ===
+
+The XOR space is dynamically subdivided by a sectioning algorithm into a growing number of dis-joint XOR sub-spaces as the number of Nodes grows. The sub-spaces are called "Sections". Nearby Sections of Nodes watch over each other, and within each Section a hierarchy of Nodes exists based on Age, which determines the level of trust, responsibility of a Node, and the power it has over other Nodes.
+
+Sections run PARSEC consensus algorithms to make decisions, and sign decisions using a group signature so that neighboring Sections can verify them. Decisions (and events) are stored in Data Chains.
+
+  * Algorithms: Sectioning, ... (other TBD)
+  * Section group size and split threshold: 8 (typical number which may be changed in the future)
+  * Consensus threshold: 5 out of 8 (62.5% (of "quorum size"?))
+  * Information held by Sections: Data Chains (of a Section, or a neighboring Section), Routing Table (
+==== 3.3 Structure of SAFE Network Software ====
+
+
+===== 4. Mechanisms =====
+(in-depth. various challenges and they were/should be solved)
+
+=== Self-configuration of the network ===
+
+SAFE Network will create a routed overlay network (OSI Layer 4) on top of an Internet of interconnected computing devices. All aspects from the overlay routing upwards should be de-centralized, consensus-based, and completely autonomous.
+
+=== Maintaining the rules ===
+
+All transactions or decisions are consented according to the rules of the network and recorded in a transaction ledger that acts as the ground truth to base future transactions on.
+
+=== Incentive system to provide storage space ===
+
+SafeCoin
+[[https://github.com/maidsafe/rfcs/blob/master/text/0057-safecoin-revised/0057-safecoin-revised.md|RFC-0057]] Safecoin Revised
+
+=== Incentive system to secure network integrity ===
+
+=== Incentive system to secure perpetual access ===
+
+=== Medium of exchange === 
+
+SAFE Network will have a native cryptocurrency as a medium of exchange, primarily for providing incentives to entities supporting the network, and for charging network users appropriate amounts for their usage. It is called SafeCoin.
+To raise funding for the project a token called MAID has been created. MAID will be exchanged for SafeCoin at the launch of the SafeNet. MAID, and the economical aspects of SafeCoin are covered in a separate Section below.
+
+=== Self-Authentication ===
+
+=== Self-Encryption ===
+
+=== Decentralized Consensus ===
+
+MaidSafe claims a world's first decentralized, asynchronous, Byzantine Fault Tolerant consensus mechanism that works in permission-less networks and that is open source.
+
+[[https://medium.com/safenetwork/parsec-a-paradigm-shift-for-asynchronous-and-permissionless-consensus-e312d721f9d8|PARSEC]] [[https://github.com/maidsafe/parsec|GitHub parsec repo]]
+=== Decentralized Applications ===
+
+
+
+=== Open Items ===
+
+== Major network upgrades ==
+
+(How to essentially reboot SAFE Network to fix issues requiring it, without loosing data?)
+
+== Minor network upgrades ==
+
+(How to tweak and maintain code?)
+
+== After Launch ==
+
+
+===== 5. Economics =====
+(everything related to the medium of exchange, it's value, supply and demand, and so on from Economist's viewpoint.)
+
+==== 5.1 MAID pre-launch ====
+(MAID creation to fund development)
+
+
+
+==== 5.2 At launch ====
+(scenarios impacting the value of MAID at conversion to SafeCoin)
+
+At this time it is expected that one MAID token will be exchanged for son SafeCoin.
+
+Source: [[https://safenetforum.org/t/safecoin-supply/13477|this]], [[https://github.com/maidsafe/Whitepapers/blob/master/Project-Safe.md|Project-Safe whitepaper April 2014]](outdated??)
+
+  * Pre-launch supply (MAID): 452 M (452,552,412 units)
+  * Investor allocation: 226 M
+  * Maximum supply: 678 M
+
+5% of total supply [of 678M??] goes to early investor/family
+
+5% of total supply [of 678M??] goes to dev team
+==== 5.3 SafeCoin ====
+(money supply, economic output, inflation)
+
+  * SafeCoin will be almost infinitely divisible 
+
+=== SafeCoin supply ===
+(following needs confirmation.) [[https://safenetforum.org/t/safecoin-supply/13477|4/2017]], [[https://safenetforum.org/t/safecoin-supply/13477/11|authoritative April 2017]]
+
+  * Pre-launch supply (MAID): 452 M (452,552,412 units) - slightly* over 10% (10.5%) of total supply, available at day 1
+  * Early investor allocation: 215 M - (about?) 5% of total supply available at day 1
+  * Maximum supply: 4.3B (4,294,967,295; 2^32-1)
+
+*) Slighyly more by a few million due to error at MAID sale. [[https://safenetforum.org/t/maidsafecoin-maid-price-trading-topic/9923/6436|@neo]]
+
+=== SafeCoin creation ===
+(following needs confirmation.) 
+
+[[https://safenetforum.org/t/safecoin-supply/13477|4/2017]], [[https://safenetforum.org/t/safecoin-supply/13477/11|authoritative April 2017]],[[https://safenetforum.org/t/safecoin-supply/13477/14|@neo]]
+
+SafeCoin goes to
+  * Farmers - Depending on supply of available but unused storage; the (instantaneous) farming rate.
+  * Network maintenance - Every GET on average pays core devs 5% of farming rate
+  * App developers - Every GET due to an App pays 10% of farming rate
+  * PtP (Pay the Provider - [[https://safenetforum.org/t/poll-should-maidsafe-implement-ptp-pay-the-producer/5805|under discussion]]) - Every GET for specific data could pay 10% of farming rate
+
+Farming rate is explained in [[https://github.com/maidsafe/rfcs/blob/47e3e688d6eb0709fbeee742f2865b50233dc98a/text/0012-safecoin-implementation/0012-safecoin-implementation.md|RFC-0012]].
+
+=== SafeCoin destruction ===
+[[https://safenetforum.org/t/safecoin-supply/13477/13|@polpolrene]]
+
+SafeCoins are destroyed/consumed by the network at:
+  * Account creation (address/ID)
+  * Domain name purchase
+  * PUT of data (immutable data will be much less expensive than mutable data)
+
+=== What determines the exchange value of SafeCoin ===
+
+Since SAFE Coin will regulate availability of (secure and perpetual decentralized) storage, it may be expected to be as stable as that commodity. However, speculation and application for predominantly other uses might change the situation significantly.
+
+===== 6. MAID and SafeCoin for Traders =====
+(everything related to dealing with MAID or SAFE Network tokens)
+
+=== What is MAID ===
+
+MAID is a token that exists in the OMNI layer on the Bitcoin Blockchain.
+
+=== What is SafeCoin ===
+
+SafeCoin will be the native medium of exchange within SAFE Network, and is supposed to replace MAID at the time of launch of the network.
+
+Warning: SafeCoin is NOT [[https://safecoin.org/|this]].
+
+=== Exchanges trading MAID ===
+
+As a general rule, do not leave large amount of MAID (or any other coins) on an exchange.
+
+  * [[https://poloniex.com/|Poloniex]]: MAID/BTC, MAID/XMR, ....
+
+  * [[http://international.bittrex.com|Bittrex International]]: MAID/BTC
+     *[[https://mobile.twitter.com/BittrexIntl/status/1131613052250599424?s=20|Announcement]] on May 23, 2019 12:29pm
+     *[[https://safenetforum.org/t/maidsafecoin-maid-price-trading-topic/9923/6799|MaidSafe confirmation]]
+     *This exchange is not accessible to US citizens (see [[https://bittrex.zendesk.com/hc/en-us/articles/360001426066-FAQs-Bittrex-International-Trading-Platform-|FAQ]])
+
+  * [[https://dex.openledger.io/|OpenLedger DEX]] low volume
+
+  * [[http://www.bitker.com|Bitker]] low volume
+
+  * [[https://hitbtc.com/exchange/MAID-to-BTC|HitBTC]]: MAID/BTC, MAID/ETH, MAID/USDT. Consider the high level of complaints on social media about losing access to funds. MaidSafe does seem to have some leverage over HitBTC and could help get issues resolved.
+
+  * [[https://safenetforum.org/t/cryptopia-liquidation/28767/11|Nova might replace Cryptopia]]. [[https://novaexchange.com/|Nova]]
+
+=== Storing MAID offline ===
+[[https://safenetforum.org/t/how-to-store-maidsafe/3644/89|Feb 2018 post]]
+===== 7. Hardware Guide for Farmers =====
+(what do you need to join.)
+
+===== 8. Software Guide for Users =====
+(how to start using apps.)
+
+===== 9. App Dev Guide for Developers =====
+(how to start app software development)
+
+===== 10. Contribution Ideas for Contributors =====
+
+This section could evolve into a guide for people to find a way to contribute matching technical capability, time and interest.
+
+==== Basic ====
+(Marketing, improving documentation, and performing testing?)
+==== Intermediate ====
+(Testing and validation of code and concepts)
+==== Advanced ====
+MaidSafe has an RFC process and discussion takes place on the MAID Safe Forum.
+(Summaries of the issues and resolutions could be added here for each.)
+
+[[https://safenetforum.org/t/current-unsolved-safe-questions/28228|Unsolved questions (still?)]]
+
+=== Discussions ===
+(participate in discussion of RFCs)
+  * [[https://safenetforum.org/t/rfc-57-safecoin-revised-specific-question-concerning-safecoin-size-and-number-polls/28810|RFC 57]] June 2019
+  * [[https://safenetforum.org/t/poll-should-maidsafe-implement-ptp-pay-the-producer/5805|RFC 59]] June 2019
+
+[[https://safenetforum.org/c/development/rfcs|List of all RFC discussions]]
+===== 11. Labs for Builders =====
+(this will be the area of the tinkerers. How-to's, experiments, etc.)
+
+
+== Community SAFE Network ==
+Testing:
+[[https://safenetforum.org/t/how-to-set-up-a-vault-from-home/13186|How to set up a vault at home]]
+[[https://safenetforum.org/t/launch-of-a-community-safe-network/26930| Launch of a cummunity safe network]] 
+===== 12. Philosophy =====
+(deeper questions)
+
+=== Perpetuity ===
+(What does it mean to store information forever? What is forever? What is the scope of SAFE Network, and what will be needed to achieve true perpetual storage?)
+
+A list of measures against which to measure "perpetuity"
+  * Civilization - [[http://www.bbc.com/future/story/20190218-the-lifespans-of-ancient-civilisations-compared|336 years]] - Civilizations [[http://www.bbc.com/future/story/20170418-how-western-civilisation-could-collapse|collapse]].
+  * Lifetime - [[https://ourworldindata.org/life-expectancy|89 years]]
+  * Generation - [[https://isogg.org/wiki/How_long_is_a_generation%3F_Science_provides_an_answer|31 years]]
+  * OS Support cycle - [[https://access.redhat.com/support/policy/updates/errata/|10 years]]
+  * 
+
+=== Freedom ===
+
+=== Equitable Access ===
+
+=== Misuse of SafeNet ===
+
+===== A. Resources =====
+
+==== Repositories ====
+[[https://github.com/maidsafe|Github]]
+
+=== Archive ===
+[[https://github.com/maidsafe-archive|Github Archive]] (Deprecated/archived repositories)
+
+
+==== Useful Resources Online ====
+(Note that some information may have become outdated and incorrect.)
+
+[[https://safenetwork.org/community/|Safenetwork.org 'Community' Links]]
+
+[[https://safenetwork.org/documentation/|Safenetwork.org 'Documentation' Links]]
+
+=== Introductions by MaidSafe and community ===
+
+[[https://safecrossroads.net/|SAFE Crossroads]] Intelligent and simple.
+
+=== Fundamental Principles ===
+
+[[https://medium.com/safenetwork/founding-fundamentals-part-1-4b2d096e1a1b|Fundamentals 1/2]]
+
+[[https://medium.com/safenetwork/founding-fundamentals-part-2-11be00c49c68|Fundamentals 2/2]]
+
+=== App Directory ===
+
+[[https://apps.safenetwork.org/|SAFE Network apps]]
+
+=== David's Blog ===
+
+[[https://metaquestions.me/|home]]
+
+[[https://metaquestions.me/2017/08/12/the-impossible-network/|The impossible network]]
+
+=== Miscellaneous ===
+
+[[https://medium.com/safenetwork|MaidSafe on Medium]]
+
+=== Introductions by third parties ===
+
+[[references|Resources and Reference Page]]
+
+[[https://drive.google.com/file/d/0BxZbU-adoO5OWUswR1h2WE9weEk/view|SAFE Network for Dummies]]
+
+==== MaidSafe Activities and Groups ====
+
+[[https://safenetwork.org/meetup-groups/|Meetup Group List]]
+
+===== B. Unofficial FAQ =====
+
+This section answers some questions that we could not easily find elsewhere. You can first check the official [[https://safenetwork.tech/faq/|FAQ]].
+
+=== Terminology ===
+(sorted)
+
+Clearnetwork : Refers to the Internet as we know it today, which is what SAFE Network will replace.
+
+MaidSafe : "Massive Array of Internet Disks, Secure Access For Everyone", the name of the entity leading the development of the SAFE Network.
+
+MVP : Minimum Viable Product: As defined in 2016, not the final product with messaging and SafeCoin, but a working network for storage, that may not guarantee perpetual data storage yet as it would be un-paid. (As of 2019 the meaning is unclear, and likely to be different.)
+
+PARSEC : Protocol for Asynchronous, Reliable, Secure and Efficient Consensus: An open sourced library
+
+SAFE Network : “Secure Access for Everyone Network”, the name of the new Internet.
+
+
+
+===== C. History and Timeline =====
+
+==== Past ====
+(what has happened in the past 13 years?)
+
+  * Founding of MaidSafe Foundation and MaidSafe Inc.
+  * Raising of funding using MAID
+  * The PARSEC Milestone (May 2018)
+==== Future ====
+(roadmaps)
+
+[[https://safenetwork.tech/roadmap/|Overall Project Roadmap]]
+
+[[https://github.com/maidsafe/rfcs/projects/1|RFC Project Board Github]]
+
+===== D. People =====
+(who are those people on the forum and what are their interests? Categories? Who are most well-known? Ranking by date of first post?)
+
+[[https://safenetforum.org/g/maidsafe_team|MAIDSafe Team on the SAFE Netwirk Forum]]
+
+[[https://safenetforum.org/g/moderators|SAFE Network Forum Moderator Team]]
+
+=== Community Doers ===
+
+(Somewhat arbitrary and incomplete list of people and their projects. Add your SAFE Network community heros here.)
+
+[[https://safenetforum.org/t/introduce-yourself/142/7|@happybeing]] since April 2014 and still active, eg [[
+https://forum.safedev.org/t/safe-drive-help-with-testing/2019|SAFEDrive]]
+
+[[https://safenetforum.org/u/dimitar/summary|@dimitar]] since August 2014, eg [[https://safenetforum.org/t/boots-on-the-ground-alpha-2-campaign/25598|Ambassador Bulgaria]]
+===== E. Corporate Organization =====
+
+===== F. Patents and Trademarks =====
+
+===== G. Related or Similar Projects =====
+(similar projects and status, failures, successes)
+
+  * Napster (P2P file sharing) 1999
+  * Freenet (distributed publishing) 2000
+  * BitTorrent (P2P file sharing)
+  * Bitcoin (decentralized trust and digital ledger) 2009
