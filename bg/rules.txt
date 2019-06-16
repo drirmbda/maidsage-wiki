@@ -1,3 +1,5 @@
+FIXME **This page is not fully translated, yet. Please help completing the translation.**\\ //(remove this paragraph once the translation is finished)//
+
 ====== Terms for Editing or Using this Wiki ======
 
 This is the only page on this wiki that cannot be freely edited. The admin will add pages, edit, and re-organize the wiki as new content is added.

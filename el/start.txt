@@ -1,5 +1,10 @@
+ΔΙΟΡΘΩΣΕ ΜΕ **Η σελίδα αυτή δεν είναι πλήρως μεταφρασμένη ακόμα. Παρακαλούμε βοηθήστε ώστε να ολοκληρωθεί η μετάφραση.**\\ //(αφαιρέστε αυτήν την παράγραφο μόλις ολοκληρωθεί η μετάφραση)//<hidden show en>FIX ME This page is not fully translated, yet. Please help completing the translation.
+(remove this paragraph once the translation is finished)</hidden>
+
+
 <jumbotron>
-====== Welcome to the Independent SAFE Network Wiki ======
+====== Καλωσήρθατε στο ανεξάρτητο Βίκι του ΑΣΦΑΛΟΥΣ Δικτύου ======
+<hidden show en>====== Welcome to the Independent SAFE Network Wiki ======</hidden>
 
 The SAFE Network project is vast and complex. While there are great resources available online for study, these resources still tend to be hard to locate and digest. The [[http://safenetforum.org|SAFE Network Forum]] contains many years-worth of great information but lacks concise and up-to-date summaries which would be convenient for newcomers to catch up.
 
@@ -45,8 +50,6 @@ Reading this wiki may one day provide an accurate technical introduction but we 
 
 === Contribution ideas ===
 (Testing and validation of code and concepts)
-
-  - Become an ambassador in your region! [[https://safenetforum.org/t/how-to-help-become-an-ambasador/28952|discussion and pointers]]. Recognition on the SafeNetwork forum may earn you an official [[https://safenetforum.org/t/safe-ambassador-title/28366|Ambassador title]].
 
 ==== 1.3 Expert Level ====
 
