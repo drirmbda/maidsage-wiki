@@ -1,10 +1,26 @@
-ΔΙΟΡΘΩΣΕ ΜΕ **Η σελίδα αυτή δεν είναι πλήρως μεταφρασμένη ακόμα. Παρακαλούμε βοηθήστε ώστε να ολοκληρωθεί η μετάφραση.**\\ //(αφαιρέστε αυτήν την παράγραφο μόλις ολοκληρωθεί η μετάφραση)//<hidden show en>FIX ME This page is not fully translated, yet. Please help completing the translation.
+ΔΙΟΡΘΩΣΕ ΜΕ **Η σελίδα αυτή δεν είναι πλήρως μεταφρασμένη ακόμα. Παρακαλούμε βοηθήστε ώστε να ολοκληρωθεί η μετάφραση.**\\ //(αφαιρέστε αυτήν την παράγραφο μόλις ολοκληρωθεί η μετάφραση)//<hidden show above in en>FIX ME This page is not fully translated, yet. Please help completing the translation.
 (remove this paragraph once the translation is finished)</hidden>
 
-
 <jumbotron>
+
 ====== Καλωσήρθατε στο ανεξάρτητο Βίκι του ΑΣΦΑΛΟΥΣ Δικτύου ======
-<hidden show en>====== Welcome to the Independent SAFE Network Wiki ======</hidden>
+
+Το ΑΣΦΑΛΕΣ Δίκτυο είναι αχανές και πολύπλοκο. Παρότι υπάρχουν εκξαιρετικοί πόροι διαθέσιμοι στο διαδίκτυο για μελέτη, οι πόροι αυτοί παραμένουν να είναι δύσκολα εντοπιστούν και να αφομοιωθούν. Το [[http://safenetforum.org| Φόρουμ του ΑΣΦΑΛΟΥΣ Δικτύου]] περιέχει αξιόλογες πληροφορίες πολλών χρόνων αλλά του λείπει η ακριβής και ενημερωμένες περιλήψεις οι οποίες να είναι εύκολες να κατανοηθούν από νέους επισκέπτες.
+
+Ο σκοπός αυτού του βίκι είναι να καταστήσει το έργο του ΑΣΦΑΛΟΥΣ Δικτύου πιό προσιτό. Αυτό ξεκίνησε αρχικά ως μια συνεχώς αυξανόμενη συλλογή από προσωπικές σημειώσεις του συντάκτη σε μια προσπάθεια εκ βάθους κατανόησης του έργου, και έχει ως στόχο να εξελιχθεί σε ένα ανεξάρτητο οδηγό για το ΑΣΦΑΛΕΣ Δίκτυο.
+
+Όλες οι πληροφορίες εδώ είναι ανεπίσημες. Είστε ελεύθεροι να επεξεργαστείτε και να συνησφέρετε άμεσα εδώ καθώς μαθαίνεται περί της MaidSafe και του ΑΣΦΑΛΟΥΣ Δικτύου οι ίδιοι. Αυτό το Βίκι συμπληρώνει κενά, με αναφορά σε υπάρχοντες πόρους οπουδήποτε υπάρχει αυτή η δυνατότητα. Προσωπικές απόψεις ανήκουν στο φόρουμ του ΑΣΦΑΛΟΥΣ Δικτύου.
+
+<note important>
+Πριν αρχίσετε να επεξεργάζεστε χρειάζεται μια αυτόματη εγγραφή. Αυτό χρειάζεται για να αποφύγουμε ανεπιθύμητες ενέργειες. Υπάρχουν μερικοί [[rules|κανόνες]] που ακολουθούμε για να το κρατήσουμε ευχάριστο. Οι σελίδα με τους κανόνες περιέχει επίσης πληροφορίες επικοινωνίας, και νομικές σημειώσεις.
+</note>
+
+<note warning>
+Πριν διαβάσετε αυτήν την ιστοσελίδα πρέπει να αποδεχτείτε ότι είναι δική σας ευθύνη να αποκτήσετε ειδική γνώμη και συμβουλή πρίν χρησιμοποιήσετε οποιαδήποτε πληροφορία από αυτήν την ιστοσελίδα για την δική σας ειδική κατάσταση. Αποδέχεστε ότι είναι μόνο εσείς είστε υπεύθυνος για οποιαδήποτε απώλεια ή ζημειά που είναι άμεσο αποτέλεσμα από την χρήση αυτής της ιστοσελίδας.
+</note>
+
+<hidden show above in en>
+**Welcome to the Independent SAFE Network Wiki**
 
 The SAFE Network project is vast and complex. While there are great resources available online for study, these resources still tend to be hard to locate and digest. The [[http://safenetforum.org|SAFE Network Forum]] contains many years-worth of great information but lacks concise and up-to-date summaries which would be convenient for newcomers to catch up.
 
@@ -20,14 +36,37 @@ Before you can start editing your need to through automatic registration. This i
 Before reading this site you must accept that it is your responsibility to obtain expert judgment and advice before using any information from this site for your particular situation. You accept that you alone are responsible for any losses or damages resulting from using this website.
 </note>
 
+</hidden>
+
 </jumbotron>
-===== 1. Start Here =====
+
+
+===== 1. Ξεκινήστε από εδώ =====
+<lead>Εάν θέλετε να βρείτε περισσότερα περί του ΑΣΦΑΛΟΥΣ Δικτύου ή να αρχίσετε να συνεισφέρετε, θέλουμε να είμαστε ο οδηγός σας. Για συγκεκριμένα θέματα κοιτάχτε τον πίκανα στα περιεχόμενα στα δεξιά σας. Εναλλακτικά διαλέξτε μια υποενότητα βασισμένη στο ποθητό επίπεδο βάθους που αναζητείτε.</lead>
+Το φόρουμ του ΑΣΦΑΛΟΥΣ Δίκτυου επίσης έχει μια [[https://safenetforum.org/t/new-members-start-here/26839|σελίδα "ξεκινήστε εδώ" (στα Αγγλικά)]] στην οποία μπορεί να θέλετε να ρίξετε μια ματιά.
+
+<hidden show above in en>
+**1. Start Here**
 <lead>If you want to find out more about SAFE Network or start contributing, we want to be your guide. For specific topics look at the table on contents on the right. Otherwise pick a subsection based on the desired level of depth you are looking for.</lead>
-The SAFE Network forum also has a [[https://safenetforum.org/t/new-members-start-here/26839|start here page]] which you may want to have a look at.
+The SAFE Network forum also has a [[https://safenetforum.org/t/new-members-start-here/26839|start here page]] which you may want to have a look at.</hidden>
 
-==== 1.1 Basic Level ====
+==== 1.1 Βασικό επίπεδο ====
 
-=== Getting up to speed ===
+=== Για να ενημερωθείς ===
+
+  - Αυτό μόλις βγήκε - το [[https://www.safenetworkprimer.com/|εισαγωγικό για το ΑΣΦΑΛΕΣ Δίκτυο (είναι στα Αγγλικά, όνομα: SAFE Network Primer)]]
+  - Μερικά θέματα παρουσιασμένα εύκολα [[https://safecrossroads.net/| ΑΣΦΑΛΕΙΣ διασταυρώσεις (είναι στα Αγγλικά, όνομα: SAFE Crossroads)]]
+  - Εάν έχετε μόνο 10 λεπτά [[https://safenetforum.org/t/10-key-facts-about-safe-network/12948 | 10 δεδομένα κλειδιά(είναι στα Αγγλικά, όνομα: 10 key facts)]]
+  - Για αυτούς που τους είναι οικεία τα bitcoin / blockchain [[https://safe-network-explained.github.io/safe-for-bitcoiners | εξήγηση του ΑΣΦΑΛΟΥΣ Δικτύου χρησιμοποιώντας bitcoin όρους (είναι στα Αγγλικά, όνομα: SAFE Network explained using bitcoin terminology)]]
+
+(ένα έγγραφο με το όνομα SafeNetForDummies είναι διαθέσιμο στο Google Docs αλλά έχω χάσει τον σύνδεσμο σε αυτό)
+
+=== Ιδέες συνεισφοράς ===
+(Μάρκετινγκ, βελτίωση της τεκμηρίωσης, και πραγματοποίηση ελέγχων;)
+
+<hidden show above in en>**1.1 Basic Level**
+
+**Getting up to speed**
 
   - This is just out - the [[https://www.safenetworkprimer.com/|SAFE Network primer]]
   - A sampling of topics made easy [[https://safecrossroads.net/|SAFE Crossroads]]
@@ -36,9 +75,9 @@ The SAFE Network forum also has a [[https://safenetforum.org/t/new-members-start
 
 (a document called SafeNetForDummies is available on Google docs but I lost the link to it)
 
-=== Contribution ideas ===
+**Contribution ideas**
 (Marketing, improving documentation, and performing testing?)
-
+</hidden>
 ==== 1.2 Intermediate Level ====
 
 === Getting up to speed ===

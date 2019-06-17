@@ -46,7 +46,7 @@ Reading this wiki may one day provide an accurate technical introduction but we 
 === Contribution ideas ===
 (Testing and validation of code and concepts)
 
-  - Become an ambassador in your region! [[https://safenetforum.org/t/how-to-help-become-an-ambasador/28952|discussion and pointers]]. Recognition on the SafeNetwork forum may earn you an official [[https://safenetforum.org/t/safe-ambassador-title/28366|Ambassador title]].
+  - Become an ambassador in your region! [[https://safenetforum.org/t/how-to-help-become-an-ambasador/28952|discussion and pointers]]. Recognition on the SafeNetwork forum for your work may earn you an official [[https://safenetforum.org/t/safe-ambassador-title/28366|SAFE Ambassador title]]. See Appendix section People for a list of SAFE Ambassadors.
 
 ==== 1.3 Expert Level ====
 
@@ -474,9 +474,12 @@ SAFE Network : “Secure Access for Everyone Network”, the name of the new Int
 
 (who are those people on the forum and what are their interests? Categories? Who are most well-known? Ranking by date of first post?)
 
-[[https://safenetforum.org/g/maidsafe_team|MAIDSafe Team on the SAFE Netwirk Forum]]
+[[https://safenetforum.org/g/maidsafe_team|MAIDSafe Team on the SAFE Network Forum]]
 
 [[https://safenetforum.org/g/moderators|SAFE Network Forum Moderator Team]]
+
+Official [[https://safenetforum.org/t/safe-ambassador-title/28366| SAFE Ambassadors]]: @dimitar (Bulgaria); @Sotros25 (US); @oetyng (Sweden)
+
 
 === Community Doers ===
 
@@ -485,7 +488,7 @@ SAFE Network : “Secure Access for Everyone Network”, the name of the new Int
 [[https://safenetforum.org/t/introduce-yourself/142/7|@happybeing]] since April 2014 and still active, eg [[
 https://forum.safedev.org/t/safe-drive-help-with-testing/2019|SAFEDrive]]
 
-[[https://safenetforum.org/u/dimitar/summary|@dimitar]] since August 2014, eg [[https://safenetforum.org/t/boots-on-the-ground-alpha-2-campaign/25598|Ambassador Bulgaria]]
+[[https://safenetforum.org/u/dimitar/summary|@dimitar]] since August 2014, eg [[https://safenetforum.org/t/boots-on-the-ground-alpha-2-campaign/25598|First SAFE Ambassador (Bulgaria)]]
 
 ===== D. Corporate Organization =====
 
