@@ -78,26 +78,84 @@ The SAFE Network forum also has a [[https://safenetforum.org/t/new-members-start
 **Contribution ideas**
 (Marketing, improving documentation, and performing testing?)
 </hidden>
-==== 1.2 Intermediate Level ====
+==== 1.2 Εδνιάμεσο Επίπεδο ====
 
-=== Getting up to speed ===
+=== Για να ενημερωθείς ===
+
+  - Μια σύνταξη του Σεπτεμβρίου του 2017 Μπορεί να βρεθεί  [[https://safe-network-explained.github.io/architecture|εδώ (είναι στα Αγγλικά, όνομα: architecture)]].
+  - Το θέμα τεκμηρίωσης του Σεπτεμβρίου 2017 συνοψίζει πολλές έννοιες [[https://safenetforum.org/t/the-documentation-topic/16149|εδώ (είναι στα Αγγλικά, όνομα: The Documentation Topic)]].
+
+Διαβάζοντας το βίκι μπορεί μια μέρα να παρέχει μια ακριβής τεχνική εισαγωγή αλλά είμαστε μόνο στην αρχή. Εάν είστε στην διαδικασία που προσπαθείτε να φτάσετε πέρα από το βασικό επίπεδο είστε ελεύθεροι να μοιραστείτε τις σημειώσεις σας σε αυτό το βίκι.
+
+=== Ιδέες Συνεισφοράς ===
+(Δοκιμή και επιβεβαίωση του κώδικα και των εννοιών
+<hidden show above in en>**1.2 Intermediate Level**
+
+**Getting up to speed**
 
   - A write-up of September 2017 can be found [[https://safe-network-explained.github.io/architecture|here]].
   - The Documentation topic of September 2017 summarizes many concepts [[https://safenetforum.org/t/the-documentation-topic/16149|here]].
 
 Reading this wiki may one day provide an accurate technical introduction but we are only at the beginning. If you are in the process of trying to go beyond the basic level feel free to share your notes on this wiki.
 
-=== Contribution ideas ===
-(Testing and validation of code and concepts)
+**Contribution ideas**
+(Testing and validation of code and concepts)</hidden>
 
-==== 1.3 Expert Level ====
+==== 1.3 Επίπεδο Ειδικού ====
 
-=== Getting up to speed ===
+=== Για να ενημερωθής ===
+
+  - Διαβάστε όλα τα RFCs (Αίτημα για σχόλιο)
+  - Διαβάστε όλα τα έγγραφα και τον κώδικα
+
+== RFCs == 
+Η MaidSafe αιτείται απόψεις μέσω μιας δημόσιας RFC (αίτηση για σχόλια) διαδικασίας. Τα RFCs είναι διαθεσιμα [[https://github.com/maidsafe/rfcs|εδώ (στα Αγγλικά, όνομα:RFCs)]] στο GitHub.
+
+Η λίστα των RFCs με βάση το στάτους μπορούν να βρεθούν στο αποθετήριο [[https://github.com/maidsafe/rfcs/blob/master/RFCs-by-status.md#active-rfcs|εδώ (στα Αγγλικά, όνομα:(active RFCs by status)]].
+
+Η MaidSafe έχει εσωτερικά "προ-RFC" έγγραφα σε μερικά θέματα, το οποίο σημαίνει ότι τα δημοσιευμένα RFCs παρέχουν μη ολοκληρωμένη εικόνα του στάτους της τεχνολογικής ανάπτυξης.
+
+== Τα έγγραφα για τις κεντρικές βιβλιοθήκες σε γλώσσα Rust ==
+
+  * [[https://docs.rs/safe_app|(στα Αγγλικά, όνομα: Crate safe_app)]]
+  * [[https://docs.rs/crate/safe_authenticator|(στα Αγγλικά, όνομα: Crate safe_authenticator)]]
+  * [[https://docs.rs/safe_core|(στα Αγγλικά, όνομα: Crate safe_core)]]
+  * [[https://docs.rs/routing|(στα Αγγλικά, όνομα: Crate routing)]]
+  * [[https://docs.rs/safe_vault|(στα Αγγλικά, όνομα: Crate safe_vault)]]
+  * [[https://docs.rs/self_encryption|(στα Αγγλικά, όνομα: Crate self_encryption)]]
+
+== ΑΣΦΑΛΕΣ Διαδικτυακή Εφαρμογή ==
+
+  * [[https://github.com/maidsafe/safe_examples/tree/master/safe_web_app_quick_start|(στα Αγγλικά, όνομα: Web App Tutorial)]]
+
+== Έγγραφα για το API ==
+
+  * [[https://docs.maidsafe.net/safe_app_nodejs/index.html|(στα Αγγλικά, όνομα: SAFE Network Node.JS Client Library Docs)]]
+  * [[https://docs.maidsafe.net/safe_app_java/|(στα Αγγλικά, όνομα: SAFE App Java (Android))]]
+  * [[https://docs.maidsafe.net/safe_app_csharp/api/index.html|(στα Αγγλικά, όνομα: SAFE App C#)]]
+
+=== Ιδέες Συνεισφοράς ===
+
+Η MaidSafe έχει μια RFC διαδικασία και γίνετε συζήτηση στο φόρουμ της MaidSafe.
+(Περιλήψεις των προβλημάτων και λύσεις μπορούν να προστεθούν για κάθε ένα.)
+
+[[https://safenetforum.org/t/current-unsolved-safe-questions/28228|(στα Αγγλικά, όνομα: Unsolved questions (still?))]]
+
+== Συζητήσεις ==
+(συμμετάσχετε στις συζητήσεις για τα RFCs)
+  * [[https://safenetforum.org/t/rfc-57-safecoin-revised-specific-question-concerning-safecoin-size-and-number-polls/28810|(στα Αγγλικά, όνομα: RFC 57)]] ιούνιος 2019
+  * [[https://safenetforum.org/t/poll-should-maidsafe-implement-ptp-pay-the-producer/5805|(στα Αγγλικά, όνομα: RFC 59)]] Ιούνιος 2019
+
+[[https://safenetforum.org/c/development/rfcs|λίστα όλων τον συζητήσεων για τα RFC (στα Αγγλικά, όνομα: List of all RFC discussions)]]
+<hidden show above in en>
+** 1.3 Expert Level **
+
+** Getting up to speed **
 
   - Read all RFCs
   - Read all Documentation and Code
 
-== RFCs ==
+** RFCs **
 
 MaidSafe requests input through a public RFC (Request For Comment) process. RFCs are accessible [[https://github.com/maidsafe/rfcs|here]] on GitHub.
 
@@ -105,7 +163,7 @@ The list of RFCs by status can be found in that repository [[https://github.com/
 
 MAIDSafe has internal "pre-RFC" documents on certain topics, which means that the published RFCs provide an incomplete picture of the status of technology development.
 
-== Rust Core Libraries Documentation ==
+** Rust Core Libraries Documentation **
 
   * [[https://docs.rs/safe_app|Crate safe_app]]
   * [[https://docs.rs/crate/safe_authenticator|Crate safe_authenticator]]
@@ -114,30 +172,30 @@ MAIDSafe has internal "pre-RFC" documents on certain topics, which means that th
   * [[https://docs.rs/safe_vault|Crate safe_vault]]
   * [[https://docs.rs/self_encryption|Crate self_encryption]]
 
-== SAFE Web App ==
+** SAFE Web App **
 
   * [[https://github.com/maidsafe/safe_examples/tree/master/safe_web_app_quick_start|Web App Tutorial]]
 
-== API Documentation ==
+** API Documentation **
 
   * [[https://docs.maidsafe.net/safe_app_nodejs/index.html|SAFE Network Node.JS Client Library Docs]]
   * [[https://docs.maidsafe.net/safe_app_java/|SAFE App Java (Android)]]
   * [[https://docs.maidsafe.net/safe_app_csharp/api/index.html|SAFE App C#]]
 
-=== Contribution Ideas ===
+** Contribution Ideas **
 
 MaidSafe has an RFC process and discussion takes place on the MAID Safe Forum.
 (Summaries of the issues and resolutions could be added here for each.)
 
 [[https://safenetforum.org/t/current-unsolved-safe-questions/28228|Unsolved questions (still?)]]
 
-== Discussions ==
+** Discussions **
 (participate in discussion of RFCs)
   * [[https://safenetforum.org/t/rfc-57-safecoin-revised-specific-question-concerning-safecoin-size-and-number-polls/28810|RFC 57]] June 2019
   * [[https://safenetforum.org/t/poll-should-maidsafe-implement-ptp-pay-the-producer/5805|RFC 59]] June 2019
 
 [[https://safenetforum.org/c/development/rfcs|List of all RFC discussions]]
-
+</hidden>
 ===== 2. Goals of the SAFE Network =====
 
 <lead>Cutting through marketing and hype, we are interested in which of the many good things SAFE Network will do for it's users will matter most to you. Understand what SAFE Network is really about, and why it's worth the wait.
