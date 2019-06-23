@@ -470,6 +470,10 @@ SAFE Network : “Secure Access for Everyone Network”, the name of the new Int
   * Raising of funding using MAID
   * The PARSEC Milestone (May 2018)
 
+=== Tidbits ===
+
+  * Sigmoid x was a company that was later folded into MaidSafe.
+  * MaidSafe has sponsored work at Strathclyde University in the past.
 ===== C. People =====
 
 (who are those people on the forum and what are their interests? Categories? Who are most well-known? Ranking by date of first post?)
@@ -493,7 +497,41 @@ https://forum.safedev.org/t/safe-drive-help-with-testing/2019|SAFEDrive]]
 ===== D. Corporate Organization =====
 
 ===== E. Patents and Trademarks =====
+(this is incomplete - work in progress)
 
+Starting point: Google scholar, "maidsafe" and "David Irvine" as search terms.
+
+Relevant forum posts: [[https://safenetforum.org/t/are-there-any-published-computer-science-mathematics-research-papers-about-how-maidsafe-works/22360|March 2018]], [https://safenetforum.org/t/safe-network-dev-update-june-20-2019/29010/81|June 2019]]
+
+==== E.1 Papers ====
+
+== Non-peer-reviewed ==
+
+  * [[https://whitepaperdatabase.com/wp-content/uploads/2017/10/MaidSafeCoin-whitepaper.pdf|Lambert, Safecoin, 2015]]
+
+  * [[https://strathprints.strath.ac.uk/36147/|Irvine, Sigmoid x - secure distributed network storage, 2011-2019]]
+
+  * [[https://docs.maidsafe.net/Whitepapers/pdf/SelfEncryptingData.pdf|Irvine, Self Encrypting Data, 2010/2015]]
+  * [[https://assets.ctfassets.net/sdlntm3tthp6/resource-asset-r356/27e3852904f5008578cf5496271f04cb/97cc7df0-d6a9-42c1-a17a-444fc5a5b7f7.pdf|Irvine, Autonomous Network, 2010]]
+  * [[https://docs.maidsafe.net/Whitepapers/pdf/MaidSafeDistributedFileSystem.pdf|Distributed File System, 2010]]
+  * [[https://docs.maidsafe.net/Whitepapers/pdf/SelfAuthentication.pdf|Self Authentication, 2010]]
+  * [[https://docs.maidsafe.net/Whitepapers/pdf/DHTbasedNATTraversal.pdf|DHT NAT Traversal, 2010]]
+
+== Peer Reviewed ==
+(probably peer-reviewed)
+
+  * [[https://ieeexplore.ieee.org/abstract/document/7345446/|Hartenstein, Security Analysis, IEEE Trustcom, 2015]] (paywalled)
+
+== Mentions of MAID/ICO ==
+(list not reviewed)
+
+  * [[https://www.researchgate.net/profile/Vikas_Kumar146/publication/332320596_Business_Management_and_Social_Innovation/links/5cadc2c8299bf193bc2dc46e/Business-Management-and-Social-Innovation.pdf#page=426|Kumar 2019]]
+  * [[https://www-cdn.law.stanford.edu/wp-content/uploads/2019/01/Mendelson_20180129.pdf|Mendelson 2019]]
+
+==== E.2 Patents ====
+
+  * [[https://patents.google.com/patent/US20100064354A1/en|US20100064354A1 abandoned]]
+  * [[https://patents.google.com/patent/US20190036895A1/en|US20190036895A1 pending]]
 ===== F. Related or Similar Projects =====
 (similar projects and status, failures, successes)
 
