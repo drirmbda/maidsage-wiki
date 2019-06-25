@@ -276,6 +276,9 @@ All transactions or decisions are consented according to the rules of the networ
 SafeCoin
 [[https://github.com/maidsafe/rfcs/blob/master/text/0057-safecoin-revised/0057-safecoin-revised.md|RFC-0057]] Safecoin Revised
 
+[[https://safenetforum.org/t/exploration-of-a-live-network-farming-rewards/29043|Farming Reward System Proposal]]
+
+
 === Incentive system to secure network integrity ===
 
 === Incentive system to secure perpetual access ===
@@ -310,6 +313,10 @@ MaidSafe claims a world's first decentralized, asynchronous, Byzantine Fault Tol
 
 == After Launch ==
 
+
+=== Vulnerability and Risk Discussion ===
+
+  * Hacking a SAFE App [[https://safenetforum.org/t/what-methods-are-there-to-hack-a-safe-site-or-app/29038/14|discussion]]
 
 ===== 5. Economics =====
 <lead>One special mechanism regulating the network involves SafeCoin, a medium of exchange within the network, but with a reach well beyond it. This section is intended to consider this from an Economist's viewpoint.
@@ -508,18 +515,23 @@ Relevant forum posts: [[https://safenetforum.org/t/are-there-any-published-compu
 
 ==== E.1 Papers ====
 
-== Non-peer-reviewed ==
-(uncertain about peer-review)
+  * [[https://whitepaperdatabase.com/wp-content/uploads/2017/10/MaidSafeCoin-whitepaper.pdf|N.Lambert, Safecoin, 2015]]
 
-  * [[https://whitepaperdatabase.com/wp-content/uploads/2017/10/MaidSafeCoin-whitepaper.pdf|Lambert, Safecoin, 2015]]
+  * [[https://strathprints.strath.ac.uk/36147/|D.Irvine, Sigmoid x - secure distributed network storage, 2011-2019]]
 
-  * [[https://strathprints.strath.ac.uk/36147/|Irvine, Sigmoid x - secure distributed network storage, 2011-2019]]
+  * [[https://docs.maidsafe.net/Whitepapers/pdf/SelfEncryptingData.pdf|D.Irvine, Self Encrypting Data, 2010/2015]]
+  * [[https://assets.ctfassets.net/sdlntm3tthp6/resource-asset-r356/27e3852904f5008578cf5496271f04cb/97cc7df0-d6a9-42c1-a17a-444fc5a5b7f7.pdf|D.Irvine, Autonomous Network, 2010]]
+  * [[https://docs.maidsafe.net/Whitepapers/pdf/MaidSafeDistributedFileSystem.pdf|D.Irvine, Distributed File System, 2010]]
+  * [[https://docs.maidsafe.net/Whitepapers/pdf/SelfAuthentication.pdf|D.Irvine, Self Authentication, 2010]]
+  * [[https://docs.maidsafe.net/Whitepapers/pdf/DHTbasedNATTraversal.pdf|D.Irvine, DHT NAT Traversal, 2010]]
 
-  * [[https://docs.maidsafe.net/Whitepapers/pdf/SelfEncryptingData.pdf|Irvine, Self Encrypting Data, 2010/2015]]
-  * [[https://assets.ctfassets.net/sdlntm3tthp6/resource-asset-r356/27e3852904f5008578cf5496271f04cb/97cc7df0-d6a9-42c1-a17a-444fc5a5b7f7.pdf|Irvine, Autonomous Network, 2010]]
-  * [[https://docs.maidsafe.net/Whitepapers/pdf/MaidSafeDistributedFileSystem.pdf|Irvine, Distributed File System, 2010]]
-  * [[https://docs.maidsafe.net/Whitepapers/pdf/SelfAuthentication.pdf|Irvine, Self Authentication, 2010]]
-  * [[https://docs.maidsafe.net/Whitepapers/pdf/DHTbasedNATTraversal.pdf|Irvine, DHT NAT Traversal, 2010]]
+== MaidSafe supported ==
+
+  * [[https://strathprints.strath.ac.uk/48569/1/Paul_etal_wwrf32_vault_network.pdf|P.Greig, Security of the MaidSage Vault Network, 2014]]
+  * [[https://strathprints.strath.ac.uk/55039/1/Dubouilh_etal_WWRF35_performance_WebRTC_context_decentralised_storage_solution.pdf|J.Irvine, Performance of WebRTC in the context of a decentralised storage solution, 2015]]
+  * [[https://strathprints.strath.ac.uk/62522/1/Paul_2017_Secure_decentralised_storage_networks.pdf|P.Greig, Thesis, 2017]]
+
+== Community analyses ==
 
 == Peer Reviewed ==
 (probably peer-reviewed)
@@ -535,35 +547,52 @@ Relevant forum posts: [[https://safenetforum.org/t/are-there-any-published-compu
 ==== E.2 Patents ====
 (This is a community best effort list. Do not rely on this information for any purpose, do your own research and obtain your professional advice.)
 
-== Applications Pending ==
+  * [[http://patft.uspto.gov/netahtml/PTO/index.html|USPTO]]
+  * [[https://patentscope.wipo.int/search/en/search.jsf|WIPO]]
 
-  * [[http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PG01&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.html&r=1&f=G&l=50&s1=%2220100064354%22.PGNR.&OS=DN/20100064354&RS=DN/20100064354|US20100064354 Maidsafe.net (abandoned?)]]
-  * [[http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PG01&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.html&r=1&f=G&l=50&s1=%2220190036895%22.PGNR.&OS=DN/20190036895&RS=DN/20190036895|US20190036895 Data distribution over nodal elements]]
-  * [[http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PG01&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.html&r=1&f=G&l=50&s1=%2220150006895%22.PGNR.&OS=DN/20150006895&RS=DN/20150006895|US20150006895 Distributed network system (abandoned?)]]
-  * [[http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=1&f=G&l=50&co1=AND&d=PG01&s1=20150127950&OS=20150127950&RS=20150127950|US20150127950 Method of encrypting data (abandoned?)]]
+=== E.2.1 Patents Granted (US) ===
 
-  * [[https://patents.google.com/patent/GB201803678D0/en?oq=GB201803678|GB201803678 Data transaction system and method]]
+  * [[http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=1&f=G&l=50&co1=AND&d=PTXT&s1=20100037060&OS=20100037060&RS=20100037060|US8,386,786 File system authentication]] David Irvine, exp. 2027
+  * [[http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=8,788,803.PN.&OS=PN/8,788,803&RS=PN/8,788,803|US8,788,803 Self-encryption process]] MaidSafe Foundation, exp. 2027
+  * [[http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9,411,976.PN.&OS=PN/9,411,976&RS=PN/9,411,976|US9,411,976 Communication system and method]] MaidSafe Foundation, exp. 2027
+  * [[http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9,135,455.PN.&OS=PN/9,135,455&RS=PN/9,135,455|US9,135,455 Distributed file system]] MaidSafe Foundation, exp. 2031
+  * [[http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=1&f=G&l=50&co1=AND&d=PTXT&s1=9485090&OS=9485090&RS=9485090|US9,485,090 Managed authentication on a distributed network]] Sigmoid Solutions, exp. 2032
 
-  * [[https://patents.google.com/patent/EP3465528A1/en?oq=EP3465528|EP3465528 Apparatus creating data chain ...]]
-  * [[https://patents.google.com/patent/WO2017202503A1/en?assignee=The+MaidSafe+Foundation|WO2017202503 Apparatus creating data chain ...]]
+=== E.2.2 Patent Applications (US) ===
 
-== Granted and Assigned to Sigmoid Solutions ==
+  * [[http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=17&f=G&l=50&co1=AND&d=PG01&s1=%22Irvine%3B+David%22.IN.&s2=GB.INCO.&OS=IN/%22Irvine;+David%22+AND+ICN/GB&RS=IN/%22Irvine;+David%22+AND+ICN/GB|US20100037060]] granted: US8,386,786
+  * [[http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=11&f=G&l=50&co1=AND&d=PG01&s1=Maidsafe&OS=Maidsafe&RS=Maidsafe|US20100058054 MSSAN]] abandoned
+  * [[http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PG01&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.html&r=1&f=G&l=50&s1=%2220100064354%22.PGNR.&OS=DN/20100064354&RS=DN/20100064354|US20100064354 Maidsafe.net]] abandoned
+  * [[http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=1&f=G&l=50&co1=AND&d=PG01&s1=20120210120&OS=20120210120&RS=20120210120|US20120210120]] granted: US8,788,803
+  * [[http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=10&f=G&l=50&co1=AND&d=PG01&s1=Maidsafe&OS=Maidsafe&RS=Maidsafe|US20120311339 Method for storing data on peer-to-peer network]] abandoned
+  * [[http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=10&f=G&l=50&co1=AND&d=PG01&s1=%22Irvine%3B+David%22.IN.&s2=GB.INCO.&OS=IN/%22Irvine;+David%22+AND+ICN/GB&RS=IN/%22Irvine;+David%22+AND+ICN/GB|US20130061049 Distributed network system]] abandoned
+  * [[http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=9&f=G&l=50&co1=AND&d=PG01&s1=%22Irvine%3B+David%22.IN.&s2=GB.INCO.&OS=IN/%22Irvine;+David%22+AND+ICN/GB&RS=IN/%22Irvine;+David%22+AND+ICN/GB|US20130262865]] granted: US9,135,455
+  * [[http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=9&f=G&l=50&co1=AND&d=PG01&s1=Maidsafe&OS=Maidsafe&RS=Maidsafe|US20140237614]] granted: US9,411,976
+  * [[http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PG01&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.html&r=1&f=G&l=50&s1=%2220150006895%22.PGNR.&OS=DN/20150006895&RS=DN/20150006895|US20150006895 Distributed network system]] abandoned
+  * [[http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=1&f=G&l=50&co1=AND&d=PG01&s1=20150127950&OS=20150127950&RS=20150127950|US20150127950 Method of encrypting data]] abandoned
+  * [[http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=6&f=G&l=50&co1=AND&d=PG01&s1=%22Irvine%3B+David%22.IN.&s2=GB.INCO.&OS=IN/%22Irvine;+David%22+AND+ICN/GB&RS=IN/%22Irvine;+David%22+AND+ICN/GB|US20150026474]] granted: US9,485,090
+  * [[http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PG01&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.html&r=1&f=G&l=50&s1=%2220160275294%22.PGNR.&OS=DN/20160275294&RS=DN/20160275294|US20160275294 Data system and method]] abandoned
+  * [[http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=2&f=G&l=50&co1=AND&d=PG01&s1=%22Irvine%3B+David%22.IN.&s2=GB.INCO.&OS=IN/%22Irvine;+David%22+AND+ICN/GB&RS=IN/%22Irvine;+David%22+AND+ICN/GB|US20170005788 Communication system and method]] abandoned
+  * [[http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PG01&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.html&r=1&f=G&l=50&s1=%2220190036895%22.PGNR.&OS=DN/20190036895&RS=DN/20190036895|US20190036895 Data distribution over nodal elements]] pending
 
-  * [[http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=1&f=G&l=50&co1=AND&d=PTXT&s1=9485090&OS=9485090&RS=9485090|US9,485,090 Managed authentication on a distributed network, exp. 2032]]
+=== E.2.3 Published Applications (Worldwide) ===
 
-== Granted and Assigned to MaidSafe Foundation ==
+  * [[https://patents.google.com/patent/GB201803678D0/en?oq=GB201803678|GB201803678 Data transaction system and method]] pending
 
-  * [[http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=8,788,803.PN.&OS=PN/8,788,803&RS=PN/8,788,803|US8,788,803 Self-encryption process, exp. 2027]]
-  * [[http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9,135,455.PN.&OS=PN/9,135,455&RS=PN/9,135,455|US9,135,455 Distributed file system, exp. 2031]]
-  * [[http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9,411,976.PN.&OS=PN/9,411,976&RS=PN/9,411,976|US9,411,976 Communication system and method, exp. 2027]]
-
-  * [[https://patents.google.com/patent/EP2692107B1/en?oq=EP2692107|EP2,692,107 Managed authentication on a distributed network, exp. 2032]]
-  * [[https://patents.google.com/patent/EP2652646B1/en?assignee=maidsafe|EP2,652,646 Distributed file systems, exp. 2031]]
-  * [[https://patents.google.com/patent/EP3070630B1/en?assignee=maidsafe|EP3,070,630 Data system and method, exp. 2036]]
-
-  * [[https://patents.google.com/patent/AU2007270991B2/en?assignee=maidsafe|AU2007270991 File system authentication, exp. 2027]]
-
-
+  * WO/2017/202503: [[https://patents.google.com/patent/WO2017202503A1/en?oq=WO2017202503A1|Apparatus and method of creating a data chain...]] pending
+  * WO/2012/131369: e.g. see US9,485,090
+  * WO/2012/080744: e.g. see US9,135,455
+  * WO/2008/065341: [[https://patents.google.com/patent/WO2008065341A3/en?oq=WO%2f2008%2f065341|Distributed Network System]] published
+  * WO/2008/065348: [[https://patents.google.com/patent/WO2008065348A3/en?oq=WO%2f2008%2f065348|Perpetual Data]] published
+  * WO/2008/065349: [[https://patents.google.com/patent/WO2008065349A1/en?oq=WO%2f2008%2f065349|Worldwide voting system]] published
+  * WO/2008/065343: [[https://patents.google.com/patent/WO2008065343A1/en?oq=WO%2f2008%2f065343|Shared access to private files]] published
+  * WO/2008/065344: [[https://patents.google.com/patent/WO2008065344A1/en?oq=WO%2f2008%2f065344|Anonymous authentication]] published
+  * WO/2008/065342: [[https://patents.google.com/patent/WO2008065342A1/en?oq=WO%2f2008%2f065342|Data maps]] published
+  * WO/2008/065347: [[https://patents.google.com/patent/WO2008065347A3/en?oq=WO%2f2008%2f065347|MSSAN]] published
+  * WO/2008/065345: [[https://patents.google.com/patent/WO2008065345A1/en?oq=WO%2f2008%2f065345|Cyber cash]] published
+  * WO/2008/065346: [[https://patents.google.com/patent/WO2008065346A2/en?oq=WO%2f2008%2f065346|Secure message and data sharing]] published
+  * WO/2008/065351: e.g. see US8,788,803
+  * WO/2008/003923: e.g. see US8,386,786
 ===== F. Related or Similar Projects =====
 (similar projects and status, failures, successes)
 
