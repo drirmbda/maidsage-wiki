@@ -52,6 +52,7 @@ Reading this wiki may one day provide an accurate technical introduction but we 
 
 === Getting up to speed ===
 
+  - Read all papers and patents (Appendix E)
   - Read all RFCs
   - Read all Documentation and Code
 
@@ -102,6 +103,7 @@ MaidSafe has an RFC process and discussion takes place on the MAID Safe Forum.
 </lead>
 
 Furthermore, understanding which features are at the core, and which are higher level or add-ons will help to focus development and create a stronger foundation made to last.
+
 ==== 2.1 SAFE Network Core Goals ====
 
 The primary goal of SAFE Network is becoming completely autonomous; impossible to change, break or stop by any single entity or group of actors.
@@ -246,7 +248,7 @@ Clients need to connect to Nodes to access the SAFE Network and the appropriate 
   * Entities in XOR Space: Vault Nodes, Clients, Chunks (other?)
   * XOR Space addresses length: 256 bits
 
-=== Organization of Entities ===
+=== Organization of Objects and Entities ===
 
 The XOR space is dynamically subdivided by a sectioning algorithm into a growing number of dis-joint XOR sub-spaces as the number of Nodes grows. The sub-spaces are called "Sections". Nearby Sections of Nodes watch over each other, and within each Section a hierarchy of Nodes exists based on Age, which determines the level of trust, responsibility of a Node, and the power it has over other Nodes.
 
@@ -255,13 +257,119 @@ Sections run PARSEC consensus algorithms to make decisions, and sign decisions u
   * Algorithms: Sectioning, ... (other TBD)
   * Section group size and split threshold: 8 (typical number which may be changed in the future)
   * Consensus threshold: 5 out of 8 (62.5% (of "quorum size"?))
-  * Information held by Sections: Data Chains (of a Section, or a neighboring Section), Routing Table (
+  * Information held by Sections: Data Chains (of a Section, or a neighboring Section), Routing Table
+
+=== Object and Entity Types ===
+(open for review and contribution; may be incomplete or outdated, as of 2015)
+
+  * Users accessing the network (clients)
+    * Passports (ID linked to multiple sub-IDs)
+      * Anonymous ID (MA-ID) - for anonymous network access
+      * Public IDs (MP-ID) - for public network access
+      * Share IDs (MS-ID) - can be associated with multiple Passports - for access to private shares
+      * Proxy IDs (PM-ID) - for providing own resources
+  * People providing resources to the network: vaults (farmers)
+    * Vaults (instances of a vault node)
+      * ClientManager vault persona - part of a group but independently relaying traffic between client and the correct DataManagers
+      * DataManager vault persona - part of a group but independently forwarding requests to the correct DataHolders
+      * DataHolderManager vault persona - part of a group but independently selecting and observing DataHolders
+      * DataHolder vault persona - part of a group but independently judging validity of requests
+      * (what is the 5th persona, or is the 5th not a persona but the client?)
+==== 3.3 Basic Facilities ====
+(work in progress)
+
+  - Storage of ALL information is in a network wide DHT
+  - ALL nodes are connected to at least four neighbors
+  - ALL inter-node communication is authenticated and encrypted (PKI)
+
+
 ==== 3.3 Structure of SAFE Network Software ====
 
 
 ===== 4. Mechanisms =====
 <lead>In this section we will try to separate out and have a closer look at the mechanisms that will keep the SAFE Network working as intended. Each of these need to be checked for possible weaknesses that could lead to disastrous malicious attacks.
 </lead>
+
+
+==== 4.1 Search for Vulnerabilities to Attack ====
+(work in progress - brainstorming phase)
+
+=== Data Integrity Vulnerabilities ===
+
+=== Node Integrity Vulnerabilities ===
+
+=== Protocol Integrity Vulnerabilities ===
+
+=== Data Availability Vulnerabilities ===
+
+=== Node Availability Vulnerabilities ===
+
+=== Data Confidentiality Vulnerabilities ===
+
+=== Node Anonymity Vulnerabilities ===
+
+=== User Anonymity Vulnerabilities ===
+
+=== User Identity and Access control Management IAM Vulnerabilities ===
+
+=== Access Console and App Vulnerabilities ===
+
+  * Hacking a SAFE App [[https://safenetforum.org/t/what-methods-are-there-to-hack-a-safe-site-or-app/29038/14|discussion]]
+
+=== Unknowns due to lack of documentation ===
+(this section is for listing potential gaps in documentation or changes since last review.)
+
+==== 4.2 Mechanisms to Eliminate Vulnerabilities ====
+(work in progress)
+
+=== 4.2.1  Maintaining Security of Clients ====
+(work in progress)
+
+
+
+=== 4.2.2 Maintaining Security of Vaults ====
+(work in progress)
+
+Distance in XOR space between entities plays a key role, see discussion elsewhere. Note that:
+  * a client must be closest CM-Ps,
+  * a data chunk must be closest to DH-Ps, DHM-Ps, and DM-Ps.
+
+== Maintaining Security of ClientManager vault Personas (CM-P) ==
+  - Four CM-Ps per Client
+  - Roles to be guaranteed (Primarily: maintain Client IP address anonymity)
+    - Identify 4 DM-Ps closest to a given key-value pair (data chunk)
+    - Forward request to the 4 DM-Ps
+    - Anonymize Client by protecting Client IP address information
+
+== Maintaining Security of DataManager vault Personas (DM-P) ==
+  - One DM-P per 4 DHM-Ps
+  - Roles to be guaranteed (Primary: data/DH-P availability (churn handling) andintegrity management)
+    - Validate request received from CM-Ps
+      - Check if CM-Ps are the nearest to the Client
+    - Select and maintain 4 random DH-Ps
+    - Determine nearest 4 DHM-Ps to each DH-P
+    - Maintain minimum level of data replication
+
+== Maintaining Security of DataHolderManager vault Personas (DHM-P) ==
+  - One DHM-P per DH-P
+  - Roles to be guaranteed (Primarily: monitoring DH-P availability and integrity, and maintain DH-P IP address anonymity)
+    - Validate requests received from DataManagers
+    - Observe their DH-P and report issues
+      - Maintain and check continued connectivity quickly
+      - Periodically perform PoR check of their DH-P
+    - Anonymize DH-P by protecting their IP address information
+
+== Maintaining Security of DataHolder vault Personas (DH-P) ==
+  - One DH-P per unique data chunk
+  - Roles to be guaranteed (Primarily: proof of resource)
+    - Validate requests received from DataHolderManagers
+      - Check if DHM-Ps are actually the nearest nodes to DH-P
+      - Confirm agreement among DHM-Ps about the request
+    - Store/retrieve key-value pairs (data chunk) as requested
+    - Provide Proof-of-Resource (PoR) to DataManagers (is this correct? or is it DataHolderManagers?)
+
+==== Miscellanous ====
+(to be reorganized later)
 
 === Self-configuration of the network ===
 
@@ -313,10 +421,6 @@ MaidSafe claims a world's first decentralized, asynchronous, Byzantine Fault Tol
 
 == After Launch ==
 
-
-=== Vulnerability and Risk Discussion ===
-
-  * Hacking a SAFE App [[https://safenetforum.org/t/what-methods-are-there-to-hack-a-safe-site-or-app/29038/14|discussion]]
 
 ===== 5. Economics =====
 <lead>One special mechanism regulating the network involves SafeCoin, a medium of exchange within the network, but with a reach well beyond it. This section is intended to consider this from an Economist's viewpoint.
@@ -507,11 +611,7 @@ https://forum.safedev.org/t/safe-drive-help-with-testing/2019|SAFEDrive]]
 ===== D. Corporate Organization =====
 
 ===== E. Patents and Trademarks =====
-(this is incomplete - work in progress)
-
-Starting point: Google scholar, "maidsafe" and "David Irvine" as search terms.
-
-Relevant forum posts: [[https://safenetforum.org/t/are-there-any-published-computer-science-mathematics-research-papers-about-how-maidsafe-works/22360|March 2018]], [https://safenetforum.org/t/safe-network-dev-update-june-20-2019/29010/81|June 2019]]
+Relevant forum posts: [[https://safenetforum.org/t/are-there-any-published-computer-science-mathematics-research-papers-about-how-maidsafe-works/22360|March 2018]], [[https://safenetforum.org/t/safe-network-dev-update-june-20-2019/29010/81|June 2019]]
 
 ==== E.1 Papers ====
 
@@ -536,7 +636,7 @@ Relevant forum posts: [[https://safenetforum.org/t/are-there-any-published-compu
 == Peer Reviewed ==
 (probably peer-reviewed)
 
-  * [[https://ieeexplore.ieee.org/abstract/document/7345446/|Hartenstein, Security Analysis, IEEE Trustcom, 2015]] (paywalled)
+  * [[https://ieeexplore.ieee.org/abstract/document/7345446/|F.Jacob, A security analysis of the emerging P2P-based personal cloud platform MaidSafe, IEEE Trustcom/BigDataSE/ISPA, pp.1403-1410, 2015]]
 
 == Mentions of MAID/ICO ==
 (list not reviewed)
@@ -545,7 +645,7 @@ Relevant forum posts: [[https://safenetforum.org/t/are-there-any-published-compu
   * [[https://www-cdn.law.stanford.edu/wp-content/uploads/2019/01/Mendelson_20180129.pdf|Mendelson 2019]]
 
 ==== E.2 Patents ====
-(This is a community best effort list. Do not rely on this information for any purpose, do your own research and obtain your professional advice.)
+(This is a community best effort list. Do not rely on this information for any purpose, do your own research and obtain your professional advice.) Believed to be up to date as of June 2019.
 
   * [[http://patft.uspto.gov/netahtml/PTO/index.html|USPTO]]
   * [[https://patentscope.wipo.int/search/en/search.jsf|WIPO]]
