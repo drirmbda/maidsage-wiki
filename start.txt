@@ -38,23 +38,24 @@ The SAFE Network forum also has a [[https://safenetforum.org/t/new-members-start
 
 === Getting up to speed ===
 
-  - A write-up of September 2017 can be found [[https://safe-network-explained.github.io/architecture|here]].
-  - The Documentation topic of September 2017 summarizes many concepts [[https://safenetforum.org/t/the-documentation-topic/16149|here]].
+  * A write-up of September 2017 can be found [[https://safe-network-explained.github.io/architecture|here]].
+  * The Documentation topic of September 2017 summarizes many concepts [[https://safenetforum.org/t/the-documentation-topic/16149|here]].
 
 Reading this wiki may one day provide an accurate technical introduction but we are only at the beginning. If you are in the process of trying to go beyond the basic level feel free to share your notes on this wiki.
 
 === Contribution ideas ===
 (Testing and validation of code and concepts)
 
-  - Become an ambassador in your region! [[https://safenetforum.org/t/how-to-help-become-an-ambasador/28952|discussion and pointers]]. Recognition on the SafeNetwork forum for your work may earn you an official [[https://safenetforum.org/t/safe-ambassador-title/28366|SAFE Ambassador title]]. See Appendix section People for a list of SAFE Ambassadors.
+  * Become an ambassador in your region! [[https://safenetforum.org/t/how-to-help-become-an-ambasador/28952|discussion and pointers]]. Recognition on the SafeNetwork forum for your work may earn you an official [[https://safenetforum.org/t/safe-ambassador-title/28366|SAFE Ambassador title]]. See Appendix section People for a list of SAFE Ambassadors.
 
+  * Develop a DAPP prototype. A strong DAPP and developer ecosystem will be important for adoption and through adoption for stronger security.
 ==== 1.3 Expert Level ====
 
 === Getting up to speed ===
 
-  - Read all papers and patents (Appendix E)
-  - Read all RFCs
-  - Read all Documentation and Code
+  * Read all papers and patents (Appendix E)
+  * Read all RFCs
+  * Read all Documentation and Code
 
 == RFCs ==
 
@@ -102,9 +103,9 @@ MaidSafe has an RFC process and discussion takes place on the MAID Safe Forum.
 <lead>Cutting through marketing and hype, we are interested in which of the many good things SAFE Network will do for it's users will matter most to you. Understand what SAFE Network is really about, and why it's worth the wait.
 </lead>
 
-Furthermore, understanding which features are at the core, and which are higher level or add-ons will help to focus development and create a stronger foundation made to last.
+Furthermore, understanding which features are at the core, and which are higher level or add-ons will help to focus development and create a stronger foundation made to last. The separation between core goals and non-core goals is unofficial, but an attempt to rank the importance of features.
 
-==== 2.1 SAFE Network Core Goals ====
+==== 2.1 SAFE Network Core Goals (unofficial) ====
 
 The primary goal of SAFE Network is becoming completely autonomous; impossible to change, break or stop by any single entity or group of actors.
 
@@ -133,7 +134,7 @@ Trustless network, autonomous network, and de-centralized network may be very si
 
 What is perpetual?
 What is the required size of group of actors to allow changes to the mechanisms of SAFE Network that guarantee the core goals?
-==== 2.2 SAFE Network Non-Core Goals ====
+==== 2.2 SAFE Network Non-Core Goals (unofficial) ====
 
 Certain goals not included in the previous section, but on the roadmap, could be considered non-essential, or merely good-to-have. This is a list of such goals, and is subject to change:
 
@@ -189,12 +190,18 @@ Does permanent availability of published data not contradict having full control
   - Secure cryptocurrency at low power cost (in contrast to PoW)
 
 
-==== 2.4 Plan and Future ====
+==== 2.4 Roadmap and Beyond ====
 
-[[https://safenetwork.tech/roadmap/|Official Project Roadmap]]
+[[https://safenetwork.tech/roadmap/|Official Project Roadmap]] and a summary:
 
-  * Alpha 2 - Live! - Interact with a network of MaidSafe vaults using SAFEBrowser - PUT limits apply, minimum forum membership level required.
+  * Alpha 2 - Live! - Interact with a network of MaidSafe vaults using SAFEBrowser - PUT limits apply, minimum forum membership level required. Data will not be carried forward to next releases.
+    * Self-Authentication - logging into network without centralized permissioning
+    * Self-Encryption - splitting files into chunks, hashing, encryption
+    * Disjoint Sections - splitting (and combining/) sections based on network size
+    * Message Relay - early iteration - messaging capability without signature verification
+
   * SAFE Fleming - Let's [[https://safenetforum.org/t/when-do-you-think-fleming-will-be-released/28570|guess]] August 2019 - PARSEC, Node Ageing, Secure Messaging, and [[https://safenetforum.org/t/maidsafecoin-maid-price-trading-topic/9923/7025|potentially (!)]] vaults at home and test SafeCoin.
+
   * SAFE Maxwell - Let's [[https://safenetforum.org/t/how-soon-after-fleming-do-you-think-maxwell-will-be-released/28576|guess]] May 2020 - test SafeCoin, wallet, vaults at home, farming, identity management, spam handling
 
 [[https://github.com/maidsafe/rfcs/projects/1|RFC Project Board Github]]
@@ -291,8 +298,8 @@ Sections run PARSEC consensus algorithms to make decisions, and sign decisions u
 </lead>
 
 
-==== 4.1 Search for Vulnerabilities to Attack ====
-(work in progress - brainstorming phase)
+==== 4.1 Search for Vulnerabilities ====
+(work in progress - brainstorming phase. Note that it may not be meaningful to consider each of the items below prematurely, e.g. in the context of an alpha release.)
 
 === Data Integrity Vulnerabilities ===
 
@@ -316,15 +323,16 @@ Sections run PARSEC consensus algorithms to make decisions, and sign decisions u
 
   * Hacking a SAFE App [[https://safenetforum.org/t/what-methods-are-there-to-hack-a-safe-site-or-app/29038/14|discussion]]
 
+  * [[https://safenetforum.org/t/open-security-issues/29092/1|Brain storming thread]]
+
 === Unknowns due to lack of documentation ===
 (this section is for listing potential gaps in documentation or changes since last review.)
 
 ==== 4.2 Mechanisms to Eliminate Vulnerabilities ====
-(work in progress)
+(Work in progress: Things may have changed so do not rely on this information too much as we try to piece information together and complete an up-to-date picture. The information below is based on a 2015 peer-reviewed technical paper.)
 
 === 4.2.1  Maintaining Security of Clients ====
 (work in progress)
-
 
 
 === 4.2.2 Maintaining Security of Vaults ====
@@ -577,13 +585,21 @@ PARSEC : Protocol for Asynchronous, Reliable, Secure and Efficient Consensus: An
 SAFE Network : “Secure Access for Everyone Network”, the name of the new Internet.
 
 ===== B. History and Timeline =====
-
 (what has happened in the past 13 years?)
 
-  * Founding of MaidSafe Foundation and MaidSafe Inc.
-  * Raising of funding using MAID
-  * The PARSEC Milestone (May 2018)
+  * 2006: David Irvine's first plans of a SAFE Network
+    * February 22, 2016: MaidSafe.net was founded
+  * 2007: David completes a PoC in Python
+  * 2009: Start of MaidSafeDHT and MaidsSafePD development, rewrite portions in C++
+  * 2010: Founding of MaidSafe Foundation (and MaidSafe Inc.?) to protect technology from trolls and corporations
+    * David donates all of his 80% share in the company - 50% to foundation, 30% to EBT(=?)
+  * 2012: MaidSafeDHT replaced by RUDP (=?) and Routing
+  * 2013: Vault code re-write from scratch completed and all libraries are open-sourced
+  * 2014: Raising 8M$ of funding through MAID ICO
+  * 2017: MAIDSafe team expanded to 30+ people; front and back-end teams
+  * 2018: The PARSEC Milestone is completed
 
+[[https://youtu.be/TE5zmH2DqqM|2014 MaidSafe "the story so far"]], [[https://safenetforum.org/t/maidsafe-progress-roadmap/20053|2018 post]]
 === Tidbits ===
 
   * Sigmoid x was a company that was later folded into MaidSafe.
@@ -747,6 +763,11 @@ Relevant forum posts: [[https://safenetforum.org/t/are-there-any-published-compu
 
 [[https://drive.google.com/file/d/0BxZbU-adoO5OWUswR1h2WE9weEk/view|SAFE Network for Dummies]]
 
+=== SafeNetwork Roadmaps and Updates ===
+
+[[https://safenetforum.org/c/development/updates|Updates category, 2014-]]
+
+[[https://safenetwork.tech/roadmap/|Official Roadmap]]
 ==== MaidSafe Activities and Groups ====
 
 [[https://safenetwork.org/meetup-groups/|Meetup Group List]]
