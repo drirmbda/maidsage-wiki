@@ -236,7 +236,7 @@ Could SAFE Network be split up in smaller parts to speed up development and to m
 
 == After Launch ==
 
-=== Notes on CRUST ===
+=== Note on CRUST ===
 
   - CRUST will be replaced by [[https://en.wikipedia.org/wiki/QUIC|QUIC]] (originally: Quick UDP Internet Connections), which relies on UDP/IP.
 
@@ -298,28 +298,28 @@ Sections run PARSEC consensus algorithms to make decisions, and sign decisions u
 </lead>
 
 
-==== 4.1 Search for Vulnerabilities ====
+==== 4.1 Security Aspects ====
 (work in progress - brainstorming phase. Note that it may not be meaningful to consider each of the items below prematurely, e.g. in the context of an alpha release.)
 
-=== Data Integrity Vulnerabilities ===
+=== Data Integrity Guarantee ===
 
-=== Node Integrity Vulnerabilities ===
+=== Node Integrity Guarantee ===
 
-=== Protocol Integrity Vulnerabilities ===
+=== Protocol Integrity Guarantee ===
 
-=== Data Availability Vulnerabilities ===
+=== Data Availability Guarantee ===
 
-=== Node Availability Vulnerabilities ===
+=== Node Availability Guarantee ===
 
-=== Data Confidentiality Vulnerabilities ===
+=== Data Confidentiality Guarantee ===
 
-=== Node Anonymity Vulnerabilities ===
+=== Node Anonymity Guarantee ===
 
-=== User Anonymity Vulnerabilities ===
+=== User Anonymity Guarantee ===
 
-=== User Identity and Access control Management IAM Vulnerabilities ===
+=== User Identity and Access control Management IAM Security Guarantee ===
 
-=== Access Console and App Vulnerabilities ===
+=== Access Console and App Security Guarantee ===
 
   * Hacking a SAFE App [[https://safenetforum.org/t/what-methods-are-there-to-hack-a-safe-site-or-app/29038/14|discussion]]
 
@@ -328,7 +328,7 @@ Sections run PARSEC consensus algorithms to make decisions, and sign decisions u
 === Unknowns due to lack of documentation ===
 (this section is for listing potential gaps in documentation or changes since last review.)
 
-==== 4.2 Mechanisms to Eliminate Vulnerabilities ====
+==== 4.2 Mechanisms to Ensure Security ====
 (Work in progress: Things may have changed so do not rely on this information too much as we try to piece information together and complete an up-to-date picture. The information below is based on a 2015 peer-reviewed technical paper.)
 
 === 4.2.1  Maintaining Security of Clients ====
@@ -558,8 +558,8 @@ A list of measures against which to measure "perpetuity"
   * Civilization - [[http://www.bbc.com/future/story/20190218-the-lifespans-of-ancient-civilisations-compared|336 years]] - Civilizations [[http://www.bbc.com/future/story/20170418-how-western-civilisation-could-collapse|collapse]].
   * Lifetime - [[https://ourworldindata.org/life-expectancy|89 years]]
   * Generation - [[https://isogg.org/wiki/How_long_is_a_generation%3F_Science_provides_an_answer|31 years]]
+  * Solar cycle - [[https://en.wikipedia.org/wiki/Solar_cycle|11 years]]
   * OS Support cycle - [[https://access.redhat.com/support/policy/updates/errata/|10 years]]
-  * 
 
 === Freedom ===
 
