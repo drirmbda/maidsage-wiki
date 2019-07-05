@@ -376,6 +376,14 @@ Distance in XOR space between entities plays a key role, see discussion elsewher
     - Store/retrieve key-value pairs (data chunk) as requested
     - Provide Proof-of-Resource (PoR) to DataManagers (is this correct? or is it DataHolderManagers?)
 
+
+==== Forum topics on studies ====
+
+  * [[https://safenetforum.org/t/open-security-issues/29092|Security]]
+  * [[https://safenetforum.org/t/exploration-of-a-live-network-farming-rewards/29043|Exploration of farming rewards]]
+  * [[https://safenetforum.org/t/chunk-distribution-within-sections/29187|Chunk Distribution within Sections]]
+
+
 ==== Miscellanous ====
 (to be reorganized later)
 
@@ -519,11 +527,11 @@ As a general rule, do not leave large amount of MAID (or any other coins) on an 
 
   * [[https://dex.openledger.io/|OpenLedger DEX]] low volume
 
-  * [[http://www.bitker.com|Bitker]] low volume
-
   * [[https://hitbtc.com/exchange/MAID-to-BTC|HitBTC]]: MAID/BTC, MAID/ETH, MAID/USDT. Consider the high level of complaints on social media about losing access to funds. MaidSafe does seem to have some leverage over HitBTC and could help get issues resolved.
 
-  * [[https://safenetforum.org/t/cryptopia-liquidation/28767/11|Nova might replace Cryptopia]]. [[https://novaexchange.com/|Nova]]
+[[https://safenetforum.org/t/cryptopia-liquidation/28767/11|Nova might replace Cryptopia]]. [[https://novaexchange.com/|Nova]]
+
+[[http://www.bitker.com|Bitker]] - MAIDSafe [[https://safenetforum.org/t/removal-of-maidsafe-assets-from-bitker/29191|decided]] to remove MAID from Bitker in July 2019.
 
 === Storing MAID offline ===
 
