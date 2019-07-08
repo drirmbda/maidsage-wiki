@@ -16,6 +16,8 @@ Before reading this site you must accept that it is your responsibility to obtai
 </note>
 
 </jumbotron>
+
+(Signup for new users is temporarily disabled.)
 ===== 1. Start Here =====
 <lead>If you want to find out more about SAFE Network or start contributing, we want to be your guide. For specific topics look at the table on contents on the right. Otherwise pick a subsection based on the desired level of depth you are looking for.</lead>
 The SAFE Network forum also has a [[https://safenetforum.org/t/new-members-start-here/26839|start here page]] which you may want to have a look at.
