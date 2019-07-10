@@ -307,6 +307,21 @@ The most recent 200 endpoints that are not behind NAT, and their certificates ar
 
 === 3.5.1 Kademlia Routing Introduction ===
 
+Kademlia (this is just a name given by the authors’ paper in 2002) routing prescribes how to establish a route through a decentralized network of nodes which only have a limited view of the network (partial routing tables), with a minimal number of node queries. For an n node addresses network that number is Order log(n) nodes. Nodes build their routing tables from queries they receive.
+
+The concept of mathematical distance is used to recursively home-in from the perspective of the originating node on a destination address.
+
+Distance metrics must satisfy the following conditions:
+  - zero distance between two nodes always mean that those nodes must be one and the same,
+  - distances between two nodes are the same no matter which is the origin, and always positive too,
+  - the triangle distance inequality applies. to any three nodes, which means that there always is a distance between one pair of these nodes that is equal or shorter than the sum of the distances between the remaining two node pairs. 
+
+The creators of Kademlia proposed the XOR distance metric as a “novel” metric. The metric meets the above requirements. However, it is not Euclidean. A distance is not Euclid’s 5th “parallel” postulate does not hold.
+
+Interesting properties include the fact that other nodes as seen from a node all have unique distances. This results in the “homing-in” from any originating node to converge to a common path as the destination is approached.
+
+The route is not a physical route, but only a journey of visiting and querying nodes, each having only partial knowledge of other nodes in the overlay, in order to find the IP and port number of the destination node.
+
 === 3.5.2 MDSF Lib routing ====
 
 MaidSafe [[https://crates.io/crates/routing|routing]] ([[https://docs.rs/routing/0.37.0/routing/|0.37.0 docs]], [[https://github.com/maidsafe/routing/projects?query=is%3Aopen|projects]]) implements Kademlia-like routing.
