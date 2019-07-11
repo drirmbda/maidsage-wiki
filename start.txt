@@ -18,8 +18,10 @@ Before reading this site you must accept that it is your responsibility to obtai
 </jumbotron>
 ===== 1. Start Here =====
 <lead>If you want to find out more about SAFE Network or start contributing, we want to be your guide. For specific topics look at the table on contents on the right. Otherwise pick a subsection based on the desired level of depth you are looking for.</lead>
+
 The SAFE Network forum also has a [[https://safenetforum.org/t/new-members-start-here/26839|start here page]] which you may want to have a look at.
 
+Wherever you read MDSF, expand it to Maidsafe in your mind, and SFNW to SAFE Network. Feel free to edit the wiki.
 ==== 1.1 Basic Level ====
 
 === Getting up to speed ===
@@ -307,22 +309,47 @@ The most recent 200 endpoints that are not behind NAT, and their certificates ar
 
 === 3.5.1 Kademlia Routing Introduction ===
 
-Kademlia (this is just a name given by the authors’ paper in 2002) routing prescribes how to establish a route through a decentralized network of nodes which only have a limited view of the network (partial routing tables), with a minimal number of node queries. For an n node addresses network that number is Order log(n) nodes. Nodes build their routing tables from queries they receive.
+Kademlia routing (it's just a name) was first proposed in a paper of 2002. A Kademlia route is a shortest sequence of nodes to query to locate a node with a given address, in a network of nodes with distributed routing tables. For a network with n node addresses the number of nodes to query is Order log(n).
 
-The concept of mathematical distance is used to recursively home-in from the perspective of the originating node on a destination address.
+Nodes build their individual routing tables from queries they receive during the routing process. Routing tables contain IP addresses and Port numbers for a limited number of certain other nodes. Communication between nodes during and after this process continues to be physically routed using conventional routing.
 
-Distance metrics must satisfy the following conditions:
-  - zero distance between two nodes always mean that those nodes must be one and the same,
-  - distances between two nodes are the same no matter which is the origin, and always positive too,
-  - the triangle distance inequality applies. to any three nodes, which means that there always is a distance between one pair of these nodes that is equal or shorter than the sum of the distances between the remaining two node pairs. 
+Nodes know exponentially less about nodes that are farther away, and are experts about nodes in their closest vicinity. Kademlia routes converge to an increasingly common route for each given destination address, as that destination is approached. This exponentially homing-in behavior from originating node towards given destination node is thanks to a special kind of mathematical distance that is used to decide which node to query next. 
 
-The creators of Kademlia proposed the XOR distance metric as a “novel” metric. The metric meets the above requirements. However, it is not Euclidean. A distance is not Euclid’s 5th “parallel” postulate does not hold.
+Kademlia's creators not only proposed an algorithm but also a "novel" distance metric, the XOR distance. It satisfies all requirements of a proper metric:
+  - Zero distance between two nodes always means that those nodes must be one and the same.
+  - Distances between two nodes are the same no matter which is the origin, and are always positive.
+  - The triangle inequality applies; for any three nodes there always is a distance between one pair that is equal or less than the sum of the distances between the two other possible pairs of nodes.
 
-Interesting properties include the fact that other nodes as seen from a node all have unique distances. This results in the “homing-in” from any originating node to converge to a common path as the destination is approached.
+However, XOR distance is non-Euclidean, i.e. Euclid’s 5th “parallel” postulate does not hold. This results in some very interesting and hard to grasp properties:
 
-The route is not a physical route, but only a journey of visiting and querying nodes, each having only partial knowledge of other nodes in the overlay, in order to find the IP and port number of the destination node.
+  * Nodes observed from any particular node, all have a unique distance to that observing node.
 
-=== 3.5.2 MDSF Lib routing ====
+  * Closeness (e.g. k-nearest nodes) is uni-directional or asymmetric, which means that a node n1 in the set of k-nearest nodes to node n0, does not need to be in the set of k-nearest nodes to n1.
+
+[[https://stackoverflow.com/questions/25751928/kademlia-xor-metric-properties-purposes|This]] includes an answer explaining most of the above by @fraser in other better words. [[https://metaquestions.me/2014/08/01/shortest-distance-between-two-points-is-not-always-a-straight-line/|This]] is a long but useful write-up by @dirvine to help understand things better intuitively and pointing out many peculiarities of XOR distance.
+
+[[https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f|Article]] of 2015 on Kademlia applications.
+
+=== 3.5.2 XOR Distance ===
+
+The following table shows XOR distances in a 3-bit space, or 0..7, to help you grasp XOR distances better. Horizontally the table shows source node number, and the vertical axis is decimal increment to obtain the destination node number modulo 8. For example, distance from node 2 (on top), to node 4 (on skip 1 row), is 6. 
+
+The 2-nearest and 2-farthest distances are indicated to verify k-nearest relations. For example, note that the 2 closest nodes to n0 are {n1, n2}. The nearest two nodes to n1 are {n2, n0}. However, the nearest two nodes to n2 are {n3, n0}, where n1 is notably not included.
+
+^ ^                                  Source Node                 ^^^^^^^
+^ xor  ^   0   ^   1   ^   2   ^   3   ^   4   ^   5   ^   6   ^   7   ^
+^ dist.|  000  |  001  |  010  |  011  |  100  |  101  |  110  |  111  |
+^skip 0|  [1]  |   3   |  [1]  |  -7-  |  [1]  |   3   |  [1]  |  -7-  |
+^skip 1|  [2]  |  [2]  |  -6-  |  -6-  |  [2]  |  [2]  |  -6-  |  -6-  |
+^skip 2|   3   |   5   |  -7-  |   5   |   3   |   5   |  -7-  |   5   |
+^skip 3|   4   |   4   |   4   |   4   |   4   |   4   |   4   |   4   |
+^skip 4|   5   |  -7-  |   5   |   3   |   5   |  -7-  |   5   |   3   |
+^skip 5|  -6-  |  -6-  |  [2]  |  [2]  |  -6-  |  -6-  |  [2]  |  [2]  |
+^skip 6|  -7-  |  [1]  |   3   |  [1]  |  -7-  |  [1]  |   3   |  [1]  |
+
+[[https://safenetforum.org/t/a-little-example-in-xor/8002|Post]] by @polpolrene. And [[https://safecrossroads.net/podcasts/episode-21-class-iv-reaching-bedrock/|Podcast]] on XOR by @fergish. [[http://www.ericklavoie.com/|Erick's]] page with some related information.
+
+=== 3.5.3 MDSF Lib routing ====
 
 MaidSafe [[https://crates.io/crates/routing|routing]] ([[https://docs.rs/routing/0.37.0/routing/|0.37.0 docs]], [[https://github.com/maidsafe/routing/projects?query=is%3Aopen|projects]]) implements Kademlia-like routing.
 ===== 4. Mechanisms =====
@@ -442,6 +469,7 @@ MaidSafe claims a world's first decentralized, asynchronous, Byzantine Fault Tol
 
   * [[https://safenetforum.org/t/chunk-distribution-within-sections/29187|Chunk distribution within Sections]]
 
+  * [[https://safenetforum.org/t/step-by-step-the-road-to-fleming-1-the-big-questions-safe-fleming-and-beyond/27560|Road to Fleming Big Questions]]
 
 <hidden == Open Items ==>
 
@@ -570,6 +598,10 @@ Storing large amounts on exchanges is not a good idea. However, before you creat
 Testing:
 [[https://safenetforum.org/t/how-to-set-up-a-vault-from-home/13186|How to set up a vault at home]]
 [[https://safenetforum.org/t/launch-of-a-community-safe-network/26930| Launch of a cummunity safe network]] 
+
+== XOR Distance ==
+
+A useful XOR distance [[https://www.miniwebtool.com/bitwise-calculator/?data_type=10&number1=0&number2=0&operator=XOR|calculator]] on the web. [[https://github.com/mafintosh/xor-distance/blob/master/index.js|This]] is an example implementation in JS.
 ===== 11. Philosophy =====
 (deeper questions)
 
