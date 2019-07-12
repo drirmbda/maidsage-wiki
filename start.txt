@@ -326,7 +326,7 @@ However, XOR distance is non-Euclidean, i.e. Euclid’s 5th “parallel” postu
 
   * Closeness (e.g. k-nearest nodes) is uni-directional or asymmetric, which means that a node n1 in the set of k-nearest nodes to node n0, does not need to be in the set of k-nearest nodes to n1.
 
-[[https://stackoverflow.com/questions/25751928/kademlia-xor-metric-properties-purposes|This]] includes an answer explaining most of the above by @fraser in other better words. [[https://metaquestions.me/2014/08/01/shortest-distance-between-two-points-is-not-always-a-straight-line/|This]] is a long but useful write-up by @dirvine to help understand things better intuitively and pointing out many peculiarities of XOR distance.
+[[https://stackoverflow.com/questions/25751928/kademlia-xor-metric-properties-purposes|This]] includes an answer explaining most of the above by @fraser in other better words. [[https://metaquestions.me/2014/08/01/shortest-distance-between-two-points-is-not-always-a-straight-line/|This]] is a long but useful write-up by @dirvine to help understand things better intuitively and pointing out many peculiarities of XOR distance. Finally there is [[https://medium.com/@maidsafe/structuring-network-with-xor-431e785b5ee7|this]] Medium post by MaidSafe on this topic.
 
 [[https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f|Article]] of 2015 on Kademlia applications.
 
@@ -785,6 +785,8 @@ Relevant forum posts: [[https://safenetforum.org/t/are-there-any-published-compu
 
 ==== Useful Resources Online ====
 (Note that some information may have become outdated and incorrect.)
+
+[[https://github.com/maidsafe/Whitepapers/blob/master/Project-Safe.md|SAFE Project whitepaper]]
 
 [[https://safenetwork.org/community/|Safenetwork.org 'Community' Links]]
 
