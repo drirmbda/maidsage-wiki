@@ -354,8 +354,27 @@ The 2-nearest and 2-farthest distances are indicated to verify k-nearest relatio
 
 === 3.5.3 MDSF Lib routing ====
 
-(is this the old crust library?)
 MaidSafe [[https://crates.io/crates/routing|routing]] ([[https://docs.rs/routing/0.37.0/routing/|0.37.0 docs]], [[https://github.com/maidsafe/routing/projects?query=is%3Aopen|projects]]) implements "Kademlia-like" implementation of Distributed Hash Tables (DHT).
+
+==== 3.6 Gossip Protocol ====
+
+=== 3.6.1 Randomized Rumor Spreading ===
+
+=== 3.6.2 MDSF Lib safe_gossip ===
+
+MaidSafe safe_gossip (0.1.0 docs, projects) implements Randomized Rumor Spreading [[http://zoo.cs.yale.edu/classes/cs426/2013/bib/karp00randomized.pdf|Karp et al.]] (FOCS 2000).
+
+
+==== 3.7 Vault ====
+
+=== 3.7.1 MDSF application safe_vault ===
+
+MaidSafe safe_vault (0.18.0 [[https://docs.rs/safe_vault/0.18.0/safe_vault/|docs]], projects) implements the SAFE Network node capable of data storage, publishing, sharing, (computation, and Safecoin transfers.)
+
+  * Entry: src/bin/safe_vault.rs.
+  * Configuration: src/config_handler.rs
+  * Vault instance: src/vault.rs - State(Elder/Adult);
+
 ===== 4. Mechanisms =====
 <lead>In this section we will try to separate out and have a closer look at the mechanisms that will keep the SAFE Network working as intended. Each of these need to be checked for possible weaknesses that could lead to disastrous malicious attacks.
 </lead>
@@ -573,11 +592,11 @@ As a general rule, do not leave large amount of MAID (or any other coins) on an 
 
   * [[https://dex.openledger.io/|OpenLedger DEX]] low volume
 
-  * [[http://www.bitker.com|Bitker]] - MAIDSafe [[https://safenetforum.org/t/removal-of-maidsafe-assets-from-bitker/29191|decided]] to remove MAID from Bitker in July 2019.
-
   * [[https://hitbtc.com/exchange/MAID-to-BTC|HitBTC]]: MAID/BTC, MAID/ETH, MAID/USDT. Consider the high level of complaints on social media about losing access to funds. MaidSafe does seem to have some leverage over HitBTC and could help get issues resolved.
 
   * [[https://safenetforum.org/t/cryptopia-liquidation/28767/11|Nova might replace Cryptopia]]. [[https://novaexchange.com/|Nova]]
+
+MAIDSafe [[https://safenetforum.org/t/removal-of-maidsafe-assets-from-bitker/29191|decided]] to remove MAID from [[http://www.bitker.com|Bitker]] in July 2019.
 
 === Storing MAID offline ===
 
