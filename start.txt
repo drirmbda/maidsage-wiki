@@ -206,7 +206,7 @@ Does permanent availability of published data not contradict having full control
 
   * SAFE Fleming - Let's [[https://safenetforum.org/t/when-do-you-think-fleming-will-be-released/28570|guess]] August 2019 - PARSEC, Node Ageing, Secure Messaging, and [[https://safenetforum.org/t/maidsafecoin-maid-price-trading-topic/9923/7025|potentially (!)]] vaults at home and test SafeCoin.
 
-  * SAFE Maxwell - Let's [[https://safenetforum.org/t/how-soon-after-fleming-do-you-think-maxwell-will-be-released/28576|guess]] May 2020 - test SafeCoin, wallet, vaults at home, farming, identity management, spam handling
+  * SAFE Maxwell - Let's [[https://safenetforum.org/t/how-soon-after-fleming-do-you-think-maxwell-will-be-released/28576|guess]] May 2020 - The scope is TBD but could include: test SafeCoin, wallet, vaults at home, farming, identity management, spam handling.
 
 [[https://github.com/maidsafe/rfcs/projects/1|RFC Project Board Github]]
 ===== 3. Architecture =====
@@ -294,6 +294,9 @@ There are some early adopter issues such as worse handling of NAT by the typical
 
 MaidSafe [[https://crates.io/crates/quic-p2p|quick-p2p]] ([[https://docs.rs/quic-p2p/0.1.1/quic_p2p/|0.1.1 docs]],[[https://github.com/maidsafe/quic-p2p/projects/2|to do]]) is a library implementing QUIC using [[https://www.cloudflare.com/learning-resources/tls-1-3/|TLS 1.3]].
 
+[[https://github.com/maidsafe/quic-p2p/network|Watch]] the master branch.
+
+== Notes ==
 The library provides 2 connection types in P2P mode: Bi-directional and uni-directional.
 
 Uni-directional type is used to force to prove a node's ability to accept incoming connections and create outgoing connections, which is a necessary requirement to be accepted as a network peer worker node.
@@ -305,7 +308,7 @@ The library provides 3 connection types of different identity certification leve
 
 The most recent 200 endpoints that are not behind NAT, and their certificates are cached and used for re-joining of nodes.
 
-==== 3.5 Routing in MSNW ====
+==== 3.5 Routing ====
 
 === 3.5.1 Kademlia Routing Introduction ===
 
@@ -356,20 +359,39 @@ The 2-nearest and 2-farthest distances are indicated to verify k-nearest relatio
 
 MaidSafe [[https://crates.io/crates/routing|routing]] ([[https://docs.rs/routing/0.37.0/routing/|0.37.0 docs]], [[https://github.com/maidsafe/routing/projects?query=is%3Aopen|projects]]) implements "Kademlia-like" implementation of Distributed Hash Tables (DHT).
 
+[[https://github.com/maidsafe/routing/network|Watch]] the fleming branch.
+
 ==== 3.6 Gossip Protocol ====
 
 === 3.6.1 Randomized Rumor Spreading ===
 
+Randomized Rumor Spreading [[http://zoo.cs.yale.edu/classes/cs426/2013/bib/karp00randomized.pdf|Karp et al.]] (FOCS 2000)
+
 === 3.6.2 MDSF Lib safe_gossip ===
 
-MaidSafe safe_gossip (0.1.0 docs, projects) implements Randomized Rumor Spreading [[http://zoo.cs.yale.edu/classes/cs426/2013/bib/karp00randomized.pdf|Karp et al.]] (FOCS 2000).
+MaidSafe safe_gossip (0.1.0 docs, projects) implements Randomized Rumor Spreading.
 
 
-==== 3.7 Vault ====
+==== 3.7 Parsec ====
 
-=== 3.7.1 MDSF application safe_vault ===
+=== 3.7.1 Byzantine Agreement ===
 
-MaidSafe safe_vault (0.18.0 [[https://docs.rs/safe_vault/0.18.0/safe_vault/|docs]], projects) implements the SAFE Network node capable of data storage, publishing, sharing, (computation, and Safecoin transfers.)
+PARSEC stands for Protocol for Asynchronous Reliable Secure and Efficient Consensus and is described in this [[http://docs.maidsafe.net/Whitepapers/pdf/PARSEC.pdf|whitepaper]] by MaidSafe.
+
+=== 3.7.2 MDSF parsec ===
+
+MaidSafe parsec (0.5.0 [[https://docs.rs/parsec/0.5.0/parsec/|docs]], projects) is a library for reaching consensus on network events.
+
+[[https://github.com/maidsafe/parsec/network|Watch]] the master branch.
+==== 3.8 Vault ====
+
+=== 3.8.1 MDSF application safe_vault ===
+
+MaidSafe safe_vault (0.18.0 [[https://docs.rs/safe_vault/0.18.0/safe_vault/|docs]], [[https://github.com/maidsafe/safe_vault/projects|projects]]) implements the SAFE Network node capable of data storage, publishing, sharing, (computation, and Safecoin transfers.)
+
+[[https://github.com/maidsafe/safe_vault/network|Watch]] the master branch.
+
+== Notes ==
 
   * Entry: src/bin/safe_vault.rs.
   * Configuration: src/config_handler.rs
