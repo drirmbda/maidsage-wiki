@@ -19,613 +19,87 @@ Before reading this site you must accept that it is your responsibility to obtai
 ===== 1. Introduction - Start Here =====
 <lead>If you want to find out more about SAFE Network or start contributing, we want to be your guide. For specific topics look at the table on contents on the right. Otherwise pick a subsection based on the desired level of depth you are looking for.</lead>
 
-The SAFE Network forum also has a [[https://safenetforum.org/t/new-members-start-here/26839|start here page]] which you may want to have a look at.
+[[introduction|=> Introduction - Start Here TOP]]
 
-Wherever you read MDSF, expand it to Maidsafe in your mind, and SFNW to SAFE Network. Feel free to edit the wiki.
- 
-==== 1.1 Basic Level ====
+  * [[introduction#1.1 Basic Level]]
+  * [[introduction#1.2 Intermediate Level]]
+  * [[introduction#1.3 Expert Level]]
 
-=== Getting up to speed ===
-
-  * The [[https://www.safenetworkprimer.com/|SAFE Network primer]]
-  * Various topics made easy [[https://safecrossroads.net/|SAFE Crossroads]]
-  * If you've only got 10 minutes [[https://safenetforum.org/t/10-key-facts-about-safe-network/12948 | 10 key facts]]
-  * For those familiar with bitcoin / blockchain [[https://safe-network-explained.github.io/safe-for-bitcoiners | SAFE Network explained using bitcoin terminology]]
-
-(a document called SafeNetForDummies is available on Google docs but I lost the link to it)
-
-=== Contribution ideas ===
-(Marketing, improving documentation, and performing testing?)
-
-==== 1.2 Intermediate Level ====
-
-=== Getting up to speed ===
-
-  * A write-up of September 2017 can be found [[https://safe-network-explained.github.io/architecture|here]].
-  * The Documentation topic of September 2017 summarizes many concepts [[https://safenetforum.org/t/the-documentation-topic/16149|here]].
-
-Reading this wiki may one day provide an accurate technical introduction but we are only at the beginning. If you are in the process of trying to go beyond the basic level feel free to share your notes on this wiki.
-
-=== Contribution ideas ===
-(Testing and validation of code and concepts)
-
-  * Become an ambassador in your region! [[https://safenetforum.org/t/how-to-help-become-an-ambasador/28952|discussion and pointers]]. Recognition on the SafeNetwork forum for your work may earn you an official [[https://safenetforum.org/t/safe-ambassador-title/28366|SAFE Ambassador title]]. See Appendix section People for a list of SAFE Ambassadors.
-
-  * Develop a DAPP prototype. A strong DAPP and developer ecosystem will be important for adoption and through adoption for stronger security.
-==== 1.3 Expert Level ====
-
-=== Getting up to speed ===
-
-  * Read all papers and patents (Appendix E)
-  * Read all RFCs
-  * Read all Documentation and Code
-
-== RFCs ==
-
-MaidSafe requests input through a public RFC (Request For Comment) process. RFCs are accessible [[https://github.com/maidsafe/rfcs|here]] on GitHub.
-
-The list of RFCs by status can be found in that repository [[https://github.com/maidsafe/rfcs/blob/master/RFCs-by-status.md#active-rfcs|here]].
-
-MAIDSafe has internal "pre-RFC" documents on certain topics, which means that the published RFCs provide an incomplete picture of the status of technology development.
-
-== Rust Core Libraries Documentation ==
-
-  * [[https://docs.rs/safe_app|Crate safe_app]]
-  * [[https://docs.rs/crate/safe_authenticator|Crate safe_authenticator]]
-  * [[https://docs.rs/safe_core|Crate safe_core]]
-  * [[https://docs.rs/routing|Crate routing]]
-  * [[https://docs.rs/safe_vault|Crate safe_vault]]
-  * [[https://docs.rs/self_encryption|Crate self_encryption]]
-
-== SAFE Web App ==
-
-  * [[https://github.com/maidsafe/safe_examples/tree/master/safe_web_app_quick_start|Web App Tutorial]]
-
-== API Documentation ==
-
-  * [[https://docs.maidsafe.net/safe_app_nodejs/index.html|SAFE Network Node.JS Client Library Docs]]
-  * [[https://docs.maidsafe.net/safe_app_java/|SAFE App Java (Android)]]
-  * [[https://docs.maidsafe.net/safe_app_csharp/api/index.html|SAFE App C#]]
-
-=== Contribution Ideas ===
-
-MaidSafe has an RFC process and discussion takes place on the MAID Safe Forum.
-(Summaries of the issues and resolutions could be added here for each.)
-
-[[https://safenetforum.org/t/current-unsolved-safe-questions/28228|Unsolved questions (still?)]]
-
-== Discussions ==
-(participate in discussion of RFCs)
-  * [[https://safenetforum.org/t/rfc-57-safecoin-revised-specific-question-concerning-safecoin-size-and-number-polls/28810|RFC 57]] June 2019
-  * [[https://safenetforum.org/t/poll-should-maidsafe-implement-ptp-pay-the-producer/5805|RFC 59]] June 2019
-
-[[https://safenetforum.org/c/development/rfcs|List of all RFC discussions]]
  
 ===== 2. Goals of the SAFE Network =====
 
 <lead>Cutting through marketing and hype, we are interested in which of the many good things SAFE Network will do for it's users will matter most to you. Understand what SAFE Network is really about, and why it's worth the wait.
 </lead>
 
-Furthermore, understanding which features are at the core, and which are higher level or add-ons will help to focus development and create a stronger foundation made to last. The separation between core goals and non-core goals is unofficial, but an attempt to rank the importance of features.
+[[safenetgoals|=> Goals of the SAFE Network TOP]]
 
-==== 2.1 SAFE Network Core Goals (unofficial) ====
+  * [[safenetgoals#2.1 SAFE Network Core Goals (unofficial)]]
+  * [[safenetgoals#2.2 SAFE Network Non-Core Goals (unofficial)]]
+  * [[safenetgoals#2.3 Benefits]]
+  * [[safenetgoals#2.4 Roadmap and Beyond]]
 
-The primary goal of SAFE Network is becoming completely autonomous; impossible to change, break or stop by any single entity or group of actors.
-
-The first iteration of the SAFE Network will achieve the following core goals [[https://safenetforum.org/t/core-goals-of-the-first-iteration-of-safe-network-at-launch/28820|(discussion)]]:
-
-  - de-centralize ownership of certain network functions so that they cannot be changed or disabled by any group of actors(*3)
-    - function: identity proofing
-    - function: access control
-    - function: communication
-    - function: information storage
-  - protect all information perpetually(*1) from unpermitted access, interception, tampering or deletion
-  - preserve stored information, and end-to-end communications, and global access to these perpetually(*1) and for free(*2)
-  - provide a digital medium of exchange
-
-  * (*1) The meaning of perpetual is not clear yet. 30 years?
-  * (*2) Free, except for the cost of broadband access and the user terminal.
-  * (*3) That the threshold is to making changes is unclear yet. A majority?
-
-A future iteration is expected to achieve the following additional goals
-    - function: computation
-
-Trustless network, autonomous network, and de-centralized network may be very similar ways to express the same goal.
-
-<hidden == Open Questions ==>
-(List open questions here, along with links to forum discussion, until we find some answers.)
-
-What is perpetual?
-What is the required size of group of actors to allow changes to the mechanisms of SAFE Network that guarantee the core goals?
-
-</hidden>
-==== 2.2 SAFE Network Non-Core Goals (unofficial) ====
-
-Certain goals not included in the previous section, but on the roadmap, could be considered non-essential, or merely good-to-have. This is a list of such goals, and is subject to change:
-
-=== Independent but important add-ons ===
-  - multiple identities
-  - de-centralized name resolution
-  - CLI interface and API
-
-=== Convenient and promoting adoption ===
-  - SAFE Browser
-  - Language bindings
-
-=== Nice to have but not as important ===
-  - RDF Format
-
-
-==== 2.3 Benefits ====
-
-Benefits will be the results of SAFE Network achieving its goals.
-Many individual benefits may not be unique to SAFE Network, but the combination of a large number of them might be.
-
-=== Relevant to the user ===
-  - No censorship
-  - Perfect privacy
-  - Full control over own data
-  - No loss of data or access issues ever
-  - No loss of ability to communicate ever
-  - Always on; 100% availability
-
-== Cryptocurrency benefits relevant to users ==
-  - No transaction fees
-  - Anonymous and untraceable transactions
-
-== Open Questions ==
-
-Does permanent availability of published data not contradict having full control over own data?
-
-=== Relevant to the developer ===
-
-  - No need to implement and maintain reliable data storage
-  - No need to implement and maintain basic security measures
-  - No need to implement authentication
-  - Get paid for development of software
-  - Inherently scaling storage infrastructure
-
-=== Relevant to technical progress ===
-
-  - Scalable immutable transaction ledger
-  - Scalable cryptocurrency (without a block chain)
-
-=== Relevant to our planet ===
-  - Consensus at low power consumption
-  - Secure cryptocurrency at low power cost (in contrast to PoW)
-
-
-==== 2.4 Roadmap and Beyond ====
-
-[[https://safenetwork.tech/roadmap/|Official Project Roadmap]] and a summary:
-
-  * Alpha 2 - Live! - Interact with a network of MaidSafe vaults using SAFEBrowser - PUT limits apply, minimum forum membership level required. Data will not be carried forward to next releases.
-    * Self-Authentication - logging into network without centralized permissioning
-    * Self-Encryption - splitting files into chunks, hashing, encryption
-    * Disjoint Sections - splitting (and combining/) sections based on network size
-    * Message Relay - early iteration - messaging capability without signature verification
-
-  * SAFE Fleming - Let's [[https://safenetforum.org/t/when-do-you-think-fleming-will-be-released/28570|guess]] August 2019 - PARSEC, Node Ageing, Secure Messaging, and [[https://safenetforum.org/t/maidsafecoin-maid-price-trading-topic/9923/7025|potentially (!)]] vaults at home and test SafeCoin.
-
-  * SAFE Maxwell - Let's [[https://safenetforum.org/t/how-soon-after-fleming-do-you-think-maxwell-will-be-released/28576|guess]] May 2020 - The scope is TBD but could include: test SafeCoin, wallet, vaults at home, farming, identity management, spam handling.
-
-[[https://github.com/maidsafe/rfcs/projects/1|RFC Project Board Github]]
 ===== 3. Architecture and Implementation =====
 
 <lead>A good architecture of SAFE Network is incredibly important for long-term success. This section will be an attempt to give an accurate overview.
 </lead>
 
+[[architecture|=> Architecture and Implementation TOP]]
+
+  * [[architecture#3.1 Place in OSI Reference Model]]
+  * [[architecture#3.2 SAFE Network Overlay Network]]
+  * [[architecture#3.3 Basic Facilities]]
+  * [[architecture#3.4 Transport Protocol for P2P]]
+    * [[architecture#3.4.1 IETF QUIC Introduction]]
+    * [[architecture#3.4.2 MDSF Lib quic-p2p]]
+  * [[architecture#3.5 Routing]]
+    * [[architecture#3.5.1 Kademlia Routing Introduction]]
+    * [[architecture#3.5.2 XOR Distance]]
+    * [[architecture#3.5.3 MDSF Lib routing]]
+  * [[architecture#3.6 Gossip Protocol]]
+    * [[architecture#3.6.1 Randomized Rumor Spreading]]
+    * [[architecture#3.6.2 MDSF Lib safe_gossip]]
+  * [[architecture#3.7 Parsec]]
+    * [[architecture#3.7.1 Byzantine Agreement]]
+    * [[architecture#3.7.2 MDSF parsec]]
+  * [[architecture#3.8 Vault]]
+    * [[architecture#3.8.1 MDSF application safe_vault]]
 
-==== 3.1 Place in OSI Reference Model ====
-
-Layers 0-4 will provide the basis for communication, without modification. Internet/Routing (Layer 3) will be based on IPv4 and/or IPv6. Host-to-host Transport (Layer 4) will provide QUIC transport, which is based on UDP (a connection-less service). SAFE Network will not modify anything below and including Layer 3. SAFE Network will add to Layer 4, and functions in Layers 5, 6, and 7:
-
-LAYER 7 - Application: Vaults, SAFE Browser, Authenticator, SDNS, (not sure about SFTP, SNTP, SIMAP) (tentatively placed here until verified)
-
-LAYER 6 - Presentation: "Self-Encryption" (tentatively placed here until verified)
-
-LAYER 5 - Session: Session ID and network entry point selection, Self-Authentication (tentative)
-
-LAYER 4 - Routing: SAFE Network PARSEC Consensus, and Kademlia Distributed Hash Table-based Routing, using QUIC/UDP
-
-<hidden == Note on CRUST ==>
-CRUST will be replaced by [[https://en.wikipedia.org/wiki/QUIC|QUIC]] (originally: Quick UDP Internet Connections), which relies on UDP/IP.
-</hidden>
-==== 3.2 SAFE Network Overlay Network ====
-
-The SAFE Network is a virtual overlay network on the Internet, consisting of SAFE Network Nodes, which correspond to an instance of SAFE Network "Vault" software in the real world. Nodes are dynamically organized by the network as Vaults come, gain trust over time, and leave the network.
-
-=== SAFE Network Address Space ===
-
-SAFE Network Nodes exist in the virtual overlay network in a multi-dimensional space called the XOR Space. There is no correlation between geographical distance (or IP address distance) between physical nodes in the real world, and distance between the same nodes in XOR Space. This is the result of how Node IDs are allocated by the SAFE Network. People running a Vault have no control over this process, which is an important security feature.
-
-In XOR space, the distance between Nodes is the XOR of the IDs of the two Nodes, which is read as an unsigned integer. Distance is used for routing in this space and for organizing Nodes into groups, as well as for allocating responsibilities over other entities in SAFE Network XOR space such as "Clients" and units of data ("Chunks"), which also have an ID using which distances to Nodes can be calculated in exactly the same way.
-
-Clients need to connect to Nodes to access the SAFE Network and the appropriate node is decided based on distance. Chunks are managed by groups of Nodes, which are also determined by distance. Chunks of data derive their ID from a hash of the contents of the chunk.
-
-  * Entities in XOR Space: Vault Nodes, Clients, Chunks (other?)
-  * XOR Space addresses length: 256 bits
-
-=== Organization of Objects and Entities ===
-
-The XOR space is dynamically subdivided by a sectioning algorithm into a growing number of dis-joint XOR sub-spaces as the number of Nodes grows. The sub-spaces are called "Sections". Nearby Sections of Nodes watch over each other, and within each Section a hierarchy of Nodes exists based on Age, which determines the level of trust, responsibility of a Node, and the power it has over other Nodes.
-
-Sections run PARSEC consensus algorithms to make decisions, and sign decisions using a group signature so that neighboring Sections can verify them. Decisions (and events) are stored in Data Chains.
-
-  * Algorithms: Sectioning, ... (other TBD)
-  * Section group size and split threshold: 8 (typical number which may be changed in the future)
-  * Consensus threshold: 5 out of 8 (62.5% (of "quorum size"?))
-  * Information held by Sections: Data Chains (of a Section, or a neighboring Section), Routing Table
-
-=== Object and Entity Types ===
-(open for review and contribution; may be incomplete or outdated, as of 2015)
-
-  * Users accessing the network (clients)
-    * Passports (ID linked to multiple sub-IDs)
-      * Anonymous ID (MA-ID) - for anonymous network access
-      * Public IDs (MP-ID) - for public network access
-      * Share IDs (MS-ID) - can be associated with multiple Passports - for access to private shares
-      * Proxy IDs (PM-ID) - for providing own resources
-  * People providing resources to the network: vaults (farmers)
-    * Vaults (instances of a vault node)
-      * ClientManager vault persona - part of a group but independently relaying traffic between client and the correct DataManagers
-      * DataManager vault persona - part of a group but independently forwarding requests to the correct DataHolders
-      * DataHolderManager vault persona - part of a group but independently selecting and observing DataHolders
-      * DataHolder vault persona - part of a group but independently judging validity of requests
-      * (what is the 5th persona, or is the 5th not a persona but the client?)
-==== 3.3 Basic Facilities ====
-(work in progress)
-
-  * Storage of ALL information is in a network wide DHT
-  * ALL nodes are connected to at least four neighbors
-  * ALL inter-node communication is authenticated and encrypted (PKI)
-
-
-==== 3.4 Transport Protocol for P2P ====
-
-=== 3.4.1 IETF QUIC Introduction ===
-
-[[https://en.wikipedia.org/wiki/QUIC|QUIC]] (originally: Quick UDP Internet Connections), is a new Internet transport protocol that intends to replace TCP and TLS. It relies on UDP datagrams over IP. [[https://blog.cloudflare.com/the-road-to-quic/|This]] is a good introduction. Standard [[https://github.com/quicwg/base-drafts|IETF QUIC]] started as Google's QUIC or qQUIC but has significantly diverged and improved.
-
-Multiplexing of multiple streams reduces the number of QUIC connections and handshakes and makes streams less sensitive to congestion and faster. Authentication and encryption are not delegated to a higher layer protocol like TLS resulting in higher speed and better security. A typical handshake takes only one round trip. However, UDP protocols are susceptible to reflection attacks and to avoid this the server can cryptographically confirm if requestor and destination are the same, at the expense of doubling the handshake duration.
-
-There are some early adopter issues such as worse handling of NAT by the typical router designed with only TCP in mind. Second, connections are uniquely identified and tracked by connection ID because ports and even IP address of endpoints may change, which is a feature of QUIC. However, conventional routers may not be able to deliver the UDP packets correctly to the right end-point after such QUIC endpoint change. Finally, performance may suffer compared to TCP due to a general lack of off-loading capabilities of processing to OS or network interface hardware.
-
-=== 3.4.2 MDSF Lib quic-p2p ===
-
-MaidSafe [[https://crates.io/crates/quic-p2p|quic-p2p crate]] ([[https://docs.rs/quic-p2p/0.2.0/quic_p2p//|0.2.0 docs]],[[https://github.com/maidsafe/quic-p2p/projects/2|to do]]) is a library implementing QUIC using [[https://www.cloudflare.com/learning-resources/tls-1-3/|TLS 1.3]].
-
-[[https://github.com/maidsafe/quic-p2p/network|Watch]] the master branch.
-
-== Notes ==
-The library provides 2 connection types in P2P mode: Bi-directional and uni-directional.
-
-Uni-directional type is used to force to prove a node's ability to accept incoming connections and create outgoing connections, which is a necessary requirement to be accepted as a network peer worker node.
-
-The library provides 3 connection types of different identity certification levels:
-  * Agreed CA certificates required
-  * Private CA certificates allowed
-  * No Identity certification required
-
-The most recent 200 endpoints that are not behind NAT, and their certificates are cached and used for re-joining of nodes.
-
-==== 3.5 Routing ====
-
-=== 3.5.1 Kademlia Routing Introduction ===
-
-Kademlia routing (it's just a name) was first proposed in a paper of 2002. A Kademlia route is a shortest sequence of nodes to query to locate a node with a given address, in a network of nodes with distributed routing tables. For a network with n node addresses the number of nodes to query is Order log(n).
-
-Nodes build their individual routing tables from queries they receive during the routing process. Routing tables contain IP addresses and Port numbers for a limited number of certain other nodes. Communication between nodes during and after this process continues to be physically routed using conventional routing.
-
-Nodes know exponentially less about nodes that are farther away, and are experts about nodes in their closest vicinity. Kademlia routes converge to an increasingly common route for each given destination address, as that destination is approached. This exponentially homing-in behavior from originating node towards given destination node is thanks to a special kind of mathematical distance that is used to decide which node to query next. 
-
-Kademlia's creators not only proposed an algorithm but also a "novel" distance metric, the XOR distance. It satisfies all requirements of a proper metric:
-  - Zero distance between two nodes always means that those nodes must be one and the same.
-  - Distances between two nodes are the same no matter which is the origin, and are always positive.
-  - The triangle inequality applies; for any three nodes there always is a distance between one pair that is equal or less than the sum of the distances between the two other possible pairs of nodes.
-
-However, XOR distance is [[https://www.euclideanspace.com/maths/geometry/space/nonEuclid/index.htm|non-Euclidean]], i.e. Euclid’s 5th “parallel” postulate does not hold. This results in some very interesting and hard to grasp properties:
-
-  * Nodes observed from any particular node, all have a unique distance to that observing node.
-
-  * Closeness (e.g. k-nearest nodes) is uni-directional or asymmetric, which means that a node n1 in the set of k-nearest nodes to node n0, does not need to be in the set of k-nearest nodes to n1.
-
-[[https://stackoverflow.com/questions/25751928/kademlia-xor-metric-properties-purposes|This]] includes an answer explaining most of the above by @fraser in other better words. [[https://metaquestions.me/2014/08/01/shortest-distance-between-two-points-is-not-always-a-straight-line/|This]] is a long but useful write-up by @dirvine to help understand things better intuitively and pointing out many peculiarities of XOR distance. Finally there is [[https://medium.com/@maidsafe/structuring-network-with-xor-431e785b5ee7|this]] Medium post by MaidSafe on this topic.
-
-[[https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f|Article]] of 2015 on Kademlia applications.
-
-=== 3.5.2 XOR Distance ===
-
-The following table shows XOR distances in a 3-bit space, or 0..7, to help you grasp XOR distances better. Horizontally the table shows source node number, and the vertical axis is decimal increment to obtain the destination node number modulo 8. For example, distance from node 2 (on top), to node 4 (on skip 1 row), is 6. 
-
-The 2-nearest and 2-farthest distances are indicated to verify k-nearest relations. For example, note that the 2 closest nodes to n0 are {n1, n2}. The nearest two nodes to n1 are {n2, n0}. However, the nearest two nodes to n2 are {n3, n0}, where n1 is notably not included.
-
-^ ^                                  Source Node                 ^^^^^^^
-^ xor  ^   0   ^   1   ^   2   ^   3   ^   4   ^   5   ^   6   ^   7   ^
-^ dist.|  000  |  001  |  010  |  011  |  100  |  101  |  110  |  111  |
-^skip 0|  [1]  |   3   |  [1]  |  -7-  |  [1]  |   3   |  [1]  |  -7-  |
-^skip 1|  [2]  |  [2]  |  -6-  |  -6-  |  [2]  |  [2]  |  -6-  |  -6-  |
-^skip 2|   3   |   5   |  -7-  |   5   |   3   |   5   |  -7-  |   5   |
-^skip 3|   4   |   4   |   4   |   4   |   4   |   4   |   4   |   4   |
-^skip 4|   5   |  -7-  |   5   |   3   |   5   |  -7-  |   5   |   3   |
-^skip 5|  -6-  |  -6-  |  [2]  |  [2]  |  -6-  |  -6-  |  [2]  |  [2]  |
-^skip 6|  -7-  |  [1]  |   3   |  [1]  |  -7-  |  [1]  |   3   |  [1]  |
-
-  * In case of 3 bit address space, it is still possible to place the 8 possible decimal values (modulo 8) in decimal value order on a circle, and consistently read the relative distances off by measuring the distances along the circle.
-  * In case of 4 bit address space, the circle representation works in most cases but the distance may be wrong by 1 unit of relative distance depending on node pair between which distance is measured. (Is there a parametric curve or surface that would still work? How many dimensions would one need?)
-
-[[https://safenetforum.org/t/a-little-example-in-xor/8002|Post]] by @polpolrene. And [[https://safecrossroads.net/podcasts/episode-21-class-iv-reaching-bedrock/|Podcast]] on XOR by @fergish. [[http://www.ericklavoie.com/|Erick's]] page with some related information.
-
-=== 3.5.3 MDSF Lib routing ====
-
-MaidSafe [[https://crates.io/crates/routing|routing crate]] ([[https://docs.rs/routing/0.37.0/routing/|0.37.0 docs]], [[https://github.com/maidsafe/routing/projects?query=is%3Aopen|projects]]) implements "Kademlia-like" implementation of Distributed Hash Tables (DHT).
-
-[[https://github.com/maidsafe/routing/network|Watch]] the fleming branch.
-
-==== 3.6 Gossip Protocol ====
-
-=== 3.6.1 Randomized Rumor Spreading ===
-
-Randomized Rumor Spreading [[http://zoo.cs.yale.edu/classes/cs426/2013/bib/karp00randomized.pdf|Karp et al.]] (FOCS 2000)
-
-=== 3.6.2 MDSF Lib safe_gossip ===
-
-MaidSafe safe_gossip (0.1.0 docs, projects) implements Randomized Rumor Spreading.
-
-
-==== 3.7 Parsec ====
-
-=== 3.7.1 Byzantine Agreement ===
-
-PARSEC stands for Protocol for Asynchronous Reliable Secure and Efficient Consensus and is described in this [[http://docs.maidsafe.net/Whitepapers/pdf/PARSEC.pdf|whitepaper]] by MaidSafe.
-
-=== 3.7.2 MDSF parsec ===
-
-MaidSafe [[https://crates.io/crates/parsec|parsec crate]] ([[https://docs.rs/parsec/0.5.0/parsec/|0.5.0 docs]], projects) is a library for reaching consensus on network events.
-
-[[https://github.com/maidsafe/parsec/network|Watch]] the master branch.
-==== 3.8 Vault ====
-
-=== 3.8.1 MDSF application safe_vault ===
-
-MaidSafe [[https://crates.io/crates/safe_vault|safe_vault crate]] ([[https://docs.rs/safe_vault/0.18.0/safe_vault/|0.18.0 docs]], [[https://github.com/maidsafe/safe_vault/projects|projects]]) implements the SAFE Network node capable of data storage, publishing, sharing, (computation, and Safecoin transfers.)
-
-[[https://github.com/maidsafe/safe_vault/network|Watch]] the master branch.
-
-== Notes ==
-
-  * Entry: src/bin/safe_vault.rs.
-  * Configuration: src/config_handler.rs
-  * Vault instance: src/vault.rs - State(Elder/Adult);
 
 ===== 4. Mechanisms =====
+
 <lead>In this section we will try to separate out and have a closer look at the mechanisms that will keep the SAFE Network working as intended. Each of these need to be checked for possible weaknesses that could lead to disastrous malicious attacks.
 </lead>
 
+[[mechanisms|=> Mechanisms TOP]]
 
-==== 4.1 Security Aspects ====
-(work in progress - brainstorming phase. Note that it may not be meaningful to consider each of the items below prematurely, e.g. in the context of an alpha release.)
+  * [[mechanisms#4.1 Security Aspects]]
+  * [[mechanisms#4.2 Mechanisms to Ensure Security]]
+  * [[mechanisms#4.3 Other Operating Mechanisms]]
+  * [[mechanisms#4.4 Forum topics on studies]]
 
-=== Data Integrity Guarantee ===
-
-=== Node Integrity Guarantee ===
-
-=== Protocol Integrity Guarantee ===
-
-=== Data Availability Guarantee ===
-
-=== Node Availability Guarantee ===
-
-=== Data Confidentiality Guarantee ===
-
-=== Node Anonymity Guarantee ===
-
-=== User Anonymity Guarantee ===
-
-=== User Identity and Access control Management IAM Security Guarantee ===
-
-=== Access Console and App Security Guarantee ===
-
-  * Hacking a SAFE App [[https://safenetforum.org/t/what-methods-are-there-to-hack-a-safe-site-or-app/29038/14|discussion]]
-
-  * [[https://safenetforum.org/t/open-security-issues/29092/1|Brain storming thread]]
-
-=== Unknowns due to lack of documentation ===
-(this section is for listing potential gaps in documentation or changes since last review.)
-
-==== 4.2 Mechanisms to Ensure Security ====
-(work in progress)
-
-The following is based on a 2015 peer-reviewed paper. It may not reflect the current code, and the implementation at time of launch may differ from this too. However, it does provides a clear reference for discussion.
-
-Distance in XOR space between entities plays a key role, see discussion elsewhere. Note that:
-  * a client must be closest CM-Ps,
-  * a data chunk must be closest to DH-Ps, DHM-Ps, and DM-Ps.
-
-== Maintaining Security of ClientManager vault Personas (CM-P) ==
-  - Four CM-Ps per Client
-  - Roles to be guaranteed (Primarily: maintain Client IP address anonymity)
-    - Identify 4 DM-Ps closest to a given key-value pair (data chunk)
-    - Forward request to the 4 DM-Ps
-    - Anonymize Client by protecting Client IP address information
-
-== Maintaining Security of DataManager vault Personas (DM-P) ==
-  - One DM-P per 4 DHM-Ps
-  - Roles to be guaranteed (Primary: data/DH-P availability (churn handling) andintegrity management)
-    - Validate request received from CM-Ps
-      - Check if CM-Ps are the nearest to the Client
-    - Select and maintain 4 random DH-Ps
-    - Determine nearest 4 DHM-Ps to each DH-P
-    - Maintain minimum level of data replication
-
-== Maintaining Security of DataHolderManager vault Personas (DHM-P) ==
-  - One DHM-P per DH-P
-  - Roles to be guaranteed (Primarily: monitoring DH-P availability and integrity, and maintain DH-P IP address anonymity)
-    - Validate requests received from DataManagers
-    - Observe their DH-P and report issues
-      - Maintain and check continued connectivity quickly
-      - Periodically perform PoR check of their DH-P
-    - Anonymize DH-P by protecting their IP address information
-
-== Maintaining Security of DataHolder vault Personas (DH-P) ==
-  - One DH-P per unique data chunk
-  - Roles to be guaranteed (Primarily: proof of resource)
-    - Validate requests received from DataHolderManagers
-      - Check if DHM-Ps are actually the nearest nodes to DH-P
-      - Confirm agreement among DHM-Ps about the request
-    - Store/retrieve key-value pairs (data chunk) as requested
-    - Provide Proof-of-Resource (PoR) to DataManagers (is this correct? or is it DataHolderManagers?)
-
-(documentation of current and future plan would be nice)
-
-==== 4.3 Other Operating Mechanisms ====
-
-=== Self-configuration process ===
-
-SAFE Network will create a routed overlay network (OSI Layer 4) on top of an Internet of interconnected computing devices. All aspects from the overlay routing upwards should be de-centralized, consensus-based, and completely autonomous.
-
-=== Self-Authentication ===
-
-
-=== Self-Encryption ===
-
-
-=== Maintaining the rules ===
-
-== Decentralized Consensus ==
-
-All transactions or decisions are consented according to the rules of the network and recorded in a transaction ledger that acts as the ground truth to base future transactions on.
-
-MaidSafe claims a world's first decentralized, asynchronous, Byzantine Fault Tolerant consensus mechanism that works in permission-less networks and that is open source.
-
-[[https://medium.com/safenetwork/parsec-a-paradigm-shift-for-asynchronous-and-permissionless-consensus-e312d721f9d8|PARSEC]] [[https://github.com/maidsafe/parsec|GitHub parsec repo]]
-
-=== Incentive system to provide storage space ===
-
-[[https://github.com/maidsafe/rfcs/blob/master/text/0057-safecoin-revised/0057-safecoin-revised.md|RFC-0057]] Safecoin Revised
-
-[[https://safenetforum.org/t/exploration-of-a-live-network-farming-rewards/29043|Farming Reward System Proposal]]
-
-
-==== 4.4 Forum topics on studies ====
-
-  * [[https://safenetforum.org/t/open-security-issues/29092|Security challenges]]
-
-  * [[https://safenetforum.org/t/exploration-of-a-live-network-farming-rewards/29043|Exploration and simulation of farming rewards]]
-
-  * [[https://safenetforum.org/t/chunk-distribution-within-sections/29187|Chunk distribution within Sections]]
-
-  * [[https://safenetforum.org/t/step-by-step-the-road-to-fleming-1-the-big-questions-safe-fleming-and-beyond/27560|Road to Fleming Big Questions]]
-
-<hidden == Open Items ==>
-
-  * How to tweak and maintain code?
-  * How to reboot SAFE Network to fix issues requiring it without losing data?
-  * Decentralized Applications   
-</hidden>
 ===== 5. Economics =====
 <lead>One special mechanism regulating the network involves SafeCoin, a medium of exchange within the network, but with a reach well beyond it. This section is intended to consider this from an Economist's viewpoint.
 </lead>
 
-SAFE Network will have a native cryptocurrency called SafeCoin, providing incentives to people to support the network with resources and applications, and charging network users for certain kinds of usage.
+[[economics|=> Economics TOP]]
+  * [[economics#5.1 MAID pre-launch]]
+  * [[economics#5.2 MAID and SafeCoin at launch]]
+  * [[economics#5.3 SafeCoin]]
 
-To raise funding for the project a token called MAID was created. MAID will be exchanged for SafeCoin at the launch of the SAFE Network.
-==== 5.1 MAID pre-launch ====
-(MAID creation to fund development)
+===== 6. Handling MAID and SafeCoin =====
 
-
-
-==== 5.2 MAID and SafeCoin at launch ====
-(scenarios impacting the value of MAID at conversion to SafeCoin)
-
-At this time it is expected that one MAID token will be exchanged for son SafeCoin.
-
-Source: [[https://safenetforum.org/t/safecoin-supply/13477|this]], [[https://github.com/maidsafe/Whitepapers/blob/master/Project-Safe.md|Project-Safe whitepaper April 2014]](outdated??)
-
-  * Pre-launch supply (MAID): 452 M (452,552,412 units)
-  * Investor allocation: 226 M
-  * Maximum supply: 678 M
-
-5% of total supply [of 678M??] goes to early investor/family
-
-5% of total supply [of 678M??] goes to dev team
-==== 5.3 SafeCoin ====
-(money supply, economic output, inflation)
-
-  * SafeCoin will be almost infinitely divisible 
-
-=== 5.3.1 SafeCoin supply ===
-(following needs confirmation.) [[https://safenetforum.org/t/safecoin-supply/13477|4/2017]], [[https://safenetforum.org/t/safecoin-supply/13477/11|authoritative April 2017]]
-
-  * Pre-launch supply (MAID): 452 M (452,552,412 units) - slightly* over 10% (10.5%) of total supply, available at day 1
-  * Early investor allocation: 215 M - (about?) 5% of total supply available at day 1
-  * Maximum supply: 4.3B (4,294,967,295; 2^32-1)
-
-*) Slighyly more by a few million due to error at MAID sale. [[https://safenetforum.org/t/maidsafecoin-maid-price-trading-topic/9923/6436|@neo]]
-
-=== 5.3.2 SafeCoin creation ===
-(following needs confirmation.) 
-
-[[https://safenetforum.org/t/safecoin-supply/13477|4/2017]], [[https://safenetforum.org/t/safecoin-supply/13477/11|authoritative April 2017]],[[https://safenetforum.org/t/safecoin-supply/13477/14|@neo]]
-
-SafeCoin goes to
-  * Farmers - Depending on supply of available but unused storage; the (instantaneous) farming rate.
-  * Network maintenance - Every GET on average pays core devs 5% of farming rate
-  * App developers - Every GET due to an App pays 10% of farming rate
-  * PtP (Pay the Provider - [[https://safenetforum.org/t/poll-should-maidsafe-implement-ptp-pay-the-producer/5805|under discussion]]) - Every GET for specific data could pay 10% of farming rate
-
-Farming rate is explained in [[https://github.com/maidsafe/rfcs/blob/47e3e688d6eb0709fbeee742f2865b50233dc98a/text/0012-safecoin-implementation/0012-safecoin-implementation.md|RFC-0012]].
-
-=== 5.3.3 SafeCoin destruction ===
-[[https://safenetforum.org/t/safecoin-supply/13477/13|@polpolrene]]
-
-SafeCoins are destroyed/consumed by the network at:
-  * Account creation (address/ID)
-  * Domain name purchase
-  * PUT of data (immutable data will be much less expensive than mutable data)
-
-=== What determines the exchange value of SafeCoin ===
-
-Since SAFE Coin will regulate availability of (secure and perpetual decentralized) storage, it may be expected to be as stable as that commodity. However, speculation and application for predominantly other uses might change the situation significantly.
-
-===== 6. MAID and SafeCoin for Holders and Traders =====
 <lead> Dealing with MAID and SAFE Network tokens is much more complicated than dealing with cash. This should be a guide to make things easier.
 </lead>
 
-=== What is MAID ===
+[[safecoin|=> Handling MAID and SafeCoin TOP]]
+  * [[safecoin#6.1 What is MAID]]
+  * [[safecoin#6.2 What is SafeCoin]]
+  * [[safecoin#6.3 Exchanges trading MAID]]
+  * [[safecoin#6.4 Storing MAID offline]]
 
-MAID is a token that exists in the OMNI layer on the Bitcoin Blockchain.
+[[cryptocharts|=> Crypto Charts Page]]
 
-=== What is SafeCoin ===
 
-SafeCoin will be the native medium of exchange within SAFE Network, and is supposed to replace MAID at the time of launch of the network.
-
-Warning: SafeCoin is NOT [[https://safecoin.org/|this]].
-
-=== Exchanges trading MAID ===
-
-As a general rule, do not leave large amount of MAID (or any other coins) on an exchange.
-
-  * [[https://poloniex.com/|Poloniex]]: MAID/BTC, MAID/XMR, ....
-
-  * [[http://international.bittrex.com|Bittrex International]]: MAID/BTC
-     *[[https://mobile.twitter.com/BittrexIntl/status/1131613052250599424?s=20|Announcement]] on May 23, 2019 12:29pm
-     *[[https://safenetforum.org/t/maidsafecoin-maid-price-trading-topic/9923/6799|MaidSafe confirmation]]
-     *This exchange is not accessible to US citizens (see [[https://bittrex.zendesk.com/hc/en-us/articles/360001426066-FAQs-Bittrex-International-Trading-Platform-|FAQ]])
-
-  * [[https://dex.openledger.io/|OpenLedger DEX]] low volume
-
-  * [[https://hitbtc.com/exchange/MAID-to-BTC|HitBTC]]: MAID/BTC, MAID/ETH, MAID/USDT. Consider the high level of complaints on social media about losing access to funds. MaidSafe does seem to have some leverage over HitBTC and could help get issues resolved.
-
-  * [[https://safenetforum.org/t/cryptopia-liquidation/28767/11|Nova might replace Cryptopia]]. [[https://novaexchange.com/|Nova]]
-
-MAIDSafe [[https://safenetforum.org/t/removal-of-maidsafe-assets-from-bitker/29191|decided]] to remove MAID from [[http://www.bitker.com|Bitker]] in July 2019.
-
-=== Storing MAID offline ===
-
-Storing large amounts on exchanges is not a good idea. However, before you create a paper BTC wallet and send MAID to it, read through the steps needed to send the MAID back from the paper wallet to an exchange and decide if is worth the trouble and the risks of making mistakes and of reduced liquidity.
-
-[[https://safenetforum.org/t/how-to-store-maidsafe/3644/89|Feb 2018 post]]
 ===== 7. Hardware Guide for Farmers =====
 (what do you need to join.)
 

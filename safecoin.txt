@@ -1,0 +1,43 @@
+===== 6. Handling MAID and SafeCoin =====
+
+<lead> Dealing with MAID and SAFE Network tokens is much more complicated than dealing with cash. This should be a guide to make things easier.
+</lead>
+
+[[start#6. Handling MAID and SafeCoin|<= Back to FRONT]]
+
+[[cryptocharts|=> Crypto Charts Page]]
+
+==== 6.1 What is MAID ====
+
+MAID is a token that exists in the OMNI layer on the Bitcoin Blockchain.
+
+==== 6.2 What is SafeCoin ====
+
+SafeCoin will be the native medium of exchange within SAFE Network, and is supposed to replace MAID at the time of launch of the network.
+
+Warning: SafeCoin is NOT [[https://safecoin.org/|this]].
+
+==== 6.3 Exchanges trading MAID ====
+
+As a general rule, do not leave large amount of MAID (or any other coins) on an exchange.
+
+  * [[https://poloniex.com/|Poloniex]]: MAID/BTC, MAID/XMR, ....
+
+  * [[http://international.bittrex.com|Bittrex International]]: MAID/BTC
+     *[[https://mobile.twitter.com/BittrexIntl/status/1131613052250599424?s=20|Announcement]] on May 23, 2019 12:29pm
+     *[[https://safenetforum.org/t/maidsafecoin-maid-price-trading-topic/9923/6799|MaidSafe confirmation]]
+     *This exchange is not accessible to US citizens (see [[https://bittrex.zendesk.com/hc/en-us/articles/360001426066-FAQs-Bittrex-International-Trading-Platform-|FAQ]])
+
+  * [[https://dex.openledger.io/|OpenLedger DEX]] low volume
+
+  * [[https://hitbtc.com/exchange/MAID-to-BTC|HitBTC]]: MAID/BTC, MAID/ETH, MAID/USDT. Consider the high level of complaints on social media about losing access to funds. MaidSafe does seem to have some leverage over HitBTC and could help get issues resolved.
+
+  * [[https://safenetforum.org/t/cryptopia-liquidation/28767/11|Nova might replace Cryptopia]]. [[https://novaexchange.com/|Nova]]
+
+MAIDSafe [[https://safenetforum.org/t/removal-of-maidsafe-assets-from-bitker/29191|decided]] to remove MAID from [[http://www.bitker.com|Bitker]] in July 2019.
+
+==== 6.4 Storing MAID offline ====
+
+Storing large amounts on exchanges is not a good idea. However, before you create a paper BTC wallet and send MAID to it, read through the steps needed to send the MAID back from the paper wallet to an exchange and decide if is worth the trouble and the risks of making mistakes and of reduced liquidity.
+
+[[https://safenetforum.org/t/how-to-store-maidsafe/3644/89|Feb 2018 post]]

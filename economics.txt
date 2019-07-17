@@ -1,0 +1,65 @@
+===== 5. Economics =====
+<lead>One special mechanism regulating the network involves SafeCoin, a medium of exchange within the network, but with a reach well beyond it. This section is intended to consider this from an Economist's viewpoint.
+</lead>
+
+[[start#5. Economics|<= Back to FRONT]]
+
+SAFE Network will have a native cryptocurrency called SafeCoin, providing incentives to people to support the network with resources and applications, and charging network users for certain kinds of usage.
+
+To raise funding for the project a token called MAID was created. MAID will be exchanged for SafeCoin at the launch of the SAFE Network.
+
+==== 5.1 MAID pre-launch ====
+(MAID creation to fund development)
+
+==== 5.2 MAID and SafeCoin at launch ====
+(scenarios impacting the value of MAID at conversion to SafeCoin)
+
+At this time it is expected that one MAID token will be exchanged for son SafeCoin.
+
+Source: [[https://safenetforum.org/t/safecoin-supply/13477|this]], [[https://github.com/maidsafe/Whitepapers/blob/master/Project-Safe.md|Project-Safe whitepaper April 2014]](outdated??)
+
+  * Pre-launch supply (MAID): 452 M (452,552,412 units)
+  * Investor allocation: 226 M
+  * Maximum supply: 678 M
+
+5% of total supply [of 678M??] goes to early investor/family
+
+5% of total supply [of 678M??] goes to dev team
+==== 5.3 SafeCoin ====
+(money supply, economic output, inflation)
+
+  * SafeCoin will be almost infinitely divisible 
+
+=== 5.3.1 SafeCoin supply ===
+(following needs confirmation.) [[https://safenetforum.org/t/safecoin-supply/13477|4/2017]], [[https://safenetforum.org/t/safecoin-supply/13477/11|authoritative April 2017]]
+
+  * Pre-launch supply (MAID): 452 M (452,552,412 units) - slightly* over 10% (10.5%) of total supply, available at day 1
+  * Early investor allocation: 215 M - (about?) 5% of total supply available at day 1
+  * Maximum supply: 4.3B (4,294,967,295; 2^32-1)
+
+*) Slighyly more by a few million due to error at MAID sale. [[https://safenetforum.org/t/maidsafecoin-maid-price-trading-topic/9923/6436|@neo]]
+
+=== 5.3.2 SafeCoin creation ===
+(following needs confirmation.) 
+
+[[https://safenetforum.org/t/safecoin-supply/13477|4/2017]], [[https://safenetforum.org/t/safecoin-supply/13477/11|authoritative April 2017]],[[https://safenetforum.org/t/safecoin-supply/13477/14|@neo]]
+
+SafeCoin goes to
+  * Farmers - Depending on supply of available but unused storage; the (instantaneous) farming rate.
+  * Network maintenance - Every GET on average pays core devs 5% of farming rate
+  * App developers - Every GET due to an App pays 10% of farming rate
+  * PtP (Pay the Provider - [[https://safenetforum.org/t/poll-should-maidsafe-implement-ptp-pay-the-producer/5805|under discussion]]) - Every GET for specific data could pay 10% of farming rate
+
+Farming rate is explained in [[https://github.com/maidsafe/rfcs/blob/47e3e688d6eb0709fbeee742f2865b50233dc98a/text/0012-safecoin-implementation/0012-safecoin-implementation.md|RFC-0012]].
+
+=== 5.3.3 SafeCoin destruction ===
+[[https://safenetforum.org/t/safecoin-supply/13477/13|@polpolrene]]
+
+SafeCoins are destroyed/consumed by the network at:
+  * Account creation (address/ID)
+  * Domain name purchase
+  * PUT of data (immutable data will be much less expensive than mutable data)
+
+=== What determines the exchange value of SafeCoin ===
+
+Since SAFE Coin will regulate availability of (secure and perpetual decentralized) storage, it may be expected to be as stable as that commodity. However, speculation and application for predominantly other uses might change the situation significantly.

@@ -1,0 +1,111 @@
+===== 2. Goals of the SAFE Network =====
+
+<lead>Cutting through marketing and hype, we are interested in which of the many good things SAFE Network will do for it's users will matter most to you. Understand what SAFE Network is really about, and why it's worth the wait.
+</lead>
+
+[[start#2. Goals of the SAFE Network|<= Back to FRONT]]
+
+Furthermore, understanding which features are at the core, and which are higher level or add-ons will help to focus development and create a stronger foundation made to last. The separation between core goals and non-core goals is unofficial, but an attempt to rank the importance of features.
+
+==== 2.1 SAFE Network Core Goals (unofficial) ====
+
+The primary goal of SAFE Network is becoming completely autonomous; impossible to change, break or stop by any single entity or group of actors.
+
+The first iteration of the SAFE Network will achieve the following core goals [[https://safenetforum.org/t/core-goals-of-the-first-iteration-of-safe-network-at-launch/28820|(discussion)]]:
+
+  - de-centralize ownership of certain network functions so that they cannot be changed or disabled by any group of actors(*3)
+    - function: identity proofing
+    - function: access control
+    - function: communication
+    - function: information storage
+  - protect all information perpetually(*1) from unpermitted access, interception, tampering or deletion
+  - preserve stored information, and end-to-end communications, and global access to these perpetually(*1) and for free(*2)
+  - provide a digital medium of exchange
+
+  * (*1) The meaning of perpetual is not clear yet. 30 years?
+  * (*2) Free, except for the cost of broadband access and the user terminal.
+  * (*3) That the threshold is to making changes is unclear yet. A majority?
+
+A future iteration is expected to achieve the following additional goals
+    - function: computation
+
+Trustless network, autonomous network, and de-centralized network may be very similar ways to express the same goal.
+
+<hidden == Open Questions ==>
+(List open questions here, along with links to forum discussion, until we find some answers.)
+
+What is perpetual?
+What is the required size of group of actors to allow changes to the mechanisms of SAFE Network that guarantee the core goals?
+
+</hidden>
+==== 2.2 SAFE Network Non-Core Goals (unofficial) ====
+
+Certain goals not included in the previous section, but on the roadmap, could be considered non-essential, or merely good-to-have. This is a list of such goals, and is subject to change:
+
+=== Independent but important add-ons ===
+  - multiple identities
+  - de-centralized name resolution
+  - CLI interface and API
+
+=== Convenient and promoting adoption ===
+  - SAFE Browser
+  - Language bindings
+
+=== Nice to have but not as important ===
+  - RDF Format
+
+
+==== 2.3 Benefits ====
+
+Benefits will be the results of SAFE Network achieving its goals.
+Many individual benefits may not be unique to SAFE Network, but the combination of a large number of them might be.
+
+=== Relevant to the user ===
+  - No censorship
+  - Perfect privacy
+  - Full control over own data
+  - No loss of data or access issues ever
+  - No loss of ability to communicate ever
+  - Always on; 100% availability
+
+== Cryptocurrency benefits relevant to users ==
+  - No transaction fees
+  - Anonymous and untraceable transactions
+
+== Open Questions ==
+
+Does permanent availability of published data not contradict having full control over own data?
+
+=== Relevant to the developer ===
+
+  - No need to implement and maintain reliable data storage
+  - No need to implement and maintain basic security measures
+  - No need to implement authentication
+  - Get paid for development of software
+  - Inherently scaling storage infrastructure
+
+=== Relevant to technical progress ===
+
+  - Scalable immutable transaction ledger
+  - Scalable cryptocurrency (without a block chain)
+
+=== Relevant to our planet ===
+  - Consensus at low power consumption
+  - Secure cryptocurrency at low power cost (in contrast to PoW)
+
+
+==== 2.4 Roadmap and Beyond ====
+
+[[https://safenetwork.tech/roadmap/|Official Project Roadmap]] and a summary:
+
+  * Alpha 2 - Live! - Interact with a network of MaidSafe vaults using SAFEBrowser - PUT limits apply, minimum forum membership level required. Data will not be carried forward to next releases.
+    * Self-Authentication - logging into network without centralized permissioning
+    * Self-Encryption - splitting files into chunks, hashing, encryption
+    * Disjoint Sections - splitting (and combining/) sections based on network size
+    * Message Relay - early iteration - messaging capability without signature verification
+
+  * SAFE Fleming - Let's [[https://safenetforum.org/t/when-do-you-think-fleming-will-be-released/28570|guess]] August 2019 - PARSEC, Node Ageing, Secure Messaging, and [[https://safenetforum.org/t/maidsafecoin-maid-price-trading-topic/9923/7025|potentially (!)]] vaults at home and test SafeCoin.
+
+  * SAFE Maxwell - Let's [[https://safenetforum.org/t/how-soon-after-fleming-do-you-think-maxwell-will-be-released/28576|guess]] May 2020 - The scope is TBD but could include: test SafeCoin, wallet, vaults at home, farming, identity management, spam handling.
+
+[[https://github.com/maidsafe/rfcs/projects/1|RFC Project Board Github]]

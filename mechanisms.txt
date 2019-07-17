@@ -1,0 +1,126 @@
+===== 4. Mechanisms =====
+<lead>In this section we will try to separate out and have a closer look at the mechanisms that will keep the SAFE Network working as intended. Each of these need to be checked for possible weaknesses that could lead to disastrous malicious attacks.
+</lead>
+
+[[start#4. Mechniasm|<= Back to FRONT]]
+
+==== 4.1 Security Aspects ====
+(work in progress - brainstorming phase. Note that it may not be meaningful to consider each of the items below prematurely, e.g. in the context of an alpha release.)
+
+=== Data Integrity Guarantee ===
+
+=== Node Integrity Guarantee ===
+
+=== Protocol Integrity Guarantee ===
+
+=== Data Availability Guarantee ===
+
+=== Node Availability Guarantee ===
+
+=== Data Confidentiality Guarantee ===
+
+=== Node Anonymity Guarantee ===
+
+=== User Anonymity Guarantee ===
+
+=== User Identity and Access control Management IAM Security Guarantee ===
+
+=== Access Console and App Security Guarantee ===
+
+  * Hacking a SAFE App [[https://safenetforum.org/t/what-methods-are-there-to-hack-a-safe-site-or-app/29038/14|discussion]]
+
+  * [[https://safenetforum.org/t/open-security-issues/29092/1|Brain storming thread]]
+
+=== Unknowns due to lack of documentation ===
+(this section is for listing potential gaps in documentation or changes since last review.)
+
+==== 4.2 Mechanisms to Ensure Security ====
+(work in progress)
+
+The following is based on a 2015 peer-reviewed paper. It may not reflect the current code, and the implementation at time of launch may differ from this too. However, it does provides a clear reference for discussion.
+
+Distance in XOR space between entities plays a key role, see discussion elsewhere. Note that:
+  * a client must be closest CM-Ps,
+  * a data chunk must be closest to DH-Ps, DHM-Ps, and DM-Ps.
+
+== Maintaining Security of ClientManager vault Personas (CM-P) ==
+  - Four CM-Ps per Client
+  - Roles to be guaranteed (Primarily: maintain Client IP address anonymity)
+    - Identify 4 DM-Ps closest to a given key-value pair (data chunk)
+    - Forward request to the 4 DM-Ps
+    - Anonymize Client by protecting Client IP address information
+
+== Maintaining Security of DataManager vault Personas (DM-P) ==
+  - One DM-P per 4 DHM-Ps
+  - Roles to be guaranteed (Primary: data/DH-P availability (churn handling) andintegrity management)
+    - Validate request received from CM-Ps
+      - Check if CM-Ps are the nearest to the Client
+    - Select and maintain 4 random DH-Ps
+    - Determine nearest 4 DHM-Ps to each DH-P
+    - Maintain minimum level of data replication
+
+== Maintaining Security of DataHolderManager vault Personas (DHM-P) ==
+  - One DHM-P per DH-P
+  - Roles to be guaranteed (Primarily: monitoring DH-P availability and integrity, and maintain DH-P IP address anonymity)
+    - Validate requests received from DataManagers
+    - Observe their DH-P and report issues
+      - Maintain and check continued connectivity quickly
+      - Periodically perform PoR check of their DH-P
+    - Anonymize DH-P by protecting their IP address information
+
+== Maintaining Security of DataHolder vault Personas (DH-P) ==
+  - One DH-P per unique data chunk
+  - Roles to be guaranteed (Primarily: proof of resource)
+    - Validate requests received from DataHolderManagers
+      - Check if DHM-Ps are actually the nearest nodes to DH-P
+      - Confirm agreement among DHM-Ps about the request
+    - Store/retrieve key-value pairs (data chunk) as requested
+    - Provide Proof-of-Resource (PoR) to DataManagers (is this correct? or is it DataHolderManagers?)
+
+(documentation of current and future plan would be nice)
+
+==== 4.3 Other Operating Mechanisms ====
+
+=== Self-configuration process ===
+
+SAFE Network will create a routed overlay network (OSI Layer 4) on top of an Internet of interconnected computing devices. All aspects from the overlay routing upwards should be de-centralized, consensus-based, and completely autonomous.
+
+=== Self-Authentication ===
+
+
+=== Self-Encryption ===
+
+
+=== Maintaining the rules ===
+
+== Decentralized Consensus ==
+
+All transactions or decisions are consented according to the rules of the network and recorded in a transaction ledger that acts as the ground truth to base future transactions on.
+
+MaidSafe claims a world's first decentralized, asynchronous, Byzantine Fault Tolerant consensus mechanism that works in permission-less networks and that is open source.
+
+[[https://medium.com/safenetwork/parsec-a-paradigm-shift-for-asynchronous-and-permissionless-consensus-e312d721f9d8|PARSEC]] [[https://github.com/maidsafe/parsec|GitHub parsec repo]]
+
+=== Incentive system to provide storage space ===
+
+[[https://github.com/maidsafe/rfcs/blob/master/text/0057-safecoin-revised/0057-safecoin-revised.md|RFC-0057]] Safecoin Revised
+
+[[https://safenetforum.org/t/exploration-of-a-live-network-farming-rewards/29043|Farming Reward System Proposal]]
+
+
+==== 4.4 Forum topics on studies ====
+
+  * [[https://safenetforum.org/t/open-security-issues/29092|Security challenges]]
+
+  * [[https://safenetforum.org/t/exploration-of-a-live-network-farming-rewards/29043|Exploration and simulation of farming rewards]]
+
+  * [[https://safenetforum.org/t/chunk-distribution-within-sections/29187|Chunk distribution within Sections]]
+
+  * [[https://safenetforum.org/t/step-by-step-the-road-to-fleming-1-the-big-questions-safe-fleming-and-beyond/27560|Road to Fleming Big Questions]]
+
+<hidden == Open Items ==>
+
+  * How to tweak and maintain code?
+  * How to reboot SAFE Network to fix issues requiring it without losing data?
+  * Decentralized Applications   
+</hidden>

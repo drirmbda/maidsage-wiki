@@ -1,0 +1,14 @@
+===== Crypto Charts Page =====
+[[start#6. MAID and SafeCoin for Holders and Traders|<= FRONT]]
+
+Charts courtesy [[https://coinlib.io/|coinlib.io]]
+
+----
+
+{{url>https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=859&pref_coin_id=1505 100%,500 noscroll noborder}}
+
+{{url>https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=1487&pref_coin_id=1505 100%,500 noscroll noborder}}
+
+{{url>https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=145&pref_coin_id=1505 100%,500 noscroll noborder}}
+
+{{url>https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=6&pref_coin_id=1505 100%,500 noscroll noborder}}
