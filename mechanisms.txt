@@ -111,7 +111,7 @@ MaidSafe claims a world's first decentralized, asynchronous, Byzantine Fault Tol
 ==== 4.4 Forum topics on studies ====
 
   * [[https://safenetforum.org/t/open-security-issues/29092|Security challenges]]
-
+    * [[https://safenetforum.org/t/parsec-discussion-about-liveness-proof/26351|Parsec security]]
   * [[https://safenetforum.org/t/exploration-of-a-live-network-farming-rewards/29043|Exploration and simulation of farming rewards]]
 
   * [[https://safenetforum.org/t/chunk-distribution-within-sections/29187|Chunk distribution within Sections]]
