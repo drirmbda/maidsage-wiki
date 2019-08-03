@@ -64,6 +64,21 @@ https://forum.safedev.org/t/safe-drive-help-with-testing/2019|SAFEDrive]]
 
 ===== D. Corporate Organization =====
 
+  * [[https://beta.companieshouse.gov.uk/company/SC297540|MaidSafe.Net (SC297540) filing records]]
+
+Incorporated: 22 February 2006
+
+Registered office address: 6 Forbes Drive, Heathfield Industrial Estate, Ayr, South Ayrshire, Scotland, KA8 9FG
+
+[[https://beta.companieshouse.gov.uk/company/SC297540/filing-history/MzE0NDY4OTY3MmFkaXF6a2N4/document?format=pdf&download=0|annual return and shareholders report of March 2016]]
+
+  * [[https://www.oscr.org.uk/about-charities/search-the-register/charity-details?number=SC042032|SafeNetwork Foundation (SC042032) a charity]], holds less than 50% of the shares of MaidSafe.Net.
+
+Registered Charity from: 20 January 2011
+
+Registered office address: 6 Forbes Drive, Heathfield Industrial Estate, Ayr, South Ayrshire, Scotland, KA8 9FG
+
+[[https://www.oscr.org.uk/AccountsDocument/Download/191910|financials end 2018]]
 ===== E. Patents and Trademarks =====
 Relevant forum posts: [[https://safenetforum.org/t/are-there-any-published-computer-science-mathematics-research-papers-about-how-maidsafe-works/22360|March 2018]], [[https://safenetforum.org/t/safe-network-dev-update-june-20-2019/29010/81|June 2019]]
 
