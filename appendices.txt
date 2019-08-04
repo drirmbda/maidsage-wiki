@@ -192,6 +192,8 @@ Relevant forum posts: [[https://safenetforum.org/t/are-there-any-published-compu
 
 [[https://safecrossroads.net/|SAFE Crossroads]] Intelligent and simple.
 
+[[https://safe-network-explained.github.io/architecture|Safe Network explained]]
+
 === Fundamental Principles ===
 
 [[https://medium.com/safenetwork/founding-fundamentals-part-1-4b2d096e1a1b|Fundamentals 1/2]]
