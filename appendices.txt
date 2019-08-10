@@ -170,6 +170,7 @@ Relevant forum posts: [[https://safenetforum.org/t/are-there-any-published-compu
   * BitTorrent (P2P file sharing)
   * Bitcoin (decentralized trust and digital ledger) 2009
 
+  * [[https://zeronet.io|ZeroNet - Uncensorable website using Bitcoin and BitTorrent]]
 ===== G. Lists of Resources =====
 
 ==== Repositories ====
@@ -247,3 +248,7 @@ A list of measures against which to measure "perpetuity"
 === Equitable Access ===
 
 === Misuse of SafeNet ===
+
+=== Societal Implications ===
+
+[[https://safenetforum.org/t/recent-questions-about-safes-societal-implications/7146|Discussion]]

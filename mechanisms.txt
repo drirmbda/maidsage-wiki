@@ -107,7 +107,7 @@ MaidSafe claims a world's first decentralized, asynchronous, Byzantine Fault Tol
 
 [[https://safenetforum.org/t/exploration-of-a-live-network-farming-rewards/29043|Farming Reward System Proposal]]
 
-
+[[https://safenetforum.org/t/perpetual-auction-currency/29488|Perpetual Auction Proposal]]
 ==== 4.4 Forum topics on studies ====
 
   * [[https://safenetforum.org/t/open-security-issues/29092|Security challenges]]
