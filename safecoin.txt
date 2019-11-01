@@ -9,11 +9,22 @@
 
 ==== 6.1 What is MAID ====
 
-MAID is a token that exists in the OMNI layer on the Bitcoin Blockchain.
+MAID is a "property" or token that exists in the [[https://www.omnilayer.org/|OMNI layer]] on top of the Bitcoin Blockchain. MAID has token ID #3 of [[https://www.omniexplorer.info/properties/production|750+]] on following the OMNI token and Test OMNI token.
 
+MAID can be moved between bitcoin addresses, using BTC to pay for such transactions on the BTC blockchain.
+
+The OMNI layer is open-source and fully de-centralized.
+  * OMNI [[https://www.omniwallet.org/|Wallet]] on-line web-wallet
+  * OMNI [[https://www.omnilayer.org/download.html|Core]] node with wallet (MaxOS X, Windows, Linux)
+  * OMNI [[https://omniexplorer.info/|Explorer]] to view transactions.
+
+Properties
+  * MAID //on the OMNI layer// is not divisible so that transfers should be whole numbers.
 ==== 6.2 What is SafeCoin ====
 
-SafeCoin will be the native medium of exchange within SAFE Network, and is supposed to replace MAID at the time of launch of the network.
+SafeCoin will be the native medium of exchange within SAFE Network.
+
+At the time of the launch of the SAFE Network, MAID OMNI tokens will be converted one-for-one for SafeCoin.
 
 Warning: SafeCoin is NOT [[https://safecoin.org/|this]].
 
@@ -21,23 +32,63 @@ Warning: SafeCoin is NOT [[https://safecoin.org/|this]].
 
 As a general rule, do not leave large amount of MAID (or any other coins) on an exchange.
 
-  * [[https://poloniex.com/|Poloniex]]: MAID/BTC, MAID/XMR, ....
+Exchanges listing MAID
+
+  * [[https://poloniex.com/|Poloniex]]: MAID/BTC
+     * This exchange is not available to US citizens starting 11/1/'19
+
+  * [[https://dex.openledger.io/|OpenLedger DEX]]
+     * Decentralized platform
+     * The volume of MAID transactions may be low
 
   * [[http://international.bittrex.com|Bittrex International]]: MAID/BTC
-     *[[https://mobile.twitter.com/BittrexIntl/status/1131613052250599424?s=20|Announcement]] on May 23, 2019 12:29pm
-     *[[https://safenetforum.org/t/maidsafecoin-maid-price-trading-topic/9923/6799|MaidSafe confirmation]]
-     *This exchange is not accessible to US citizens (see [[https://bittrex.zendesk.com/hc/en-us/articles/360001426066-FAQs-Bittrex-International-Trading-Platform-|FAQ]])
+     * [[https://mobile.twitter.com/BittrexIntl/status/1131613052250599424?s=20|Announcement]] on May 23, 2019 12:29pm
+     * [[https://safenetforum.org/t/maidsafecoin-maid-price-trading-topic/9923/6799|MaidSafe confirmation]]
+     * This exchange is not accessible to US citizens (see [[https://bittrex.zendesk.com/hc/en-us/articles/360001426066-FAQs-Bittrex-International-Trading-Platform-|FAQ]])
 
-  * [[https://dex.openledger.io/|OpenLedger DEX]] low volume
+  * [[https://hitbtc.com/exchange/MAID-to-BTC|HitBTC]]: MAID/BTC.
+     * Consider the high level of complaints on social media about suddenly losing access to funds.
+     * MaidSafe does seem to have some leverage over HitBTC though and could help get issues resolved.
+     * This exchange does not allow US citizens to use the platform (since 2019)
 
-  * [[https://hitbtc.com/exchange/MAID-to-BTC|HitBTC]]: MAID/BTC, MAID/ETH, MAID/USDT. Consider the high level of complaints on social media about losing access to funds. MaidSafe does seem to have some leverage over HitBTC and could help get issues resolved.
-
-  * [[https://safenetforum.org/t/cryptopia-liquidation/28767/11|Nova might replace Cryptopia]]. [[https://novaexchange.com/|Nova]]
-
-MAIDSafe [[https://safenetforum.org/t/removal-of-maidsafe-assets-from-bitker/29191|decided]] to remove MAID from [[http://www.bitker.com|Bitker]] in July 2019.
-
+MAID Exchange Graveyard
+  * MAIDSafe [[https://safenetforum.org/t/removal-of-maidsafe-assets-from-bitker/29191|decided]] to remove MAID from [[http://www.bitker.com|Bitker]] in July 2019.
+  * Cryptopia was hacked and closed [[https://safenetforum.org/t/cryptopia-liquidation/28767/11|Nova might replace Cryptopia]]. 
+  * NOVA [[https://novaexchange.com/|Exchange]] might have listed MAID but was closed on October 2019.
 ==== 6.4 Storing MAID offline ====
 
-Storing large amounts on exchanges is not a good idea. However, before you create a paper BTC wallet and send MAID to it, read through the steps needed to send the MAID back from the paper wallet to an exchange and decide if is worth the trouble and the risks of making mistakes and of reduced liquidity.
+Storing large amounts on exchanges is not a good idea. Store MAID on an OMNI web wallet, or even better on a hardware wallet or a paper wallet.
 
-[[https://safenetforum.org/t/how-to-store-maidsafe/3644/89|Feb 2018 post]]
+Moving MAID from an exchange onto a paper wallet BTC address securely is relatively easy.
+
+Moving MAID from wallet to an exchange is complex with some risk, and with the need to transfer the entire MAID balance, or very complex without risks except for risks associated with human error.
+
+=== 6.4.1 On a Tresor hardware wallet ===
+
+Tresor supports MAID, see [[https://safenetforum.org/t/trezor-support-for-omni-and-maid/26816/81||here]] for details.
+
+=== 6.4.2 On a BTC paper wallet ===
+
+Before you create a paper BTC wallet and send MAID to it, read through the steps needed to send the MAID back from the paper wallet to an exchange and decide if is worth the trouble and the risks of making mistakes and of reduced liquidity.
+
+Ref: [[https://safenetforum.org/t/how-to-store-maidsafe/3644/89|Feb 2018 post]]
+
+Know what you are doing. Follow the procedure at your own risk, including the risk of loss of all your MAID. Depending on the value you need to store you may want to do better (or worse) than this.
+<code>
+[ ] Obtain BIP39 Bitcoin address generator and store on USB stick A
+[ ] Create a bootable secure OS (e.g. Tails) on USB stick B
+[ ] Boot into the secure OS while keeping the host off-line and out of sight
+[ ] From USB stick A execute the generator to generate addresses, keys, and mnemonic
+[ ] Write down the information on paper in duplicate
+[ ] Terminate the safe OS and overwrite and reformat USB sticks A and B
+[ ] Store the information in a safe, and duplicate in a safe located elsewhere
+[ ] Note the BTC public address you want to use to store OMNI
+[ ] Verify validity of the BTC address by typing it into a block explorer (e.g. https://omniexplorer.info, https://btc-explorer.com)
+[ ] Verify that the address starts with a '1', otherwise create a "classical" address
+[ ] Send MAID from exchange to the new address
+[ ] Verify MAID balance using the OMNI explorer
+</code>
+
+The transaction will include of an OMNI protocol instruction and 0.05USD worth of BTC left on the destination BTC address per transaction from [[https://omniexplorer.info/address/1Po1oWkD2LmodfkBYiAktwh76vkF93LKnh|Poloniex]].
+
+The unconfirmed BTC transaction will be visible within minutes on both BTC explorer and OMNI explorer. At that time the unconfirmed MAID transaction will also be visible under the "Unconfirmed" transactions tab on OMNI explorer. Once the BTC transaction is confirmed, the MAID balance will be reflected on OMNI explorer, and transaction will be complete.

@@ -79,6 +79,12 @@ Registered Charity from: 20 January 2011
 Registered office address: 6 Forbes Drive, Heathfield Industrial Estate, Ayr, South Ayrshire, Scotland, KA8 9FG
 
 [[https://www.oscr.org.uk/AccountsDocument/Download/191910|financials end 2018]]
+
+  * Reorganization and loan program: November 2019
+
+To lower burn rate and focus on core product, MAIDSafe closes 2 offices and reduces staff [[https://safenetforum.org/t/maidsafe-update-november-2019/30262|update]].
+
+Holders of 100,000 MAID or more now may enter into a contract to [[https://safenetforum.org/t/maidsafe-loan-opportunity-november-2019/30261|lend]] their coins to MAIDSafe for a 50% return once SAFE Network launches.
 ===== E. Patents and Trademarks =====
 Relevant forum posts: [[https://safenetforum.org/t/are-there-any-published-computer-science-mathematics-research-papers-about-how-maidsafe-works/22360|March 2018]], [[https://safenetforum.org/t/safe-network-dev-update-june-20-2019/29010/81|June 2019]]
 
