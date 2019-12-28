@@ -35,7 +35,8 @@
   * 2016
   * 2017: MAIDSafe team expanded to 30+ people; front and back-end teams
   * 2018: The PARSEC Milestone is completed
-  * 2019
+  * 2019: Significant non-technical staff reduction; refocus on core product
+  * 2020
 
 [[https://youtu.be/TE5zmH2DqqM|2014 MaidSafe "the story so far"]], [[https://safenetforum.org/t/maidsafe-progress-roadmap/20053|2018 post]]
 === Tidbits ===

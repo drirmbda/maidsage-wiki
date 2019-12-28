@@ -98,14 +98,18 @@ Does permanent availability of published data not contradict having full control
 
 [[https://safenetwork.tech/roadmap/|Official Project Roadmap]] and a summary:
 
-  * Alpha 2 - Live! - Interact with a network of MaidSafe vaults using SAFEBrowser - PUT limits apply, minimum forum membership level required. Data will not be carried forward to next releases.
+  * Alpha 2 - Live - Interact with a network of MaidSafe vaults using SAFEBrowser - PUT limits apply, minimum forum membership level required. Data will not be carried forward to next releases.
     * Self-Authentication - logging into network without centralized permissioning
     * Self-Encryption - splitting files into chunks, hashing, encryption
     * Disjoint Sections - splitting (and combining/) sections based on network size
     * Message Relay - early iteration - messaging capability without signature verification
 
+Before the staff reduction late 2019:
   * SAFE Fleming - Let's [[https://safenetforum.org/t/when-do-you-think-fleming-will-be-released/28570|guess]] August 2019 - PARSEC, Node Ageing, Secure Messaging, and [[https://safenetforum.org/t/maidsafecoin-maid-price-trading-topic/9923/7025|potentially (!)]] vaults at home and test SafeCoin.
 
   * SAFE Maxwell - Let's [[https://safenetforum.org/t/how-soon-after-fleming-do-you-think-maxwell-will-be-released/28576|guess]] May 2020 - The scope is TBD but could include: test SafeCoin, wallet, vaults at home, farming, identity management, spam handling.
+
+Since the staff reduction, focus is on "feature completeness"
+  * SAFE Fleming/Maxwell work progressing steadily...
 
 [[https://github.com/maidsafe/rfcs/projects/1|RFC Project Board Github]]

@@ -34,14 +34,12 @@ As a general rule, do not leave large amount of MAID (or any other coins) on an 
 
 Exchanges listing MAID
 
-  * [[https://poloniex.com/|Poloniex]]: MAID/BTC
-     * This exchange is not available to US citizens starting 11/1/'19
+  * [[https://www.chainrift.com/|Chainrift]] MAID/BTC
+     * [[https://safenetforum.org/t/maid-relisted-on-chainrift/30674|Announcement by MaidSafe]] on 12/27/'19
+     * Relisted MAID on 12/24/'19 considering the potential of higher volume after delisting by Poloniex
+     * Available to US citizens in many but not all states
 
-  * [[https://dex.openledger.io/|OpenLedger DEX]]
-     * Decentralized platform
-     * The volume of MAID transactions may be low
-
-  * [[http://international.bittrex.com|Bittrex International]]: MAID/BTC
+  * [[https://global.bittrex.com/Market/Index?MarketName=BTC-MAID|Bittrex International]]: MAID/BTC
      * [[https://mobile.twitter.com/BittrexIntl/status/1131613052250599424?s=20|Announcement]] on May 23, 2019 12:29pm
      * [[https://safenetforum.org/t/maidsafecoin-maid-price-trading-topic/9923/6799|MaidSafe confirmation]]
      * This exchange is not accessible to US citizens (see [[https://bittrex.zendesk.com/hc/en-us/articles/360001426066-FAQs-Bittrex-International-Trading-Platform-|FAQ]])
@@ -52,7 +50,15 @@ Exchanges listing MAID
      * This exchange does not allow US citizens to use the platform (since 2019)
 
 MAID Exchange Graveyard
-  * MAIDSafe [[https://safenetforum.org/t/removal-of-maidsafe-assets-from-bitker/29191|decided]] to remove MAID from [[http://www.bitker.com|Bitker]] in July 2019.
+
+  * [[https://poloniex.com/|Poloniex]]: MAID/BTC
+     * Exchange not available to US citizens from 11/1/'19
+     * Delisting MAID on 12/30/'19 ([[https://safenetforum.org/t/poloniex-delisting-maid-december-30-must-withdraw-by-january-30/30617|discussion]])
+  * [[https://dex.openledger.io/|OpenLedger DEX]]
+     * In some respects a decentralized platform
+     * Listing of MAID was hoped for but has not materialized
+     * Exchange [[https://dex.openledger.io/news/openledger-dex-to-terminate-support-for-some-gateways/|delisted OMNI]] token on 8/12/2019
+  * Bitker: MAIDSafe [[https://safenetforum.org/t/removal-of-maidsafe-assets-from-bitker/29191|decided]] to remove MAID from [[http://www.bitker.com|Bitker]] in July 2019.
   * Cryptopia was hacked and closed [[https://safenetforum.org/t/cryptopia-liquidation/28767/11|Nova might replace Cryptopia]]. 
   * NOVA [[https://novaexchange.com/|Exchange]] might have listed MAID but was closed on October 2019.
 ==== 6.4 Storing MAID offline ====
