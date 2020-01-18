@@ -1,11 +1,9 @@
 <jumbotron>
 ====== Welcome to the Independent SAFE Network Wiki ======
 
-The SAFE Network project is vast and complex. While there are great resources available online for study, these resources still tend to be hard to locate and digest. The [[http://safenetforum.org|SAFE Network Forum]] contains many years-worth of great information but lacks concise and up-to-date summaries which would be convenient for newcomers to catch up.
+The SAFE Network project is vast and complex. The purpose of this wiki is to make the SAFE Network project more accessible. This is starting-out as a growing collection of personal notes of the editor trying to thoroughly understand the project, and is intended to evolve into an independent guide to SAFE Network.
 
-The purpose of this wiki is to make the SAFE Network project more accessible. This is starting-out as a growing collection of personal notes of the editor trying to thoroughly understand the project, and is intended to evolve into an independent guide to SAFE Network.
-
-All information here is unofficial. You are free to edit and contribute right here as you learn about MaidSafe and SAFE Network yourself. This Wiki fills gaps, referencing existing resources whenever possible. Opinions belong on the Safenet forum.
+All information here is unofficial. You are free to edit and contribute right here as you learn about MaidSafe and SAFE Network yourself. This Wiki fills gaps, referencing existing resources whenever possible. Opinions belong on the [[http://safenetforum.org|SAFE Network Forum]].
 
 <note important>
 Before you can start editing your need to through automatic registration. This is needed to avoid spam. There are some [[rules]] to follow to keep this fun. The rules page also contains contact information, and legal notices.
@@ -86,7 +84,7 @@ Before reading this site you must accept that it is your responsibility to obtai
   * [[economics#5.2 MAID and SafeCoin at launch]]
   * [[economics#5.3 SafeCoin]]
 
-===== 6. Handling MAID and SafeCoin =====
+===== 6. Dealing with MAID and SafeCoin =====
 
 <lead> Dealing with MAID and SAFE Network tokens is much more complicated than dealing with cash. This should be a guide to make things easier.
 </lead>

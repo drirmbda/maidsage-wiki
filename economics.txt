@@ -25,6 +25,10 @@ Source: [[https://safenetforum.org/t/safecoin-supply/13477|this]], [[https://git
 5% of total supply [of 678M??] goes to early investor/family
 
 5% of total supply [of 678M??] goes to dev team
+
+Statistics (Omni/MAID)
+^ Date ^ Addresses ^ Balance (MAID) ^ Source 
+| 2020-01-12 | 16848 | 452,542,031 | [[https://safenetforum.org/t/maidsafecoin-maid-price-trading-topic/9923/9009 |@mav]] |
 ==== 5.3 SafeCoin ====
 (money supply, economic output, inflation)
 
