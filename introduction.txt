@@ -64,6 +64,7 @@ MAIDSafe has internal "pre-RFC" documents on certain topics, which means that th
 == SAFE Web App ==
 
   * [[https://github.com/maidsafe/safe_examples/tree/master/safe_web_app_quick_start|Web App Tutorial]]
+  * [[https://safenetforum.org/t/download-safes-latest-versions/30904|SAFE application program list]]
 
 == API Documentation ==
 
