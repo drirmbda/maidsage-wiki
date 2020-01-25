@@ -2,7 +2,7 @@
 [[start#Appendices|<= Back to FRONT]]
 ===== A. Unofficial FAQ =====
 
-<lead> This section answers some questions that we could not easily find elsewhere. You can check the official [[https://safenetwork.tech/faq/|FAQ]] for other questions.
+<lead> This section answers some questions that we could not easily find elsewhere. You can check the official [[https://safenetwork.tech/faq/|FAQ]] for other questions. A list of acronyms is [[https://safenetforum.org/t/terms-used-on-the-forum/30945|here]].
 </lead>
 
 === Terminology ===
