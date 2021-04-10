@@ -33,7 +33,9 @@ Warning: SafeCoin is NOT [[https://safecoin.org/|this]].
 As a general rule, do not leave large amount of MAID (or any other coins) on an exchange.
 
 Exchanges listing MAID
-
+  * [[https://p2pb2b.io/?referral=17ab35c4|P2PB2B]]: MAID/BTC; MAID/USDT
+     * [[https://safenetforum.org/t/maidsafecoin-maid-to-be-listed-on-p2pb2b/34202|Announcement]] on April 2, 2021.
+     * referral code referral code 17ab35c4 is embedded in the above link supporting community marketing initiatives.
   * [[https://global.bittrex.com/Market/Index?MarketName=BTC-MAID|Bittrex International]]: MAID/BTC
      * [[https://mobile.twitter.com/BittrexIntl/status/1131613052250599424?s=20|Announcement]] on May 23, 2019 12:29pm
      * [[https://safenetforum.org/t/maidsafecoin-maid-price-trading-topic/9923/6799|MaidSafe confirmation]]

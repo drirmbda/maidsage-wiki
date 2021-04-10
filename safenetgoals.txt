@@ -95,7 +95,7 @@ Does permanent availability of published data not contradict having full control
 
 
 ==== 2.4 Roadmap and Beyond ====
-
+This is intended to be an immutable record, allowing over time a comparison of prediction to actual.
 [[https://safenetwork.tech/roadmap/|Official Project Roadmap]] and a summary:
 
   * Alpha 2 - Live - Interact with a network of MaidSafe vaults using SAFEBrowser - PUT limits apply, minimum forum membership level required. Data will not be carried forward to next releases.
@@ -104,12 +104,8 @@ Does permanent availability of published data not contradict having full control
     * Disjoint Sections - splitting (and combining/) sections based on network size
     * Message Relay - early iteration - messaging capability without signature verification
 
-Before the staff reduction late 2019:
-  * SAFE Fleming - Let's [[https://safenetforum.org/t/when-do-you-think-fleming-will-be-released/28570|guess]] August 2019 - PARSEC, Node Ageing, Secure Messaging, and [[https://safenetforum.org/t/maidsafecoin-maid-price-trading-topic/9923/7025|potentially (!)]] vaults at home and test SafeCoin.
+  * SAFE Fleming - A [[https://safenetforum.org/t/when-do-you-think-fleming-will-be-released/28570|guess]] August 2019 - PARSEC, Node Ageing, Secure Messaging, and [[https://safenetforum.org/t/maidsafecoin-maid-price-trading-topic/9923/7025|potentially (!)]] vaults at home and test SafeCoin. Since then, there was a staff reduction in 2019. Actual delivery of a first Fleming testnet was in April 2021, but with more features than initially planned. Since the staff reduction, the focus has been on "feature completeness."
 
-  * SAFE Maxwell - Let's [[https://safenetforum.org/t/how-soon-after-fleming-do-you-think-maxwell-will-be-released/28576|guess]] May 2020 - The scope is TBD but could include: test SafeCoin, wallet, vaults at home, farming, identity management, spam handling.
-
-Since the staff reduction, focus is on "feature completeness"
-  * SAFE Fleming/Maxwell work progressing steadily...
+  * SAFE Maxwell - A [[https://safenetforum.org/t/how-soon-after-fleming-do-you-think-maxwell-will-be-released/28576|guess]] May 2020 - The scope was TBD but could include: test SafeCoin, wallet, vaults at home, farming, identity management, spam handling. This was the plan before the staff reduction.
 
 [[https://github.com/maidsafe/rfcs/projects/1|RFC Project Board Github]]
