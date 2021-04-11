@@ -11,7 +11,7 @@ By accessing this site you accept that it is your responsibility to obtain exper
 
 The full history of this wiki is archived on [[https://github.com/drirmbda/maidsage-wiki/commits/master|GitHub]]
 
-**April 9, 2021 - BREAKING NEWS: Fleming Testnet is here!!** Refer to [[start#10. Labs for Builders|Section 10]] below for instructions how to run your own node and interact with the network.
+**April 8, 2021: Fleming Testnet is here!!** Refer to [[start#10. Labs for Builders|Section 10]] below for instructions how to run your own node and interact with the network.
 
 </jumbotron>
 ===== 1. Introduction =====
@@ -115,10 +115,12 @@ This section is for tinkerers; experimental how-to's, etc.
 
 === Fleming TestNet April 2021 ===
 
-Fleming testnet is live. Give it a try. Instructions how to get started below.
-[[https://safenetforum.org/t/fleming-testnet-release/34308|Fleming testnet April 9, 2021]]
+Fleming testnet is live. Give it a try. Instructions how to get started below. 
+[[https://safenetforum.org/t/fleming-testnet-release/34308|Fleming testnet April 8, 2021]]
 Note that all data and test coin balances will be lost at launch of the next testnet!
-The [[https://github.com/maidsafe/sn_api/blob/master/sn_cli/README.md#download|cli user guide]] provides a lot of detail on how to interact with the network via the cli. The following was tested on Ubuntu 18.04.
+The [[https://github.com/maidsafe/sn_api/blob/master/sn_cli/README.md#download|cli user guide]] provides a lot of detail on how to interact with the network via the cli.
+
+The following was tested on Ubuntu 18.04. Be prepared for some road bumps along the way though as this is still experimental.
 
 <code>
 [ FLEMING_INSTALL_LINUX 20210409 ]
@@ -211,7 +213,7 @@ To perform operations on the network that are not free, the CLI needs to be unlo
 |
 [ ] Authorize the CLI
 | The unlocking and authorizing can be done using --self-auth:
-  safe auth unlock --selft-auth
+  safe auth unlock --self-auth
 | provide passphrase and password.
 | Be patient, this can take a few minutes.
 | at fail: Error: Application authorisation failed Caused by: AuthdClientError: [Error] ClientError - Response not received: read error: connection closed: timed out
