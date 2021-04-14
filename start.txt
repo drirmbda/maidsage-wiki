@@ -11,7 +11,7 @@ By accessing this site you accept that it is your responsibility to obtain exper
 
 The full history of this wiki is archived on [[https://github.com/drirmbda/maidsage-wiki/commits/master|GitHub]]
 
-**April 8, 2021: Fleming Testnet is here!!** Refer to [[start#10. Labs for Builders|Section 10]] below for instructions how to run your own node and interact with the network.
+**April 8, 2021: Fleming Testnet v1; April 14? expecting v3 ** Refer to [[start#10. Labs for Builders|Section 10]] below for instructions how to run your own node and interact with the network.
 
 </jumbotron>
 ===== 1. Introduction =====
@@ -86,7 +86,7 @@ The full history of this wiki is archived on [[https://github.com/drirmbda/maids
 
 ===== 6. Dealing with MAID and SafeCoin =====
 
-<lead> Dealing with MAID and SAFE Network tokens is much more complicated than dealing with cash. This should be a guide to make things easier.
+<lead> Dealing with MAID and SAFE Network tokens is much more complicated than dealing with cash. This should be a guide to make things easier. A thread tracking all MAID transactions so far is [[https://safenetforum.org/t/full-maidsafecoin-transaction-data/34162|here]].
 </lead>
 
 [[safecoin|=> Handling MAID and SafeCoin TOP]]
@@ -113,9 +113,11 @@ This section is for tinkerers; experimental how-to's, etc.
 
 ==== Community SAFE Network Testing ====
 
+4/8/2021: Fleming Testnet v1; 4/14: v2; Expecting v3 soon.
+
 === Fleming TestNet April 2021 ===
 
-Fleming testnet is live. Give it a try. Instructions how to get started below. 
+Instructions how to get started on Fleming testnet (if up) are below. 
 [[https://safenetforum.org/t/fleming-testnet-release/34308|Fleming testnet April 8, 2021]]
 Note that all data and test coin balances will be lost at launch of the next testnet!
 The [[https://github.com/maidsafe/sn_api/blob/master/sn_cli/README.md#download|cli user guide]] provides a lot of detail on how to interact with the network via the cli.
@@ -123,7 +125,7 @@ The [[https://github.com/maidsafe/sn_api/blob/master/sn_cli/README.md#download|c
 The following was tested on Ubuntu 18.04. Be prepared for some road bumps along the way though as this is still experimental.
 
 <code>
-[ FLEMING_INSTALL_LINUX 20210409 ]
+[ FLEMING_INSTALL_LINUX 20210414 ]
 |
 [ ] Clean out prior installations
   rm -rf $HOME/.safe
@@ -132,8 +134,8 @@ The following was tested on Ubuntu 18.04. Be prepared for some road bumps along 
 | Installs into ~/.safe
 [ ] Close and reopen your terminal, and test version
   safe -V
-| Expect: sn_cli 0.23.0
-[ ] Install Authenticator daemon and Node
+| Expect: sn_cli 0.23.1
+[ ] Install Authenticator daemon (0.5.1) and Node (0.37.0)
   safe auth install
   safe node install
 | The authenticator endpoint is by default at https://localhost:33000
@@ -143,15 +145,14 @@ The following was tested on Ubuntu 18.04. Be prepared for some road bumps along 
 | The .config file contains a list of IP addresses and ports of hard-coded bootstrap nodes.
 [ ] View the configured network profiles
   safe networks
-[ ] Join our node to the network
+[ ] Join our node to the network (this process continues to attempt to join the network until successful or killed.)
   safe node join
 | logs will be here: ~/.safe/node/local-node/sn_node.log
 | node data, incl. reward key pair is here: ~/.safe/node/local-node
 [ ] In a new terminal follow the log
   tail -f ~/.safe/node/local-node/sn_node.log
 | You will likely see Cannot start node due to error: Routing(TryJoinLater) because the network allows joining only when it is starting to run out of storage space.
-[ ] Run this one-line script to try to join repeatedly until successful
-  until grep -q "Handling NodeDuty" ~/.safe/node/local-node/sn_node.log; do safe node join; sleep 30; done
+| Or when the network is down: on Cannot start node due to error: Routing(Network(UnresolvedPublicIp)). Exiting
 [ ] Download an example file in read-only mode, before creating your own Vault.
   safe cat safe://hygoyeye9mq5jmipo3we79wohue8hjyw55e6f8xyk1hquwy9hsxnk9tdsme > ~/safe-the-planet.png
 | Be patient; command execution can take a minute.
