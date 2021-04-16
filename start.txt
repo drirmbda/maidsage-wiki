@@ -5,13 +5,13 @@ The SAFE Network project is vast and complex. The purpose of this wiki is to mak
 
 All information here is unofficial. You are free to edit and contribute right here as you learn about MaidSafe and SAFE Network yourself. This Wiki fills gaps, referencing existing resources whenever possible. Opinions belong on the [[http://safenetforum.org|SAFE Network Forum]].
 
-To edit this wiki your will need to go through automatic registration. This is needed to avoid spam. There are some [[rules]] to follow to keep this fun. The rules page also contains contact information, and legal notices.
+To edit this wiki your will need to go through automatic registration which is needed to avoid spam. There are some [[rules]] to keep this fun. The rules page contains contact information and legal notices.
 
 By accessing this site you accept that it is your responsibility to obtain expert judgment and advice before using any information from this site for your particular situation. You alone are responsible for any losses or damages resulting from using this website.
 
 The full history of this wiki is archived on [[https://github.com/drirmbda/maidsage-wiki/commits/master|GitHub]]
 
-**April 8, 2021: Fleming Testnet v1; April 14? expecting v3 ** Refer to [[start#10. Labs for Builders|Section 10]] below for instructions how to run your own node and interact with the network.
+**April 2021 Fleming TestNets ** Refer to [[start#10. Labs for Builders|Section 10]] below for instructions how to (try to) run your own node and interact with the network.
 
 </jumbotron>
 ===== 1. Introduction =====
@@ -113,19 +113,19 @@ This section is for tinkerers; experimental how-to's, etc.
 
 ==== Community SAFE Network Testing ====
 
-4/8/2021: Fleming Testnet v1; 4/14: v2; Expecting v3 soon.
+4/8/2021: Fleming Testnet v1; 4/14: v2; 4/15: v3.
 
 === Fleming TestNet April 2021 ===
 
-Instructions how to get started on Fleming testnet (if up) are below. 
-[[https://safenetforum.org/t/fleming-testnet-release/34308|Fleming testnet April 8, 2021]]
 Note that all data and test coin balances will be lost at launch of the next testnet!
+
+Instructions how to get started on Fleming testnet (if up) are below. (Search the latest Fleming Testnet V<version> on the SafeNetForum for more.)
 The [[https://github.com/maidsafe/sn_api/blob/master/sn_cli/README.md#download|cli user guide]] provides a lot of detail on how to interact with the network via the cli.
 
-The following was tested on Ubuntu 18.04. Be prepared for some road bumps along the way though as this is still experimental.
+The following was tested on Ubuntu 18.04 with testnet v1, but there were issues with the later test-nets so be prepared for some road bumps along the way though as this is still very experimental. The network is not stable yet and you are most likely to succeed if it's early after a new bootstrap. The purpose is to debug and iterate in public, in a real-world environment.
 
 <code>
-[ FLEMING_INSTALL_LINUX 20210414 ]
+[ FLEMING_INSTALL_LINUX 20210415/v3 ]
 |
 [ ] Clean out prior installations
   rm -rf $HOME/.safe
@@ -134,11 +134,10 @@ The following was tested on Ubuntu 18.04. Be prepared for some road bumps along 
 | Installs into ~/.safe
 [ ] Close and reopen your terminal, and test version
   safe -V
-| Expect: sn_cli 0.23.1
-[ ] Install Authenticator daemon (0.5.1) and Node (0.37.0)
+| Expect: sn_cli 0.23.3
+[ ] Install Authenticator daemon (0.5.2) and Node (0.37.8). Client is v0.52.10.
   safe auth install
   safe node install
-| The authenticator endpoint is by default at https://localhost:33000
 [ ] Add network profile to join the first Fleming testnet, and switch to the profile/testnet
   safe networks add fleming-testnet https://sn-node.s3.eu-west-2.amazonaws.com/config/node_connection_info.config
   safe networks switch fleming-testnet
@@ -151,19 +150,20 @@ The following was tested on Ubuntu 18.04. Be prepared for some road bumps along 
 | node data, incl. reward key pair is here: ~/.safe/node/local-node
 [ ] In a new terminal follow the log
   tail -f ~/.safe/node/local-node/sn_node.log
-| You will likely see Cannot start node due to error: Routing(TryJoinLater) because the network allows joining only when it is starting to run out of storage space.
-| Or when the network is down: on Cannot start node due to error: Routing(Network(UnresolvedPublicIp)). Exiting
+| You will likely see: The network is not accepting nodes right now. Retrying after 3 minutes
 [ ] Download an example file in read-only mode, before creating your own Vault.
   safe cat safe://hygoyeye9mq5jmipo3we79wohue8hjyw55e6f8xyk1hquwy9hsxnk9tdsme > ~/safe-the-planet.png
+  safe cat safe://hyryyyymmy7wefy4qn5fjiuea4wwkdbg5j8ibxqiqmi8hi5bij4pte56ppa > ~/test.png
 | Be patient; command execution can take a minute.
+| Or you get: Error: NetDataError: Failed to GET Public Blob: ErrorMessage(NoSuchData)
 </code>
 
-With your own node joined or not, you can always interact with the network through the cli. ''safe -h'' provides all the options, and ''safe //subcommand// -h'' the options for each subcommand. [[https://github.com/maidsafe/sn_api/blob/master/sn_cli/README.md#download|cli user guide]]
+With your own node joined or not, you can always interact with the network through the cli. ''safe -h'' provides all the options, and ''safe //subcommand// -h'' the options for each sub-command. [[https://github.com/maidsafe/sn_api/blob/master/sn_cli/README.md#download|cli user guide]]
 
 To transact we will need some coin, so let's just create test-coins first. Because we can on the test-net.
 
 <code>
-[ SETUP_SAFEKEY_AND_TRANSFER 20210409 ]
+[ SETUP_SAFEKEY_AND_TRANSFER 20210409/v1 ]
 |
 [ ] Create SafeKey and preload with a balance of e.g. 123456
   safe keys create --test-coins --preload 123456
@@ -184,21 +184,23 @@ You can also create a wallet (a SafeKey container) to store SafeKeys, see CLI do
 For authenticator to work and to avoid this error ''Error: AuthdClientError: Failed to create client endpoint: [Error] ClientError - Failed to read certificate from '/home/mbouda/.safe/authd/cert.der': No such file or directory (os error 2)'' we need to start the daemon, which creates ''~/.safe/authd/logs'' folder and additional files such as ''cert.der'' and ''key.der'' in ''~/.safe/authf/'' to get you started. Then we need to create a Safe (incl. an identity), and link a SafeKey to it. However, in this iteration of the testnet we need to create a new SafeKey using --test-coin option.
 
 <code>
-[ SETUP_AUTH_AND_SAFE 20210409 ]
+[ SETUP_AUTH_AND_SAFE 20210415/v3 ]
 |
 [ ] Ensure that you have enabled UPnP on your WAN router.
 [ ] Start and Interact with Authenticator
   safe auth start
   safe auth status
+| The authenticator endpoint is by default at https://localhost:33000
 [ ] Follow the authenticator's log
-  tail -f ~/.safe/authd/logs/sn_authd.log 
-| Currently the daemon version is 0.5.0
+  tail -f ~/.safe/authd/logs/sn_authd.log
+| if the authd does not start, there may already be an authd running. Find it using ps -A | grep authd and kill <pid> and retry safe auth start.
 [ ] Create an Safe (passphrase and password) and attach a SafeKey to it, to pay with.
   safe auth create --test-coins
 | safe auth create alone does not work yet.
 | note the pasphrase and password.
 | If the initial balance is insufficient, you will get Error: AuthdError: AuthenticatorError: Failed to store Safe on a Map: Insufficient balance to complete this operation
 | After re-install and using the same credentials: Error: AuthdError: AuthenticatorError: Client data already exists. In that case change your passphrase and password and try again.
+| or you get: Error: AuthdClientError: [Error] ClientError - Response not received: read error: connection closed: timed out
 | expect: Safe was created successfully!
 [ ] Unlock your Safe
   safe auth unlock
@@ -210,7 +212,7 @@ For authenticator to work and to avoid this error ''Error: AuthdClientError: Fai
 </code>
 To perform operations on the network that are not free, the CLI needs to be unlocked.
 <code>
-[ UNLOCK_CLI 20210409 ]
+[ UNLOCK_CLI 20210409/v1 ]
 |
 [ ] Authorize the CLI
 | The unlocking and authorizing can be done using --self-auth:
@@ -236,7 +238,7 @@ An alternative:?
 Under ~/.safe/cli/ there will be a file credentials containing a json array of numbers.
 Next up is creation of easy to read names NRS-URLs, mapping to XOR-URLs. NRS stands for Name Resolution System. These mappings are held in NRS Map Containers, which are based on Public Sequence data type.
 <code>
-[ CREATE_NRS_CONTAINER 20210409 ]
+[ CREATE_NRS_CONTAINER 20210409/v1 ]
 |
 [ ] Lookup XOR name and other details by XOR URL
   safe dog "safe://<xor-url>"
@@ -249,7 +251,7 @@ Next up is creation of easy to read names NRS-URLs, mapping to XOR-URLs. NRS sta
 </code>
 Now you can use ''safe:%%//%%<readable name>'' in place of corresponding ''safe:%%//%%<xor-url>''. Instead of ''create'', use ''add'' to add sub-addresses.
 <code>
-[ CREATE_FILES_CONTAINER 20210409 ]
+[ CREATE_FILES_CONTAINER 20210409/v1 ]
 |
 [ ] Check if you have a positive balance to pay for uploads.
   safe keys balance
@@ -274,7 +276,7 @@ Now you can use ''safe:%%//%%<readable name>'' in place of corresponding ''safe:
 Versions of objects can be requested by adding ''?v=<version>'' to the URL.
 Below are some additional examples to play with. Read the cli manual for more...
 <code>
-[ MISC_CLI_EXAMPLES 20210409 ]
+[ MISC_CLI_EXAMPLES 20210409/v1 ]
 |
 [ ] List network profiles, switch, etc.
   safe networks
@@ -299,7 +301,7 @@ Below are some additional examples to play with. Read the cli manual for more...
 === ARCHIVE of Community SAFE Network Testnet Instructions ===
 
 [[https://safenetforum.org/t/how-to-set-up-a-vault-from-home/13186|How to set up a vault at home]]
-[[https://safenetforum.org/t/launch-of-a-community-safe-network/26930| Launch of a cummunity safe network]] 
+[[https://safenetforum.org/t/launch-of-a-community-safe-network/26930| Launch of a community safe network]] 
 
 ==== Compute XOR Distances ====
 

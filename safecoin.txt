@@ -20,6 +20,8 @@ The OMNI layer is open-source and fully de-centralized.
 
 Properties
   * MAID //on the OMNI layer// is not divisible so that transfers should be whole numbers.
+
+OMNI is still being developed and updated, see for example [[https://blog.omni.foundation/2021/04/14/omni-core-0-10-0-released/|Release v0.10.0]] (April 2021)
 ==== 6.2 What is SafeCoin ====
 
 SafeCoin will be the native medium of exchange within SAFE Network.
@@ -45,6 +47,11 @@ Exchanges listing MAID
      * Consider the high level of complaints on social media about suddenly losing access to funds.
      * MaidSafe does seem to have some leverage over HitBTC though and could help get issues resolved.
      * This exchange does not allow US citizens to use the platform (since 2019)
+
+Other places to buy/sell MAID
+
+  * [[https://changelly.com/|Changelly]]
+     * Good option for people in the US.
 
 MAID Exchange Graveyard
 
