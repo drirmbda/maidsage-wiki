@@ -95,6 +95,8 @@ The full history of this wiki is archived on [[https://github.com/drirmbda/maids
   * [[safecoin#6.3 Exchanges trading MAID]]
   * [[safecoin#6.4 Storing MAID offline]]
 
+The 2014 MAID crowd sale record is [[https://docs.google.com/spreadsheets/d/1r4fv57JDNkW55P5dnwPmHF3rOhdt1Jn5I2DZFuZfmfU/edit#gid=1074972288|here]].
+
 [[cryptocharts|=> Crypto Charts Page]]
 
 
@@ -113,7 +115,7 @@ This section is for tinkerers; experimental how-to's, etc.
 
 ==== Community SAFE Network Testing ====
 
-4/8/2021: Fleming Testnet v1; 4/14: v2; 4/15: v3.
+4/8/2021: Fleming Testnet v1; 4/14: v2; 4/15: v3; 4/22: v4.
 
 === Fleming TestNet April 2021 ===
 
@@ -124,8 +126,10 @@ The [[https://github.com/maidsafe/sn_api/blob/master/sn_cli/README.md#download|c
 
 The following was tested on Ubuntu 18.04 with testnet v1, but there were issues with the later test-nets so be prepared for some road bumps along the way though as this is still very experimental. The network is not stable yet and you are most likely to succeed if it's early after a new bootstrap. The purpose is to debug and iterate in public, in a real-world environment.
 
+Here is a simple guide to creating your own Ubuntu VM to work with: [[https://safenetforum.org/t/a-rough-guide-to-installing-a-linux-vm-for-testnets/34568|Ubuntu VM]].
+
 <code>
-[ FLEMING_INSTALL_LINUX 20210415/v3 ]
+[ FLEMING_INSTALL_LINUX 20210422/v4 ]
 |
 [ ] Clean out prior installations
   rm -rf $HOME/.safe
@@ -134,8 +138,12 @@ The following was tested on Ubuntu 18.04 with testnet v1, but there were issues 
 | Installs into ~/.safe
 [ ] Close and reopen your terminal, and test version
   safe -V
-| Expect: sn_cli 0.23.3
-[ ] Install Authenticator daemon (0.5.2) and Node (0.37.8). Client is v0.52.10.
+| Expect: sn_cli 0.24.0
+[ ] Make sure any and all old processes are dead, or kill them if needed.
+  ps -A | grep sn_*
+! killall sn_node
+! killall sn_authd
+[ ] Install Authenticator daemon (0.6.0) and Node (0.38.5).
   safe auth install
   safe node install
 [ ] Add network profile to join the first Fleming testnet, and switch to the profile/testnet
@@ -147,13 +155,13 @@ The following was tested on Ubuntu 18.04 with testnet v1, but there were issues 
 [ ] Join our node to the network (this process continues to attempt to join the network until successful or killed.)
   safe node join
 | logs will be here: ~/.safe/node/local-node/sn_node.log
-| node data, incl. reward key pair is here: ~/.safe/node/local-node
+| node data, incl. reward key pair should be here: ~/.safe/node/local-node
 [ ] In a new terminal follow the log
   tail -f ~/.safe/node/local-node/sn_node.log
-| You will likely see: The network is not accepting nodes right now. Retrying after 3 minutes
+| You may see something like: The network is not accepting nodes right now. Retrying after 3 minutes, or the logging may seem to hang, reattempting to join periodically.
 [ ] Download an example file in read-only mode, before creating your own Vault.
+  safe dog safe://hygoyeye9mq5jmipo3we79wohue8hjyw55e6f8xyk1hquwy9hsxnk9tdsme
   safe cat safe://hygoyeye9mq5jmipo3we79wohue8hjyw55e6f8xyk1hquwy9hsxnk9tdsme > ~/safe-the-planet.png
-  safe cat safe://hyryyyymmy7wefy4qn5fjiuea4wwkdbg5j8ibxqiqmi8hi5bij4pte56ppa > ~/test.png
 | Be patient; command execution can take a minute.
 | Or you get: Error: NetDataError: Failed to GET Public Blob: ErrorMessage(NoSuchData)
 </code>
@@ -202,13 +210,6 @@ For authenticator to work and to avoid this error ''Error: AuthdClientError: Fai
 | After re-install and using the same credentials: Error: AuthdError: AuthenticatorError: Client data already exists. In that case change your passphrase and password and try again.
 | or you get: Error: AuthdClientError: [Error] ClientError - Response not received: read error: connection closed: timed out
 | expect: Safe was created successfully!
-[ ] Unlock your Safe
-  safe auth unlock
-| provide passphrase and password
-| at failure: Error: AuthdError: AuthenticatorError: Client data already exists
-| at failure: Error: AuthdError: ClientError: Requested data not found
-| However, even with Errors, the unlock may still have "worked". Check safe auth status. (bug?)
-| expect: Safe unlocked successfully
 </code>
 To perform operations on the network that are not free, the CLI needs to be unlocked.
 <code>
