@@ -143,7 +143,7 @@ Here is a simple guide to creating your own Ubuntu VM to work with: [[https://sa
   ps -A | grep sn_*
 ! killall sn_node
 ! killall sn_authd
-[ ] Install Authenticator daemon (0.6.0) and Node (0.38.5).
+[ ] Install Authenticator daemon (0.6.0) and Node (0.39.0).
   safe auth install
   safe node install
 [ ] Add network profile to join the first Fleming testnet, and switch to the profile/testnet
@@ -154,6 +154,7 @@ Here is a simple guide to creating your own Ubuntu VM to work with: [[https://sa
   safe networks
 [ ] Join our node to the network (this process continues to attempt to join the network until successful or killed.)
   safe node join
+| or:  until grep "The network is not accepting" ~/.safe/node/local-node/sn_node.log; do echo "Starting node..." ; safe node killall ; safe node join; sleep 300; done
 | logs will be here: ~/.safe/node/local-node/sn_node.log
 | node data, incl. reward key pair should be here: ~/.safe/node/local-node
 [ ] In a new terminal follow the log
@@ -192,7 +193,7 @@ You can also create a wallet (a SafeKey container) to store SafeKeys, see CLI do
 For authenticator to work and to avoid this error ''Error: AuthdClientError: Failed to create client endpoint: [Error] ClientError - Failed to read certificate from '/home/mbouda/.safe/authd/cert.der': No such file or directory (os error 2)'' we need to start the daemon, which creates ''~/.safe/authd/logs'' folder and additional files such as ''cert.der'' and ''key.der'' in ''~/.safe/authf/'' to get you started. Then we need to create a Safe (incl. an identity), and link a SafeKey to it. However, in this iteration of the testnet we need to create a new SafeKey using --test-coin option.
 
 <code>
-[ SETUP_AUTH_AND_SAFE 20210415/v3 ]
+[ SETUP_AUTH_AND_SAFE 20210423/v4 ]
 |
 [ ] Ensure that you have enabled UPnP on your WAN router.
 [ ] Start and Interact with Authenticator
@@ -212,8 +213,9 @@ For authenticator to work and to avoid this error ''Error: AuthdClientError: Fai
 | expect: Safe was created successfully!
 </code>
 To perform operations on the network that are not free, the CLI needs to be unlocked.
+
 <code>
-[ UNLOCK_CLI 20210409/v1 ]
+[ UNLOCK_CLI 20210423/v4 ]
 |
 [ ] Authorize the CLI
 | The unlocking and authorizing can be done using --self-auth:
@@ -224,6 +226,7 @@ To perform operations on the network that are not free, the CLI needs to be unlo
 | expect: Safe CLI app was successfully authorised
 | If it fails, try once more. Sometimes it times out and then succeeds.
 </code>
+
 An alternative:?
 <code>
 ...untested...
@@ -236,8 +239,20 @@ An alternative:?
   safe auth reqs
   safe auth allow <request id>
 </code>
+
+A shortcut to bypass the need for authd was implemented so that you can write to the network without it.
+<code>
+[ SHORTCUT_TO_WRITE_PRIVILEGES 20210423/V4 ]
+|
+[ ] Generate test-coins for cli
+  safe keys create --test-coins --for-cli
+| expect: Safe CLI now has write access to the network
+| note the Public and Private keys.
+</code>
+
 Under ~/.safe/cli/ there will be a file credentials containing a json array of numbers.
 Next up is creation of easy to read names NRS-URLs, mapping to XOR-URLs. NRS stands for Name Resolution System. These mappings are held in NRS Map Containers, which are based on Public Sequence data type.
+
 <code>
 [ CREATE_NRS_CONTAINER 20210409/v1 ]
 |
@@ -250,13 +265,14 @@ Next up is creation of easy to read names NRS-URLs, mapping to XOR-URLs. NRS sta
 +  <readable name>  safe://<xor-url-of file container version>
 | note the NRS Map container URL.
 </code>
+
 Now you can use ''safe:%%//%%<readable name>'' in place of corresponding ''safe:%%//%%<xor-url>''. Instead of ''create'', use ''add'' to add sub-addresses.
 <code>
-[ CREATE_FILES_CONTAINER 20210409/v1 ]
+[ CREATE_FILES_CONTAINER 20210423/v4 ]
 |
 [ ] Check if you have a positive balance to pay for uploads.
   safe keys balance
-| expect e.g.: SafeKey's current balance: 776.999814921
+| expect e.g.: SafeKey's current balance: 1000.111
 [ ] Add a first file to the network, creating a file container
   safe files put <local filename>
 | Be very patient as this may take several minutes.
@@ -274,6 +290,7 @@ Now you can use ''safe:%%//%%<readable name>'' in place of corresponding ''safe:
 [ ] Download all files (the whole tree, incl. subdirs)
   safe files get "safe://<xor-url>" > ./<local dir>
 </code>
+
 Versions of objects can be requested by adding ''?v=<version>'' to the URL.
 Below are some additional examples to play with. Read the cli manual for more...
 <code>
