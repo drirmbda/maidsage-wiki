@@ -11,7 +11,7 @@ By accessing this site you accept that it is your responsibility to obtain exper
 
 The full history of this wiki is archived on [[https://github.com/drirmbda/maidsage-wiki/commits/master|GitHub]]
 
-**April 2021 Fleming TestNets ** Refer to [[start#10. Labs for Builders|Section 10]] below for instructions how to (try to) run your own node and interact with the network.
+**April/May 2021 Fleming TestNets ** Refer to [[start#10. Labs for Builders|Section 10]] below for instructions how to (try to) run your own node and interact with the network.
 
 </jumbotron>
 ===== 1. Introduction =====
@@ -115,9 +115,9 @@ This section is for tinkerers; experimental how-to's, etc.
 
 ==== Community SAFE Network Testing ====
 
-4/8/2021: Fleming Testnet v1; 4/14: v2; 4/15: v3; 4/22: v4.
+Fleming Testnet 4/8/2021 v1; 4/14 v2; 4/15 v3; 4/22 v4; 5/13 v5.
 
-=== Fleming TestNet April 2021 ===
+=== Fleming TestNets April/May 2021 ===
 
 Note that all data and test coin balances will be lost at launch of the next testnet!
 
