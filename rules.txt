@@ -24,7 +24,7 @@ Due to time and resource limitations, this wiki is kept as simple as possible.
 
 ==== Protection from loss contributions ====
 
-The contents of this wiki are automatically backed up daily, using git. A public repository is planned for easy access.
+The contents of this wiki are automatically backed up daily, using git. A public repository is here: [[https://github.com/drirmbda/maidsage-wiki|github maidsage-wiki]]
 
 ==== Information Collection ====
 

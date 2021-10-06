@@ -11,8 +11,6 @@ By accessing this site you accept that it is your responsibility to obtain exper
 
 The full history of this wiki is archived on [[https://github.com/drirmbda/maidsage-wiki/commits/master|GitHub]]
 
-**April/May 2021 Fleming TestNets ** Refer to [[start#10. Labs for Builders|Section 10]] below for instructions how to (try to) run your own node and interact with the network.
-
 </jumbotron>
 ===== 1. Introduction =====
 <lead>If you want to find out more about SAFE Network or start contributing, we want to be your guide. For specific topics look at the table on contents on the right. Otherwise pick a subsection based on the desired level of depth you are looking for.</lead>
