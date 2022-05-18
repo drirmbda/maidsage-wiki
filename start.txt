@@ -1,5 +1,5 @@
 <jumbotron>
-====== Welcome to the Community SAFE Network Wiki ======
+====== Welcome to (a) SAFE Network Wiki ======
 
 The SAFE Network project is vast and complex. The purpose of this wiki is to make the SAFE Network project more accessible. This is starting-out as a growing collection of personal notes of the editor trying to thoroughly understand the project, and is intended to evolve into an community-driven and independent guide to SAFE Network.
 
