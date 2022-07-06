@@ -1,335 +1,57 @@
-<jumbotron>
-====== Welcome to (a) SAFE Network Wiki ======
+tonight dismissed the prospect of more Covid curbs as he warned people to brace for a stormy few weeks - but insisted the country can 'ride out' the  wave.
+At a  press conference, the PM said that he would be recommending to Cabinet tomorrow that the 'balanced' Plan B restrictions stay unchanged.
+He stressed that despite the  going on a 'war footing' and daily cases hitting an eye-watering new high of 218,000, there should be no need to 'shut down our country again'.
+'We have a chance to ride out this Omicron wave without shutting down our country once again,' Mr Johnson said.
 
-The SAFE Network project is vast and complex. The purpose of this wiki is to make the SAFE Network project more accessible. This is starting-out as a growing collection of personal notes of the editor trying to thoroughly understand the project, and is intended to evolve into an community-driven and independent guide to SAFE Network.
+He was backed by chief medic Chris Whitty, who confirmed that there is no sign of a 'surge' in mortality rates and said boosters offer 88 per cent protection against needing hospital treatment.
+Although he said he could not 'rule anything out' completely and much will depend on how quickly Omicron peaks, the premier made clear he intends to rely on people to 'implement Plan B carefully and to behave carefully with other people'.  
+However, Mr Johnson stopped short of making any changes to self-isolation rules that are threatening to bring core services to a standstill. 
+Today's new infection number represents a 58 per cent rise compared to last week but includes several days of backlogged cases in Wales and Northern Ireland.
+Hospitalisations also continued to rise today with England recording 1,819 on January 1, the latest date with data, marking a 42 per cent rise on the previous week.  
+But the statistics do not differentiate between patients that were admitted primarily for Covid and those who were admitted for a different illness and tested positive after admission. So-called 'incidental' admissions now make up about a third of all Covid inpatients, and fewer patients primarily sick with Covid are needing to be hooked up to ventilators. 
+Explaining his position, Mr Johnson said that anyone thinking the pandemic is over would be 'profoundly wrong' and it was a 'moment for the utmost caution'.
 
-All information here is unofficial. You are free to edit and contribute right here as you learn about MaidSafe and SAFE Network yourself. This Wiki fills gaps, referencing existing resources whenever possible. Opinions belong on the [[http://safenetforum.org|SAFE Network Forum]].
+The NHS is doing an 'amazing job' under 'huge pressure', he said. 
+But he stressed the situation was different from earlier in the crisis in key respects, and it was possible to rely on booster jabs and the health service - including a 'territorial army' of retired medics and nurses - while keeping society running.   
+'First, we now know that Omicron is milder than previous variants, so while hospital admissions are rising quickly, with over 15,000 Covid patients now in hospital in England alone, this is not yet, thankfully, translating into the same numbers needing intensive care that we saw in previous waves,' he said.
+'Second, thanks to the fantastic national effort to get Britain boosted, we now have a substantial level of protection, higher than any of our European neighbours, with over 34million boosters administered, including in England reaching more than 90 per cent of the over 70s and 86 per cent of the over 50s.
+'And so, together with the Plan B measures that we introduced before Christmas, we have a chance to ride out this Omicron wave without shutting down our country once again.
+'We can keep our schools and our businesses open and we can find a way to live with this virus. If you have any questions concerning where and how you can use [[https://slotcomment.com/unconditional-free-credit|เครดิตฟรีไม่มีเงื่อนไข]], you can contact us at the site. '
+He said 100,000 essential workers in areas such as nuclear and air traffic control will get daily tests to try to catch cases early before they spread.  
+In other developments today:
+Mr Johnson said it is 'absolutely crazy' that people are not taking up booster appointments, amid claims two million are still available this week;The PM has rejected calls to cut the Covid isolation period again to five days, saying doing so could make the staffing crisis even worse;Hospital admissions for Covid in London fell for the first time since before Omicron took off, spurring hopes that the worst of the wave may have peaked;Britons shouldn't be offered a fourth Covid jab until there is more evidence, according to the head of the country's vaccine body, who warned dishing out vaccines every six months was 'not sustainable';Pre-return Covid international travel tests are expected to be scrapped tomorrow.           more videos                                                                           
 
-To edit this wiki your will need to go through automatic registration which is needed to avoid spam. There are some [[rules]] to keep this fun. The rules page contains contact information and legal notices.
+DM.later('bundle', function()
+DM.molFeCarousel.init('#p-17', 'channelCarousel', 
+"activeClass" : "wocc",
+"pageCount" : "3.0",
+"pageSize" : 1,
+"onPos": 0,
+"updateStyleOnHover": true
+);
+);
+(Image: [[|]])  At a Downing Street press conference, Boris Johnson said that he would be recommending to Cabinet tomorrow that Plan B restrictions stay unchanged
+     (Image: [[|]])  
+      (Image: [[|]])   The empty concourse at Victoria train station, central London, today as rail passengers are hit by disruption on the first working day of the year in England and Wales due to a combination of faults and coronavirus-related staff shortages
+      (Image: [[|]])   The West Park recycling centre in Long Eaton has seen dozens of fly tippers litter the floor with waste as people desperately tried to empty their homes of leftover materials following the festive period over New Year's weekend
+      (Image: [[|]])   A person walks past Christmas trees discarded on the pavement, in west London, Britain, January 3, 2022.
 
-By accessing this site you accept that it is your responsibility to obtain expert judgment and advice before using any information from this site for your particular situation. You alone are responsible for any losses or damages resulting from using this website.
+Many people are simply throwing their Christmas trees outside to rot
+      (Image: [[|]])   
+      (Image: [[|]])   
+      (Image: [[|]])   
+      (Image: [[|]])     
+      (Image: [[|]])     
+      (Image: [[|]])     Road congestion levels in London were at 22 per cent in the 8am to 9am slot this morning (far right) according to TomTom
+          more videos                                                                           
 
-The full history of this wiki is archived on [[https://github.com/drirmbda/maidsage-wiki/commits/master|GitHub]]
-
-</jumbotron>
-===== 1. Introduction =====
-<lead>If you want to find out more about SAFE Network or start contributing, we want to be your guide. For specific topics look at the table on contents on the right. Otherwise pick a subsection based on the desired level of depth you are looking for.</lead>
-
-[[introduction|=> Introduction - Start Here TOP]]
-
-  * [[introduction#1.1 Basic Level]]
-  * [[introduction#1.2 Intermediate Level]]
-  * [[introduction#1.3 Expert Level]]
-
- 
-===== 2. Goals of the SAFE Network =====
-
-<lead>Cutting through marketing and hype, we are interested in which of the many good things SAFE Network will do for it's users will matter most to you. Understand what SAFE Network is really about, and why it's worth the wait.
-</lead>
-
-[[safenetgoals|=> Goals of the SAFE Network TOP]]
-
-  * [[safenetgoals#2.1 SAFE Network Core Goals (unofficial)]]
-  * [[safenetgoals#2.2 SAFE Network Non-Core Goals (unofficial)]]
-  * [[safenetgoals#2.3 Benefits]]
-  * [[safenetgoals#2.4 Roadmap and Beyond]]
-
-===== 3. Architecture and Implementation =====
-(warning: Section needs to be updated)
-<lead>A good architecture of SAFE Network is incredibly important for long-term success. This section will be an attempt to give an accurate overview.
-</lead>
-
-[[architecture|=> Architecture and Implementation TOP]]
-
-  * [[architecture#3.1 Place in OSI Reference Model]]
-  * [[architecture#3.2 SAFE Network Overlay Network]]
-  * [[architecture#3.3 Basic Facilities]]
-  * [[architecture#3.4 Transport Protocol for P2P]]
-    * [[architecture#3.4.1 IETF QUIC Introduction]]
-    * [[architecture#3.4.2 MDSF Lib quic-p2p]]
-  * [[architecture#3.5 Routing]]
-    * [[architecture#3.5.1 Kademlia Routing Introduction]]
-    * [[architecture#3.5.2 XOR Distance]]
-    * [[architecture#3.5.3 MDSF Lib routing]]
-  * [[architecture#3.6 Gossip Protocol]]
-    * [[architecture#3.6.1 Randomized Rumor Spreading]]
-    * [[architecture#3.6.2 MDSF Lib safe_gossip]]
-  * [[architecture#3.7 Parsec]]
-    * [[architecture#3.7.1 Byzantine Agreement]]
-    * [[architecture#3.7.2 MDSF parsec]]
-  * [[architecture#3.8 Vault]]
-    * [[architecture#3.8.1 MDSF application safe_vault]]
-
-
-===== 4. Mechanisms =====
-
-<lead>In this section we will try to separate out and have a closer look at the mechanisms that will keep the SAFE Network working as intended. Each of these need to be checked for possible weaknesses that could lead to disastrous malicious attacks.
-</lead>
-
-[[mechanisms|=> Mechanisms TOP]]
-
-  * [[mechanisms#4.1 Security Aspects]]
-  * [[mechanisms#4.2 Mechanisms to Ensure Security]]
-  * [[mechanisms#4.3 Other Operating Mechanisms]]
-  * [[mechanisms#4.4 Forum topics on studies]]
-
-===== 5. Economics =====
-<lead>One special mechanism regulating the network involves SafeCoin, a medium of exchange within the network, but with a reach well beyond it. This section is intended to consider this from an Economist's viewpoint.
-</lead>
-
-[[economics|=> Economics TOP]]
-  * [[economics#5.1 MAID pre-launch]]
-  * [[economics#5.2 MAID and SafeCoin at launch]]
-  * [[economics#5.3 SafeCoin]]
-
-===== 6. Dealing with MAID and SafeCoin =====
-
-<lead> Dealing with MAID and SAFE Network tokens is much more complicated than dealing with cash. This should be a guide to make things easier. A thread tracking all MAID transactions so far is [[https://safenetforum.org/t/full-maidsafecoin-transaction-data/34162|here]].
-</lead>
-
-[[safecoin|=> Handling MAID and SafeCoin TOP]]
-  * [[safecoin#6.1 What is MAID]]
-  * [[safecoin#6.2 What is SafeCoin]]
-  * [[safecoin#6.3 Exchanges trading MAID]]
-  * [[safecoin#6.4 Storing MAID offline]]
-
-The 2014 MAID crowd sale record is [[https://docs.google.com/spreadsheets/d/1r4fv57JDNkW55P5dnwPmHF3rOhdt1Jn5I2DZFuZfmfU/edit#gid=1074972288|here]].
-
-[[cryptocharts|=> Crypto Charts Page]]
-
-
-===== 7. Hardware Guide for Farmers =====
-(what do you need to join.)
-
-===== 8. Software Guide for Users =====
-(how to start using apps.)
-
-===== 9. App Dev Guide for Developers =====
-(how to start app software development)
-
-
-===== 10. Labs for Builders =====
-This section is for tinkerers; experimental how-to's, etc.
-
-==== Community SAFE Network Testing ====
-
-Fleming Testnet 4/8/2021 v1; 4/14 v2; 4/15 v3; 4/22 v4; 5/13 v5.
-
-=== Fleming TestNets April/May 2021 ===
-
-Note that all data and test coin balances will be lost at launch of the next testnet!
-
-Instructions how to get started on Fleming testnet (if up) are below. (Search the latest Fleming Testnet V<version> on the SafeNetForum for more.)
-The [[https://github.com/maidsafe/sn_api/blob/master/sn_cli/README.md#download|cli user guide]] provides a lot of detail on how to interact with the network via the cli.
-
-The following was tested on Ubuntu 18.04 with testnet v1, but there were issues with the later test-nets so be prepared for some road bumps along the way though as this is still very experimental. The network is not stable yet and you are most likely to succeed if it's early after a new bootstrap. The purpose is to debug and iterate in public, in a real-world environment.
-
-Here is a simple guide to creating your own Ubuntu VM to work with: [[https://safenetforum.org/t/a-rough-guide-to-installing-a-linux-vm-for-testnets/34568|Ubuntu VM]].
-
-<code>
-[ FLEMING_INSTALL_LINUX 20210422/v4 ]
-|
-[ ] Clean out prior installations
-  rm -rf $HOME/.safe
-[ ] Run the installation script (on a 64-bit machine)
-  curl -so- https://sn-api.s3.amazonaws.com/install.sh | bash
-| Installs into ~/.safe
-[ ] Close and reopen your terminal, and test version
-  safe -V
-| Expect: sn_cli 0.24.0
-[ ] Make sure any and all old processes are dead, or kill them if needed.
-  ps -A | grep sn_*
-! killall sn_node
-! killall sn_authd
-[ ] Install Authenticator daemon (0.6.0) and Node (0.39.0).
-  safe auth install
-  safe node install
-[ ] Add network profile to join the first Fleming testnet, and switch to the profile/testnet
-  safe networks add fleming-testnet https://sn-node.s3.eu-west-2.amazonaws.com/config/node_connection_info.config
-  safe networks switch fleming-testnet
-| The .config file contains a list of IP addresses and ports of hard-coded bootstrap nodes.
-[ ] View the configured network profiles
-  safe networks
-[ ] Join our node to the network (this process continues to attempt to join the network until successful or killed.)
-  safe node join
-| or:  until grep "The network is not accepting" ~/.safe/node/local-node/sn_node.log; do echo "Starting node..." ; safe node killall ; safe node join; sleep 300; done
-| logs will be here: ~/.safe/node/local-node/sn_node.log
-| node data, incl. reward key pair should be here: ~/.safe/node/local-node
-[ ] In a new terminal follow the log
-  tail -f ~/.safe/node/local-node/sn_node.log
-| You may see something like: The network is not accepting nodes right now. Retrying after 3 minutes, or the logging may seem to hang, reattempting to join periodically.
-[ ] Download an example file in read-only mode, before creating your own Vault.
-  safe dog safe://hygoyeye9mq5jmipo3we79wohue8hjyw55e6f8xyk1hquwy9hsxnk9tdsme
-  safe cat safe://hygoyeye9mq5jmipo3we79wohue8hjyw55e6f8xyk1hquwy9hsxnk9tdsme > ~/safe-the-planet.png
-| Be patient; command execution can take a minute.
-| Or you get: Error: NetDataError: Failed to GET Public Blob: ErrorMessage(NoSuchData)
-</code>
-
-With your own node joined or not, you can always interact with the network through the cli. ''safe -h'' provides all the options, and ''safe //subcommand// -h'' the options for each sub-command. [[https://github.com/maidsafe/sn_api/blob/master/sn_cli/README.md#download|cli user guide]]
-
-To transact we will need some coin, so let's just create test-coins first. Because we can on the test-net.
-
-<code>
-[ SETUP_SAFEKEY_AND_TRANSFER 20210409/v1 ]
-|
-[ ] Create SafeKey and preload with a balance of e.g. 123456
-  safe keys create --test-coins --preload 123456
-| Be patient, it takes a minute.
-| Note the safe xor address, and the public and secret key pair.
-[ ] Check the balance
-  safe keys balance
-| enter the secret key when requested
-| expect e.g.: SafeKey's current balance: 123456.000000000
-[ ] Send coins
-  safe keys transfer --from <secret key> --to "safe://<user>" <amount>
-| without --from option, a default SafeKey will be used. (WHICH SAFEKEY IS DEFAULT??)
-| expect e.g.: Success. TX_ID: 0 where the number is the serial tx from the SafeKey.
-</code>
-Note that this is not the default SafeKey that is associated with the CLI and which is used to pay for operations on the network.
-You can also create a wallet (a SafeKey container) to store SafeKeys, see CLI documenation.
-
-For authenticator to work and to avoid this error ''Error: AuthdClientError: Failed to create client endpoint: [Error] ClientError - Failed to read certificate from '/home/mbouda/.safe/authd/cert.der': No such file or directory (os error 2)'' we need to start the daemon, which creates ''~/.safe/authd/logs'' folder and additional files such as ''cert.der'' and ''key.der'' in ''~/.safe/authf/'' to get you started. Then we need to create a Safe (incl. an identity), and link a SafeKey to it. However, in this iteration of the testnet we need to create a new SafeKey using --test-coin option.
-
-<code>
-[ SETUP_AUTH_AND_SAFE 20210423/v4 ]
-|
-[ ] Ensure that you have enabled UPnP on your WAN router.
-[ ] Start and Interact with Authenticator
-  safe auth start
-  safe auth status
-| The authenticator endpoint is by default at https://localhost:33000
-[ ] Follow the authenticator's log
-  tail -f ~/.safe/authd/logs/sn_authd.log
-| if the authd does not start, there may already be an authd running. Find it using ps -A | grep authd and kill <pid> and retry safe auth start.
-[ ] Create an Safe (passphrase and password) and attach a SafeKey to it, to pay with.
-  safe auth create --test-coins
-| safe auth create alone does not work yet.
-| note the pasphrase and password.
-| If the initial balance is insufficient, you will get Error: AuthdError: AuthenticatorError: Failed to store Safe on a Map: Insufficient balance to complete this operation
-| After re-install and using the same credentials: Error: AuthdError: AuthenticatorError: Client data already exists. In that case change your passphrase and password and try again.
-| or you get: Error: AuthdClientError: [Error] ClientError - Response not received: read error: connection closed: timed out
-| expect: Safe was created successfully!
-</code>
-To perform operations on the network that are not free, the CLI needs to be unlocked.
-
-<code>
-[ UNLOCK_CLI 20210423/v4 ]
-|
-[ ] Authorize the CLI
-| The unlocking and authorizing can be done using --self-auth:
-  safe auth unlock --self-auth
-| provide passphrase and password.
-| Be patient, this can take a few minutes.
-| at fail: Error: Application authorisation failed Caused by: AuthdClientError: [Error] ClientError - Response not received: read error: connection closed: timed out
-| expect: Safe CLI app was successfully authorised
-| If it fails, try once more. Sometimes it times out and then succeeds.
-</code>
-
-An alternative:?
-<code>
-...untested...
-[ ] Request authorization
-  safe auth
-| at fail: Error: Application authorisation failed Caused by: AuthdClientError: [Error] ClientError - Response not received: read error: connection closed: timed out
-| at fail: Error: Application authorisation failed Caused by: AuthdError: AuthenticatorError: Failed to authorise application on the network: AuthError: Failed to retrieve keypair from the Safe: Requested data not found
-| expect: Safe CLI app was successfully authorised
-[ ] To avoid timeout error, check on request status from a second terminal, and approve the request
-  safe auth reqs
-  safe auth allow <request id>
-</code>
-
-A shortcut to bypass the need for authd was implemented so that you can write to the network without it.
-<code>
-[ SHORTCUT_TO_WRITE_PRIVILEGES 20210423/V4 ]
-|
-[ ] Generate test-coins for cli
-  safe keys create --test-coins --for-cli
-| expect: Safe CLI now has write access to the network
-| note the Public and Private keys.
-</code>
-
-Under ~/.safe/cli/ there will be a file credentials containing a json array of numbers.
-Next up is creation of easy to read names NRS-URLs, mapping to XOR-URLs. NRS stands for Name Resolution System. These mappings are held in NRS Map Containers, which are based on Public Sequence data type.
-
-<code>
-[ CREATE_NRS_CONTAINER 20210409/v1 ]
-|
-[ ] Lookup XOR name and other details by XOR URL
-  safe dog "safe://<xor-url>"
-[ ] Create NRS for an xor-URL. Note that the container is versioned and therefore you need to add ?v=0 to the URL to point to the first version.
-  safe nrs create -l "safe://<xor-url>?v=<version>" <readble name>
-| on fail: Error: NetDataError: Failed to get current version: NetDataError: Failed to retrieve last entry from Sequence data: ErrorMessage(NoSuchData)
-| expect: New NRS Map for "safe://<readable name>" created at: "safe://<xor-url of map container>"
-+  <readable name>  safe://<xor-url-of file container version>
-| note the NRS Map container URL.
-</code>
-
-Now you can use ''safe:%%//%%<readable name>'' in place of corresponding ''safe:%%//%%<xor-url>''. Instead of ''create'', use ''add'' to add sub-addresses.
-<code>
-[ CREATE_FILES_CONTAINER 20210423/v4 ]
-|
-[ ] Check if you have a positive balance to pay for uploads.
-  safe keys balance
-| expect e.g.: SafeKey's current balance: 1000.111
-[ ] Add a first file to the network, creating a file container
-  safe files put <local filename>
-| Be very patient as this may take several minutes.
-| expect: FilesContainer created at: "safe://<container xor-url>"
-+  ./<local filename>  safe://<file xor-url> 
-| Note the XOR-URL of the new container, as well as of the new file.
-[ ] Optionally create an NRS for the container.
-  safe nrs create -l "safe://<xor-url>" <readble name>
-| on fail: Error: InvalidInput: The linked content (FilesContainer) is versionable, therefore NRS requires the link to specify a version: "safe://xor-url"
-[ ] View the contents of the files container. Use the container xor-url.
-  safe files ls "safe://<xor-url>"
-| the default path within a container is "/".
-[ ] Download a file from the container
-  safe cat "safe://<xor-url>/<path to file>" > ./<local filename>
-[ ] Download all files (the whole tree, incl. subdirs)
-  safe files get "safe://<xor-url>" > ./<local dir>
-</code>
-
-Versions of objects can be requested by adding ''?v=<version>'' to the URL.
-Below are some additional examples to play with. Read the cli manual for more...
-<code>
-[ MISC_CLI_EXAMPLES 20210409/v1 ]
-|
-[ ] List network profiles, switch, etc.
-  safe networks
-  safe networks check
-[ ] Stop your local node
-  safe node killall
-[ ] Send test-coins
-  safe keys transfer 1.1 --from <> --to safe://<user>
-  safe dog safe://<user>
-[ ] Check balance of rewards key of your node
-  safe keys balance --sk $(cat ~/.safe/node/local-node/reward_secret_key)
-[ ] Upload a bunch of files. Note that you will reach an upload limit after some time.
-  safe files put ~/Music --recursive
-[ ] Restart authenticator
-  safe auth restart
-[ ] Check on an XOR-URL and get details
-  safe dog "safe://<xor-url>>"
-</code>
-
-[[https://safenetforum.org/t/vdash-safe-node-dashboard-safe-vault-run-baby-fleming-t/32630|Vdash node monitor]]
-
-=== ARCHIVE of Community SAFE Network Testnet Instructions ===
-
-[[https://safenetforum.org/t/how-to-set-up-a-vault-from-home/13186|How to set up a vault at home]]
-[[https://safenetforum.org/t/launch-of-a-community-safe-network/26930| Launch of a community safe network]] 
-
-==== Compute XOR Distances ====
-
-A useful XOR distance [[https://www.miniwebtool.com/bitwise-calculator/?data_type=10&number1=0&number2=0&operator=XOR|calculator]] on the web. [[https://github.com/mafintosh/xor-distance/blob/master/index.js|This]] is an example implementation in JS.
-
-===== Appendices =====
-[[appendices|=> Appendices TOP]]
-  * [[appendices#A. Unofficial FAQ|A. Unofficial FAQ]]
-  * [[appendices#B. History and Timeline|B. History and Timeline]]
-  * [[appendices#C. People|C. People]]
-  * [[appendices#D. Corporate Organization|D. Corporate Organization]]
-  * [[appendices#E. Patents and Trademarks|E. Patents and Trademarks]]
-  * [[appendices#F. Related or Similar Projects|F. Related or Similar Projects]]
-  * [[appendices#G. Lists of Resources|G. Lists of Resources]]
-  * [[appendices#H. Philosophy|H. Philosophy]]
+DM.later('bundle', function()
+DM.molFeCarousel.init('#p-40', 'channelCarousel', 
+"activeClass" : "wocc",
+"pageCount" : "3.0",
+"pageSize" : 1,
+"onPos": 0,
+"updateStyleOnHover": true
+);
+);
+<div class="art-ins mol-factbox news halfRHS" data-version="2" id="mol-1223b420-6d4a-11ec-95d9-274687643895" website says NO new Covid curbs as country &apos;ride out&apos; Omicron wave
